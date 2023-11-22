@@ -1,0 +1,5 @@
+/tracker_node
+  ros__parameters:
+    max_distance: 100
+
+    traget_frame: odom

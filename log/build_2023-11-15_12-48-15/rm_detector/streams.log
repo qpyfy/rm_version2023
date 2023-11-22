@@ -1,0 +1,49 @@
+[0.007s] Invoking command in '/rm_version/build/rm_detector': CMAKE_PREFIX_PATH=/rm_version/install/rm_msg_interfaces:/rm_version/install/ros2_video:/rm_version/install/rm_detector:/ros_ws/install/ros2_video:/ros_ws/install/rm_vision_bringup:/ros_ws/install/rm_serial_driver:/ros_ws/install/rm_gimbal_description:/ros_ws/install/rm_auto_aim:/ros_ws/install/mindvision_camera:/ros_ws/install/hik_camera:/ros_ws/install/armor_tracker:/ros_ws/install/armor_detector:/ros_ws/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/rm_version/install/rm_msg_interfaces/lib:/rm_version/install/ros2_video/lib:/rm_version/install/rm_detector/lib:/ros_ws/install/ros2_video/lib:/ros_ws/install/rm_serial_driver/lib:/ros_ws/install/mindvision_camera/lib:/ros_ws/install/hik_camera/lib:/ros_ws/install/armor_tracker/lib:/ros_ws/install/armor_detector/lib:/ros_ws/install/auto_aim_interfaces/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /rm_version/build/rm_detector -- -j20 -l20
+[0.033s] [35m[1mConsolidate compiler generated dependencies of target rm_detector[0m
+[0.038s] [ 25%] Built target rm_detector_node
+[0.049s] [ 50%] [32mBuilding CXX object CMakeFiles/rm_detector.dir/src/detector_node.cpp.o[0m
+[0.049s] [ 50%] [32mBuilding CXX object CMakeFiles/rm_detector.dir/src/number_classifier.cpp.o[0m
+[6.352s] [ 62%] [32m[1mLinking CXX shared library librm_detector.so[0m
+[6.685s] [100%] Built target rm_detector
+[6.692s] Invoked command in '/rm_version/build/rm_detector' returned '0': CMAKE_PREFIX_PATH=/rm_version/install/rm_msg_interfaces:/rm_version/install/ros2_video:/rm_version/install/rm_detector:/ros_ws/install/ros2_video:/ros_ws/install/rm_vision_bringup:/ros_ws/install/rm_serial_driver:/ros_ws/install/rm_gimbal_description:/ros_ws/install/rm_auto_aim:/ros_ws/install/mindvision_camera:/ros_ws/install/hik_camera:/ros_ws/install/armor_tracker:/ros_ws/install/armor_detector:/ros_ws/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/rm_version/install/rm_msg_interfaces/lib:/rm_version/install/ros2_video/lib:/rm_version/install/rm_detector/lib:/ros_ws/install/ros2_video/lib:/ros_ws/install/rm_serial_driver/lib:/ros_ws/install/mindvision_camera/lib:/ros_ws/install/hik_camera/lib:/ros_ws/install/armor_tracker/lib:/ros_ws/install/armor_detector/lib:/ros_ws/install/auto_aim_interfaces/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /rm_version/build/rm_detector -- -j20 -l20
+[6.710s] Invoking command in '/rm_version/build/rm_detector': CMAKE_PREFIX_PATH=/rm_version/install/rm_msg_interfaces:/rm_version/install/ros2_video:/rm_version/install/rm_detector:/ros_ws/install/ros2_video:/ros_ws/install/rm_vision_bringup:/ros_ws/install/rm_serial_driver:/ros_ws/install/rm_gimbal_description:/ros_ws/install/rm_auto_aim:/ros_ws/install/mindvision_camera:/ros_ws/install/hik_camera:/ros_ws/install/armor_tracker:/ros_ws/install/armor_detector:/ros_ws/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/rm_version/install/rm_msg_interfaces/lib:/rm_version/install/ros2_video/lib:/rm_version/install/rm_detector/lib:/ros_ws/install/ros2_video/lib:/ros_ws/install/rm_serial_driver/lib:/ros_ws/install/mindvision_camera/lib:/ros_ws/install/hik_camera/lib:/ros_ws/install/armor_tracker/lib:/ros_ws/install/armor_detector/lib:/ros_ws/install/auto_aim_interfaces/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /rm_version/build/rm_detector
+[6.714s] -- Install configuration: ""
+[6.714s] -- Up-to-date: /rm_version/install/rm_detector/lib/rm_detector/rm_detector_node
+[6.714s] -- Up-to-date: /rm_version/install/rm_detector/include
+[6.714s] -- Up-to-date: /rm_version/install/rm_detector/include/number_classifier.hpp
+[6.714s] -- Up-to-date: /rm_version/install/rm_detector/include/detector_node.hpp
+[6.714s] -- Up-to-date: /rm_version/install/rm_detector/include/detector.hpp
+[6.714s] -- Up-to-date: /rm_version/install/rm_detector/include/armor.hpp
+[6.715s] -- Up-to-date: /rm_version/install/rm_detector/include/pnp_solver.hpp
+[6.715s] -- Up-to-date: /rm_version/install/rm_detector/share/rm_detector/environment/library_path.sh
+[6.715s] -- Up-to-date: /rm_version/install/rm_detector/share/rm_detector/environment/library_path.dsv
+[6.715s] -- Installing: /rm_version/install/rm_detector/lib/librm_detector.so
+[6.718s] -- Set runtime path of "/rm_version/install/rm_detector/lib/librm_detector.so" to ""
+[6.718s] -- Up-to-date: /rm_version/install/rm_detector/share/rm_detector/model
+[6.718s] -- Up-to-date: /rm_version/install/rm_detector/share/rm_detector/model/mlp.onnx
+[6.718s] -- Up-to-date: /rm_version/install/rm_detector/share/rm_detector/model/label.txt
+[6.718s] -- Up-to-date: /rm_version/install/rm_detector/share/rm_detector/config
+[6.718s] -- Up-to-date: /rm_version/install/rm_detector/share/rm_detector/config/camera_parm.yaml
+[6.719s] -- Up-to-date: /rm_version/install/rm_detector/share/rm_detector/config/detector.yaml
+[6.719s] -- Up-to-date: /rm_version/install/rm_detector/share/rm_detector/launch
+[6.719s] -- Up-to-date: /rm_version/install/rm_detector/share/rm_detector/launch/armor_detector.launch.py
+[6.719s] -- Up-to-date: /rm_version/install/rm_detector/share/ament_index/resource_index/package_run_dependencies/rm_detector
+[6.719s] -- Up-to-date: /rm_version/install/rm_detector/share/ament_index/resource_index/parent_prefix_path/rm_detector
+[6.719s] -- Up-to-date: /rm_version/install/rm_detector/share/rm_detector/environment/ament_prefix_path.sh
+[6.719s] -- Up-to-date: /rm_version/install/rm_detector/share/rm_detector/environment/ament_prefix_path.dsv
+[6.719s] -- Up-to-date: /rm_version/install/rm_detector/share/rm_detector/environment/path.sh
+[6.719s] -- Up-to-date: /rm_version/install/rm_detector/share/rm_detector/environment/path.dsv
+[6.719s] -- Up-to-date: /rm_version/install/rm_detector/share/rm_detector/local_setup.bash
+[6.719s] -- Up-to-date: /rm_version/install/rm_detector/share/rm_detector/local_setup.sh
+[6.719s] -- Up-to-date: /rm_version/install/rm_detector/share/rm_detector/local_setup.zsh
+[6.719s] -- Up-to-date: /rm_version/install/rm_detector/share/rm_detector/local_setup.dsv
+[6.719s] -- Installing: /rm_version/install/rm_detector/share/rm_detector/package.dsv
+[6.720s] -- Up-to-date: /rm_version/install/rm_detector/share/ament_index/resource_index/packages/rm_detector
+[6.720s] -- Up-to-date: /rm_version/install/rm_detector/share/ament_index/resource_index/rclcpp_components/rm_detector
+[6.720s] -- Up-to-date: /rm_version/install/rm_detector/share/rm_detector/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.720s] -- Up-to-date: /rm_version/install/rm_detector/share/rm_detector/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.720s] -- Up-to-date: /rm_version/install/rm_detector/share/rm_detector/cmake/ament_cmake_export_libraries-extras.cmake
+[6.720s] -- Up-to-date: /rm_version/install/rm_detector/share/rm_detector/cmake/rm_detectorConfig.cmake
+[6.720s] -- Up-to-date: /rm_version/install/rm_detector/share/rm_detector/cmake/rm_detectorConfig-version.cmake
+[6.720s] -- Up-to-date: /rm_version/install/rm_detector/share/rm_detector/package.xml
+[6.722s] Invoked command in '/rm_version/build/rm_detector' returned '0': CMAKE_PREFIX_PATH=/rm_version/install/rm_msg_interfaces:/rm_version/install/ros2_video:/rm_version/install/rm_detector:/ros_ws/install/ros2_video:/ros_ws/install/rm_vision_bringup:/ros_ws/install/rm_serial_driver:/ros_ws/install/rm_gimbal_description:/ros_ws/install/rm_auto_aim:/ros_ws/install/mindvision_camera:/ros_ws/install/hik_camera:/ros_ws/install/armor_tracker:/ros_ws/install/armor_detector:/ros_ws/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/rm_version/install/rm_msg_interfaces/lib:/rm_version/install/ros2_video/lib:/rm_version/install/rm_detector/lib:/ros_ws/install/ros2_video/lib:/ros_ws/install/rm_serial_driver/lib:/ros_ws/install/mindvision_camera/lib:/ros_ws/install/hik_camera/lib:/ros_ws/install/armor_tracker/lib:/ros_ws/install/armor_detector/lib:/ros_ws/install/auto_aim_interfaces/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /rm_version/build/rm_detector

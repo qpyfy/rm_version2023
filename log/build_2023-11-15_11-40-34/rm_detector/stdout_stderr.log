@@ -1,0 +1,236 @@
+[35m[1mConsolidate compiler generated dependencies of target rm_detector[0m
+[ 25%] Built target rm_detector_node
+[ 37%] [32mBuilding CXX object CMakeFiles/rm_detector.dir/src/detector_node.cpp.o[0m
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:[m[K In member function ‘[01m[Kstd::unique_ptr<rm_auto_aim::NumberClassifier> rm_auto_aim::ArmorDetectorNode::initNumberClassifier()[m[K’:
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:169:3:[m[K [01;31m[Kerror: [m[Kno return statement in function returning non-void [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Werror=return-type]8;;[m[K]
+  169 |   [01;31m[K}[m[K
+      |   [01;31m[K^[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:[m[K At global scope:
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:170:7:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+  170 |       [01;31m[Kreturn[m[K number_classifier;
+      |       [01;31m[K^~~~~~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:173:20:[m[K [01;31m[Kerror: [m[K‘[01m[KPnpSolver[m[K’ was not declared in this scope; did you mean ‘[01m[Krm_auto_aim::PnpSolver[m[K’?
+  173 |    std::unique_ptr<[01;31m[KPnpSolver[m[K> ArmorDetectorNode::initPnpSolver()
+      |                    [01;31m[K^~~~~~~~~[m[K
+      |                    [32m[Krm_auto_aim::PnpSolver[m[K
+In file included from [01m[K/rm_version/src/rm_detector/include/detector_node.hpp:24[m[K,
+                 from [01m[K/rm_version/src/rm_detector/src/detector_node.cpp:14[m[K:
+[01m[K/rm_version/src/rm_detector/include/pnp_solver.hpp:15:11:[m[K [01;36m[Knote: [m[K‘[01m[Krm_auto_aim::PnpSolver[m[K’ declared here
+   15 |     class [01;36m[KPnpSolver[m[K
+      |           [01;36m[K^~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:173:29:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  173 |    std::unique_ptr<PnpSolver[01;31m[K>[m[K ArmorDetectorNode::initPnpSolver()
+      |                             [01;31m[K^[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:173:29:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:173:31:[m[K [01;31m[Kerror: [m[K‘[01m[KArmorDetectorNode[m[K’ has not been declared
+  173 |    std::unique_ptr<PnpSolver> [01;31m[KArmorDetectorNode[m[K::initPnpSolver()
+      |                               [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:[m[K In function ‘[01m[Kint initPnpSolver()[m[K’:
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:175:23:[m[K [01;31m[Kerror: [m[K‘[01m[KPnpSolver[m[K’ was not declared in this scope; did you mean ‘[01m[Krm_auto_aim::PnpSolver[m[K’?
+  175 |       std::unique_ptr<[01;31m[KPnpSolver[m[K> pnp_solver = std::make_unique<PnpSolver>();
+      |                       [01;31m[K^~~~~~~~~[m[K
+      |                       [32m[Krm_auto_aim::PnpSolver[m[K
+In file included from [01m[K/rm_version/src/rm_detector/include/detector_node.hpp:24[m[K,
+                 from [01m[K/rm_version/src/rm_detector/src/detector_node.cpp:14[m[K:
+[01m[K/rm_version/src/rm_detector/include/pnp_solver.hpp:15:11:[m[K [01;36m[Knote: [m[K‘[01m[Krm_auto_aim::PnpSolver[m[K’ declared here
+   15 |     class [01;36m[KPnpSolver[m[K
+      |           [01;36m[K^~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:175:32:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  175 |       std::unique_ptr<PnpSolver[01;31m[K>[m[K pnp_solver = std::make_unique<PnpSolver>();
+      |                                [01;31m[K^[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:175:32:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:175:74:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_unique<PnpSolver>()[m[K’
+  175 |       std::unique_ptr<PnpSolver> pnp_solver = [01;31m[Kstd::make_unique<PnpSolver>()[m[K;
+      |                                               [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp:10[m[K,
+                 from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/image.hpp:7[m[K,
+                 from [01m[K/opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h:40[m[K,
+                 from [01m[K/rm_version/src/rm_detector/src/detector_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...)[m[K’
+  961 |     [01;36m[Kmake_unique[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:967:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> typename std::_MakeUniq<_Tp>::__array std::make_unique(std::size_t)[m[K’
+  967 |     [01;36m[Kmake_unique[m[K(size_t __num)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:967:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__invalid_type std::make_unique(_Args&& ...)[m[K’ (deleted)
+  973 |     [01;36m[Kmake_unique[m[K(_Args&&...) = delete;
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:176:17:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  176 |       pnp_solver[01;31m[K->[m[Kcamera_matrix_ = (cv::Mat_<double>(3, 3) << 1807.12121, 0., 711.11997, 0.,
+      |                 [01;31m[K^~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:178:17:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  178 |       pnp_solver[01;31m[K->[m[Kdist_coeffs_ = (cv::Mat_<double>(5, 1) << -0.078049, 0.158627, 0.000304, -0.000566, 0.000000);
+      |                 [01;31m[K^~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:181:17:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  181 |       pnp_solver[01;31m[K->[m[KLARGE_ARMOR_HEIGHT = this->declare_parameter("LARGE_ARMOR_HEIGHT", 55);
+      |                 [01;31m[K^~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:181:40:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  181 |       pnp_solver->LARGE_ARMOR_HEIGHT = [01;31m[Kthis[m[K->declare_parameter("LARGE_ARMOR_HEIGHT", 55);
+      |                                        [01;31m[K^~~~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:182:17:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  182 |       pnp_solver[01;31m[K->[m[KLARGE_ARMOR_WIDTH = this->declare_parameter("LARGE_ARMOR_WIDTH", 225);
+      |                 [01;31m[K^~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:182:39:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  182 |       pnp_solver->LARGE_ARMOR_WIDTH = [01;31m[Kthis[m[K->declare_parameter("LARGE_ARMOR_WIDTH", 225);
+      |                                       [01;31m[K^~~~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:183:17:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  183 |       pnp_solver[01;31m[K->[m[KSMALL_ARMOR_HEIGHT = this->declare_parameter("SMALL_ARMOR_HEIGHT", 55);
+      |                 [01;31m[K^~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:183:40:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  183 |       pnp_solver->SMALL_ARMOR_HEIGHT = [01;31m[Kthis[m[K->declare_parameter("SMALL_ARMOR_HEIGHT", 55);
+      |                                        [01;31m[K^~~~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:184:17:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  184 |       pnp_solver[01;31m[K->[m[KSMALL_ARMOR_WIDTH = this->declare_parameter("SMALL_ARMOR_WIDTH", 135);
+      |                 [01;31m[K^~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:184:39:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  184 |       pnp_solver->SMALL_ARMOR_WIDTH = [01;31m[Kthis[m[K->declare_parameter("SMALL_ARMOR_WIDTH", 135);
+      |                                       [01;31m[K^~~~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:187:39:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  187 |       double small_half_y = pnp_solver[01;31m[K->[m[KLARGE_ARMOR_HEIGHT / 2.0 / 1000.0;
+      |                                       [01;31m[K^~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:188:39:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  188 |       double small_half_z = pnp_solver[01;31m[K->[m[KSMALL_ARMOR_HEIGHT / 2.0 / 1000.0;
+      |                                       [01;31m[K^~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:189:39:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  189 |       double large_half_y = pnp_solver[01;31m[K->[m[KLARGE_ARMOR_WIDTH / 2.0 / 1000.0;
+      |                                       [01;31m[K^~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:190:39:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  190 |       double large_half_z = pnp_solver[01;31m[K->[m[KLARGE_ARMOR_HEIGHT / 2.0 / 1000.0;
+      |                                       [01;31m[K^~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:194:17:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  194 |       pnp_solver[01;31m[K->[m[Ksmall_armor_points_.emplace_back(cv::Point3f(0, small_half_y, -small_half_z));
+      |                 [01;31m[K^~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:195:17:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  195 |       pnp_solver[01;31m[K->[m[Ksmall_armor_points_.emplace_back(cv::Point3f(0, small_half_y, small_half_z));
+      |                 [01;31m[K^~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:196:17:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  196 |       pnp_solver[01;31m[K->[m[Ksmall_armor_points_.emplace_back(cv::Point3f(0, -small_half_y, small_half_z));
+      |                 [01;31m[K^~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:197:17:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  197 |       pnp_solver[01;31m[K->[m[Ksmall_armor_points_.emplace_back(cv::Point3f(0, -small_half_y, -small_half_z));
+      |                 [01;31m[K^~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:199:17:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  199 |       pnp_solver[01;31m[K->[m[Klarge_armor_points_.emplace_back(cv::Point3f(0, large_half_y, -large_half_z));
+      |                 [01;31m[K^~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:200:17:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  200 |       pnp_solver[01;31m[K->[m[Klarge_armor_points_.emplace_back(cv::Point3f(0, large_half_y, large_half_z));
+      |                 [01;31m[K^~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:201:17:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  201 |       pnp_solver[01;31m[K->[m[Klarge_armor_points_.emplace_back(cv::Point3f(0, -large_half_y, large_half_z));
+      |                 [01;31m[K^~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:202:17:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  202 |       pnp_solver[01;31m[K->[m[Klarge_armor_points_.emplace_back(cv::Point3f(0, -large_half_y, -large_half_z));
+      |                 [01;31m[K^~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:37[m[K,
+                 from [01m[K/rm_version/src/rm_detector/src/detector_node.cpp:7[m[K:
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:203:19:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  203 |       RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "PnpSolver init");
+      |                   [01;31m[K^~~~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:203:19:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:203:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  203 |       [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "PnpSolver init");
+      |       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:203:7:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  203 |       [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "PnpSolver init");
+      |       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:203:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  203 |       [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "PnpSolver init");
+      |       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:203:7:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  203 |       [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "PnpSolver init");
+      |       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:203:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  203 |       [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "PnpSolver init");
+      |       [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:37[m[K,
+                 from [01m[K/rm_version/src/rm_detector/src/detector_node.cpp:7[m[K:
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:203:19:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  203 |       RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "PnpSolver init");
+      |                   [01;31m[K^~~~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:203:19:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  203 |       RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "PnpSolver init");
+      |                   [01;31m[K^~~~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:[m[K At global scope:
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:207:9:[m[K [01;31m[Kerror: [m[K‘[01m[KArmorDetectorNode[m[K’ has not been declared
+  207 |    void [01;31m[KArmorDetectorNode[m[K::initDebugPuilsher()
+      |         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:[m[K In function ‘[01m[Kvoid initDebugPuilsher()[m[K’:
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:209:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kdebug_img_pub_[m[K’ was not declared in this scope
+  209 |       [01;31m[Kdebug_img_pub_[m[K = image_transport::create_publisher(this,"/debug_img");
+      |       [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:209:58:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  209 |       debug_img_pub_ = image_transport::create_publisher([01;31m[Kthis[m[K,"/debug_img");
+      |                                                          [01;31m[K^~~~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:210:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kbin_img_pub_[m[K’ was not declared in this scope
+  210 |       [01;31m[Kbin_img_pub_[m[K = image_transport::create_publisher(this,"/bin_img");
+      |       [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:210:56:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  210 |       bin_img_pub_ = image_transport::create_publisher([01;31m[Kthis[m[K,"/bin_img");
+      |                                                        [01;31m[K^~~~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:211:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kresult_img_pub_[m[K’ was not declared in this scope
+  211 |       [01;31m[Kresult_img_pub_[m[K = image_transport::create_publisher(this,"/result_img");
+      |       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:211:59:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  211 |       result_img_pub_ = image_transport::create_publisher([01;31m[Kthis[m[K,"/result_img");
+      |                                                           [01;31m[K^~~~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:[m[K At global scope:
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:213:9:[m[K [01;31m[Kerror: [m[K‘[01m[KArmorDetectorNode[m[K’ has not been declared
+  213 |    void [01;31m[KArmorDetectorNode[m[K::PuilshDebugImg()
+      |         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:[m[K In function ‘[01m[Kvoid PuilshDebugImg()[m[K’:
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:215:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kdebug_img_pub_[m[K’ was not declared in this scope
+  215 |       [01;31m[Kdebug_img_pub_[m[K.publish(
+      |       [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:216:64:[m[K [01;31m[Kerror: [m[K‘[01m[Kimg_[m[K’ was not declared in this scope
+  216 |           *cv_bridge::CvImage(std_msgs::msg::Header(), "rgb8", [01;31m[Kimg_[m[K).toImageMsg());
+      |                                                                [01;31m[K^~~~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:217:115:[m[K [01;31m[Kerror: [m[K‘[01m[Kbin_img_[m[K’ was not declared in this scope; did you mean ‘[01m[Kbin_img_msg[m[K’?
+  217 | sgs::msg::Image> bin_img_msg = cv_bridge::CvImage(std_msgs::msg::Header(), "mono8", [01;31m[Kbin_img_[m[K).toImageMsg();
+      |                                                                                     [01;31m[K^~~~~~~~[m[K
+      |                                                                                     [32m[Kbin_img_msg[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:218:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kbin_img_pub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kbin_img_msg[m[K’?
+  218 |       [01;31m[Kbin_img_pub_[m[K.publish(*bin_img_msg);
+      |       [01;31m[K^~~~~~~~~~~~[m[K
+      |       [32m[Kbin_img_msg[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:219:117:[m[K [01;31m[Kerror: [m[K‘[01m[Kresult_img_[m[K’ was not declared in this scope; did you mean ‘[01m[Kresult_img_msg[m[K’?
+  219 | s::msg::Image> result_img_msg = cv_bridge::CvImage(std_msgs::msg::Header(), "rgb8", [01;31m[Kresult_img_[m[K).toImageMsg();
+      |                                                                                     [01;31m[K^~~~~~~~~~~[m[K
+      |                                                                                     [32m[Kresult_img_msg[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:220:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kresult_img_pub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kresult_img_msg[m[K’?
+  220 |       [01;31m[Kresult_img_pub_[m[K.publish(*result_img_msg);
+      |       [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |       [32m[Kresult_img_msg[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:[m[K At global scope:
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:223:12:[m[K [01;31m[Kerror: [m[K‘[01m[KArmorDetectorNode[m[K’ has not been declared
+  223 |    cv::Mat [01;31m[KArmorDetectorNode[m[K::drawLights()
+      |            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:[m[K In function ‘[01m[Kcv::Mat drawLights()[m[K’:
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:225:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kresult_img_[m[K’ was not declared in this scope
+  225 |       [01;31m[Kresult_img_[m[K = img_;
+      |       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:225:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kimg_[m[K’ was not declared in this scope
+  225 |       result_img_ = [01;31m[Kimg_[m[K;
+      |                     [01;31m[K^~~~[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:235:20:[m[K [01;31m[Kerror: [m[K‘[01m[Karmors_[m[K’ was not declared in this scope; did you mean ‘[01m[Karmor[m[K’?
+  235 |    for(auto &armor:[01;31m[Karmors_[m[K){
+      |                    [01;31m[K^~~~~~~[m[K
+      |                    [32m[Karmor[m[K
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:[m[K At global scope:
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:244:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  244 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [CMakeFiles/rm_detector.dir/build.make:104: CMakeFiles/rm_detector.dir/src/detector_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/rm_detector.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

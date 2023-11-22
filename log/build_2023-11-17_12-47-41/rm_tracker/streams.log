@@ -1,0 +1,20 @@
+[0.017s] Invoking command in '/rm_version/build/rm_tracker': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /rm_version/build/rm_tracker -- -j20 -l20
+[0.052s] [ 16%] [32mBuilding CXX object CMakeFiles/rm_tracker.dir/src/tracker_node.cpp.o[0m
+[0.052s] [ 33%] [32mBuilding CXX object CMakeFiles/rm_tracker.dir/src/tracker.cpp.o[0m
+[0.056s] [ 66%] Built target rm_tracker_node
+[0.198s] In file included from [01m[K/rm_version/src/rm_tracker/src/tracker.cpp:1[m[K:
+[0.198s] [01m[K/rm_version/src/rm_tracker/include/tracker.hpp:16:10:[m[K [01;31m[Kfatal error: [m[Karmor_tracker/extended_kalman_filter.hpp: No such file or directory
+[0.198s]    16 | #include [01;31m[K"armor_tracker/extended_kalman_filter.hpp"[m[K
+[0.198s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.198s] compilation terminated.
+[0.199s] gmake[2]: *** [CMakeFiles/rm_tracker.dir/build.make:90: CMakeFiles/rm_tracker.dir/src/tracker.cpp.o] Error 1
+[0.199s] gmake[2]: *** Waiting for unfinished jobs....
+[0.211s] In file included from [01m[K/rm_version/src/rm_tracker/src/tracker_node.cpp:1[m[K:
+[0.211s] [01m[K/rm_version/src/rm_tracker/include/tracker_node.hpp:21:10:[m[K [01;31m[Kfatal error: [m[Karmor_tracker/tracker.hpp: No such file or directory
+[0.211s]    21 | #include [01;31m[K"armor_tracker/tracker.hpp"[m[K
+[0.211s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.211s] compilation terminated.
+[0.212s] gmake[2]: *** [CMakeFiles/rm_tracker.dir/build.make:104: CMakeFiles/rm_tracker.dir/src/tracker_node.cpp.o] Error 1
+[0.212s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/rm_tracker.dir/all] Error 2
+[0.212s] gmake: *** [Makefile:146: all] Error 2
+[0.214s] Invoked command in '/rm_version/build/rm_tracker' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /rm_version/build/rm_tracker -- -j20 -l20

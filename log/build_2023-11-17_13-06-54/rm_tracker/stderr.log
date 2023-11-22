@@ -1,0 +1,13 @@
+In file included from [01m[K/rm_version/src/rm_tracker/src/tracker_node.cpp:1[m[K:
+[01m[K/rm_version/src/rm_tracker/include/tracker_node.hpp:28:23:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   28 |   rclcpp::Subscription[01;31m[K<[m[K
+      |                       [01;31m[K^[m[K
+[01m[K/rm_version/src/rm_tracker/include/tracker_node.hpp:28:23:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[01m[K/rm_version/src/rm_tracker/include/tracker_node.hpp:28:23:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[01m[K/rm_version/src/rm_tracker/include/tracker_node.hpp:28:23:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[01m[K/rm_version/src/rm_tracker/include/tracker_node.hpp:31:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K}[m[K’ token
+   31 | [01;31m[K}[m[K;
+      | [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/rm_tracker.dir/build.make:104: CMakeFiles/rm_tracker.dir/src/tracker_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/rm_tracker.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

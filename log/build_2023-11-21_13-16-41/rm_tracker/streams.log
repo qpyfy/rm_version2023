@@ -1,0 +1,23 @@
+[0.012s] Invoking command in '/rm_version/build/rm_tracker': AMENT_PREFIX_PATH=/rm_version/install/rm_msg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/rm_version/install/rm_msg_interfaces:/ros_ws/install/ros2_video:/ros_ws/install/rm_vision_bringup:/ros_ws/install/rm_serial_driver:/ros_ws/install/rm_gimbal_description:/ros_ws/install/rm_auto_aim:/ros_ws/install/mindvision_camera:/ros_ws/install/hik_camera:/ros_ws/install/armor_tracker:/ros_ws/install/armor_detector:/ros_ws/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/rm_version/install/rm_msg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /rm_version/build/rm_tracker -- -j20 -l20
+[0.040s] [35m[1mConsolidate compiler generated dependencies of target rm_tracker[0m
+[0.043s] [ 33%] Built target rm_tracker_node
+[0.053s] [ 50%] [32mBuilding CXX object CMakeFiles/rm_tracker.dir/src/extended_kalman_filiter.cpp.o[0m
+[0.054s] [ 66%] [32mBuilding CXX object CMakeFiles/rm_tracker.dir/src/tracker.cpp.o[0m
+[0.054s] [ 83%] [32mBuilding CXX object CMakeFiles/rm_tracker.dir/src/tracker_node.cpp.o[0m
+[0.211s] In file included from [01m[K/rm_version/src/rm_tracker/src/tracker.cpp:1[m[K:
+[0.211s] [01m[K/rm_version/src/rm_tracker/include/tracker.hpp:16:10:[m[K [01;31m[Kfatal error: [m[Kextended_kalman_filter.hpp: No such file or directory
+[0.211s]    16 | #include [01;31m[K<extended_kalman_filter.hpp>[m[K
+[0.211s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.211s] compilation terminated.
+[0.212s] gmake[2]: *** [CMakeFiles/rm_tracker.dir/build.make:90: CMakeFiles/rm_tracker.dir/src/tracker.cpp.o] Error 1
+[0.212s] gmake[2]: *** Waiting for unfinished jobs....
+[0.288s] In file included from [01m[K/rm_version/src/rm_tracker/include/tracker_node.hpp:22[m[K,
+[0.288s]                  from [01m[K/rm_version/src/rm_tracker/src/tracker_node.cpp:1[m[K:
+[0.288s] [01m[K/rm_version/src/rm_tracker/include/tracker.hpp:16:10:[m[K [01;31m[Kfatal error: [m[Kextended_kalman_filter.hpp: No such file or directory
+[0.288s]    16 | #include [01;31m[K<extended_kalman_filter.hpp>[m[K
+[0.288s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.288s] compilation terminated.
+[0.289s] gmake[2]: *** [CMakeFiles/rm_tracker.dir/build.make:104: CMakeFiles/rm_tracker.dir/src/tracker_node.cpp.o] Error 1
+[0.665s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/rm_tracker.dir/all] Error 2
+[0.665s] gmake: *** [Makefile:146: all] Error 2
+[0.667s] Invoked command in '/rm_version/build/rm_tracker' returned '2': AMENT_PREFIX_PATH=/rm_version/install/rm_msg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/rm_version/install/rm_msg_interfaces:/ros_ws/install/ros2_video:/ros_ws/install/rm_vision_bringup:/ros_ws/install/rm_serial_driver:/ros_ws/install/rm_gimbal_description:/ros_ws/install/rm_auto_aim:/ros_ws/install/mindvision_camera:/ros_ws/install/hik_camera:/ros_ws/install/armor_tracker:/ros_ws/install/armor_detector:/ros_ws/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/rm_version/install/rm_msg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /rm_version/build/rm_tracker -- -j20 -l20

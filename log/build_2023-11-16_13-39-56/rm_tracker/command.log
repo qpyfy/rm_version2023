@@ -1,0 +1,2 @@
+Invoking command in '/rm_version/build/rm_tracker': /usr/bin/cmake /rm_version/src/rm_tracker -DCMAKE_INSTALL_PREFIX=/rm_version/install/rm_tracker
+Invoked command in '/rm_version/build/rm_tracker' returned '1': /usr/bin/cmake /rm_version/src/rm_tracker -DCMAKE_INSTALL_PREFIX=/rm_version/install/rm_tracker

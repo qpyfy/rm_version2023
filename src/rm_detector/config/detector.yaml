@@ -1,0 +1,17 @@
+/detector_node:
+ ros__parameters:
+  binary_thres: 80
+  Debug: True
+  light_max_angle: 50
+  light_min_l_w_ratio: 0.1
+  light_max_l_w_ratio: 0.4
+  light_detector_color: 1
+
+  armor_max_angle: 35
+  theshold: 1.0
+  svm_model_path: src/rm_detector/model/mlp.onnx
+  ignore_classes: ["negative"]
+
+
+
+

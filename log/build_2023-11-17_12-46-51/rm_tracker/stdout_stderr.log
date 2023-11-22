@@ -1,0 +1,20 @@
+[35m[1mConsolidate compiler generated dependencies of target rm_tracker[0m
+[35m[1mConsolidate compiler generated dependencies of target rm_tracker_node[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/rm_tracker.dir/src/tracker_node.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/rm_tracker.dir/src/tracker.cpp.o[0m
+[ 66%] Built target rm_tracker_node
+In file included from [01m[K/rm_version/src/rm_tracker/src/tracker.cpp:1[m[K:
+[01m[K/rm_version/src/rm_tracker/include/tracker.hpp:16:10:[m[K [01;31m[Kfatal error: [m[Karmor_tracker/extended_kalman_filter.hpp: No such file or directory
+   16 | #include [01;31m[K"armor_tracker/extended_kalman_filter.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/rm_tracker.dir/build.make:90: CMakeFiles/rm_tracker.dir/src/tracker.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/rm_version/src/rm_tracker/src/tracker_node.cpp:1[m[K:
+[01m[K/rm_version/src/rm_tracker/include/tracker_node.hpp:21:10:[m[K [01;31m[Kfatal error: [m[Karmor_tracker/tracker.hpp: No such file or directory
+   21 | #include [01;31m[K"armor_tracker/tracker.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/rm_tracker.dir/build.make:104: CMakeFiles/rm_tracker.dir/src/tracker_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/rm_tracker.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

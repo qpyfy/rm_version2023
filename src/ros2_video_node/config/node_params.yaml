@@ -1,0 +1,3 @@
+/video_node:
+  ros__parameters:
+    video_path: src/ros2_video_node/video/ood_red.mp4

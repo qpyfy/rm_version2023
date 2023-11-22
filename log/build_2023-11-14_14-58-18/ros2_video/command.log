@@ -1,0 +1,6 @@
+Invoking command in '/rm_version/build/ros2_video': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /rm_version/src/ros2_video_node -DCMAKE_INSTALL_PREFIX=/rm_version/install/ros2_video
+Invoked command in '/rm_version/build/ros2_video' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /rm_version/src/ros2_video_node -DCMAKE_INSTALL_PREFIX=/rm_version/install/ros2_video
+Invoking command in '/rm_version/build/ros2_video': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /rm_version/build/ros2_video -- -j20 -l20
+Invoked command in '/rm_version/build/ros2_video' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /rm_version/build/ros2_video -- -j20 -l20
+Invoking command in '/rm_version/build/ros2_video': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /rm_version/build/ros2_video
+Invoked command in '/rm_version/build/ros2_video' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /rm_version/build/ros2_video

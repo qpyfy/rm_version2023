@@ -1,0 +1,7 @@
+{
+  "package_name": "rm_msg_interfaces",
+  "non_idl_tuples": [
+    "/rm_version/src/rm_msg_interfaces:msg/Armor.msg",
+    "/rm_version/src/rm_msg_interfaces:msg/Armors.msg"
+  ]
+}

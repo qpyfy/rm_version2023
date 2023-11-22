@@ -1,0 +1,6 @@
+[01m[K/rm_version/src/rm_tracker/src/tracker_node.cpp:13:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+   13 | [01;31m[Knamespace[m[K rm_auto_aim{
+      | [01;31m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rm_tracker.dir/build.make:104: CMakeFiles/rm_tracker.dir/src/tracker_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/rm_tracker.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
