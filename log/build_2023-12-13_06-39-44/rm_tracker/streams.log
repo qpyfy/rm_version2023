@@ -1,0 +1,38 @@
+[0.007s] Invoking command in '/rm_version/build/rm_tracker': AMENT_PREFIX_PATH=/rm_version/install/rm_msg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/rm_version/install/rm_msg_interfaces:/ros_ws/install/ros2_video:/ros_ws/install/rm_vision_bringup:/ros_ws/install/rm_serial_driver:/ros_ws/install/rm_gimbal_description:/ros_ws/install/rm_auto_aim:/ros_ws/install/mindvision_camera:/ros_ws/install/hik_camera:/ros_ws/install/armor_tracker:/ros_ws/install/armor_detector:/ros_ws/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/rm_version/install/rm_msg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /rm_version/build/rm_tracker -- -j20 -l20
+[0.034s] [ 33%] Built target rm_tracker_node
+[0.037s] [100%] Built target rm_tracker
+[0.043s] Invoked command in '/rm_version/build/rm_tracker' returned '0': AMENT_PREFIX_PATH=/rm_version/install/rm_msg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/rm_version/install/rm_msg_interfaces:/ros_ws/install/ros2_video:/ros_ws/install/rm_vision_bringup:/ros_ws/install/rm_serial_driver:/ros_ws/install/rm_gimbal_description:/ros_ws/install/rm_auto_aim:/ros_ws/install/mindvision_camera:/ros_ws/install/hik_camera:/ros_ws/install/armor_tracker:/ros_ws/install/armor_detector:/ros_ws/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/rm_version/install/rm_msg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /rm_version/build/rm_tracker -- -j20 -l20
+[0.056s] Invoking command in '/rm_version/build/rm_tracker': AMENT_PREFIX_PATH=/rm_version/install/rm_msg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/rm_version/install/rm_msg_interfaces:/ros_ws/install/ros2_video:/ros_ws/install/rm_vision_bringup:/ros_ws/install/rm_serial_driver:/ros_ws/install/rm_gimbal_description:/ros_ws/install/rm_auto_aim:/ros_ws/install/mindvision_camera:/ros_ws/install/hik_camera:/ros_ws/install/armor_tracker:/ros_ws/install/armor_detector:/ros_ws/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/rm_version/install/rm_msg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /rm_version/build/rm_tracker
+[0.059s] -- Install configuration: ""
+[0.059s] -- Up-to-date: /rm_version/install/rm_tracker/lib/rm_tracker/rm_tracker_node
+[0.059s] -- Up-to-date: /rm_version/install/rm_tracker/include
+[0.059s] -- Up-to-date: /rm_version/install/rm_tracker/include/tracker_node.hpp
+[0.059s] -- Up-to-date: /rm_version/install/rm_tracker/include/tracker.hpp
+[0.060s] -- Up-to-date: /rm_version/install/rm_tracker/include/extended_kalman_filiter.hpp
+[0.060s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/environment/library_path.sh
+[0.060s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/environment/library_path.dsv
+[0.060s] -- Up-to-date: /rm_version/install/rm_tracker/lib/librm_tracker.so
+[0.060s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/config
+[0.060s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/config/tracker.yaml
+[0.060s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/launch
+[0.060s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/launch/armor_tracker.launch.py
+[0.060s] -- Up-to-date: /rm_version/install/rm_tracker/share/ament_index/resource_index/package_run_dependencies/rm_tracker
+[0.060s] -- Up-to-date: /rm_version/install/rm_tracker/share/ament_index/resource_index/parent_prefix_path/rm_tracker
+[0.060s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/environment/ament_prefix_path.sh
+[0.060s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/environment/ament_prefix_path.dsv
+[0.060s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/environment/path.sh
+[0.060s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/environment/path.dsv
+[0.061s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/local_setup.bash
+[0.061s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/local_setup.sh
+[0.061s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/local_setup.zsh
+[0.061s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/local_setup.dsv
+[0.061s] -- Installing: /rm_version/install/rm_tracker/share/rm_tracker/package.dsv
+[0.061s] -- Up-to-date: /rm_version/install/rm_tracker/share/ament_index/resource_index/packages/rm_tracker
+[0.061s] -- Up-to-date: /rm_version/install/rm_tracker/share/ament_index/resource_index/rclcpp_components/rm_tracker
+[0.061s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.061s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.062s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/cmake/ament_cmake_export_libraries-extras.cmake
+[0.063s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/cmake/rm_trackerConfig.cmake
+[0.063s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/cmake/rm_trackerConfig-version.cmake
+[0.064s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/package.xml
+[0.067s] Invoked command in '/rm_version/build/rm_tracker' returned '0': AMENT_PREFIX_PATH=/rm_version/install/rm_msg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/rm_version/install/rm_msg_interfaces:/ros_ws/install/ros2_video:/ros_ws/install/rm_vision_bringup:/ros_ws/install/rm_serial_driver:/ros_ws/install/rm_gimbal_description:/ros_ws/install/rm_auto_aim:/ros_ws/install/mindvision_camera:/ros_ws/install/hik_camera:/ros_ws/install/armor_tracker:/ros_ws/install/armor_detector:/ros_ws/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/rm_version/install/rm_msg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /rm_version/build/rm_tracker

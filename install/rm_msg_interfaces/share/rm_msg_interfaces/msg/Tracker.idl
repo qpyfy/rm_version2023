@@ -1,0 +1,29 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from rm_msg_interfaces/msg/Tracker.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+#include "geometry_msgs/msg/Vector3.idl"
+#include "std_msgs/msg/Header.idl"
+
+module rm_msg_interfaces {
+  module msg {
+    struct Tracker {
+      std_msgs::msg::Header header;
+
+      boolean trackering;
+
+      string id;
+
+      geometry_msgs::msg::Point position;
+
+      geometry_msgs::msg::Vector3 velocity;
+
+      double yaw;
+
+      double v_yaw;
+
+      double radius;
+    };
+  };
+};

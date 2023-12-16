@@ -1,0 +1,24 @@
+[0.033s] Invoking command in '/rm_version/build/ros2_static_tf_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /rm_version/build/ros2_static_tf_node -- -j20 -l20
+[0.079s] [ 50%] Built target ros2_static_tf_node_node
+[0.080s] [100%] Built target ros2_static_tf_node
+[0.090s] Invoked command in '/rm_version/build/ros2_static_tf_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /rm_version/build/ros2_static_tf_node -- -j20 -l20
+[0.123s] Invoking command in '/rm_version/build/ros2_static_tf_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /rm_version/build/ros2_static_tf_node
+[0.125s] -- Install configuration: ""
+[0.125s] -- Up-to-date: /rm_version/install/ros2_static_tf_node/lib/ros2_static_tf_node/ros2_static_tf_node_node
+[0.126s] -- Up-to-date: /rm_version/install/ros2_static_tf_node/share/ament_index/resource_index/package_run_dependencies/ros2_static_tf_node
+[0.126s] -- Up-to-date: /rm_version/install/ros2_static_tf_node/share/ament_index/resource_index/parent_prefix_path/ros2_static_tf_node
+[0.126s] -- Up-to-date: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/environment/ament_prefix_path.sh
+[0.127s] -- Up-to-date: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/environment/ament_prefix_path.dsv
+[0.127s] -- Up-to-date: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/environment/path.sh
+[0.127s] -- Up-to-date: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/environment/path.dsv
+[0.128s] -- Up-to-date: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/local_setup.bash
+[0.129s] -- Up-to-date: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/local_setup.sh
+[0.129s] -- Up-to-date: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/local_setup.zsh
+[0.129s] -- Up-to-date: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/local_setup.dsv
+[0.130s] -- Installing: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/package.dsv
+[0.130s] -- Up-to-date: /rm_version/install/ros2_static_tf_node/share/ament_index/resource_index/packages/ros2_static_tf_node
+[0.130s] -- Up-to-date: /rm_version/install/ros2_static_tf_node/share/ament_index/resource_index/rclcpp_components/ros2_static_tf_node
+[0.130s] -- Up-to-date: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/cmake/ros2_static_tf_nodeConfig.cmake
+[0.131s] -- Up-to-date: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/cmake/ros2_static_tf_nodeConfig-version.cmake
+[0.131s] -- Up-to-date: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/package.xml
+[0.142s] Invoked command in '/rm_version/build/ros2_static_tf_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /rm_version/build/ros2_static_tf_node

@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/rm_msg_interfaces/msg/_armor_s.c"
   "../rosidl_generator_py/rm_msg_interfaces/msg/_armors.py"
   "../rosidl_generator_py/rm_msg_interfaces/msg/_armors_s.c"
+  "../rosidl_generator_py/rm_msg_interfaces/msg/_tracker.py"
+  "../rosidl_generator_py/rm_msg_interfaces/msg/_tracker_s.c"
   "CMakeFiles/rm_msg_interfaces__py"
 )
 

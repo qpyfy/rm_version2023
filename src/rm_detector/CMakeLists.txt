@@ -15,10 +15,10 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 #######################
 ## Find dependencies ##
 #######################
-
+find_package(rm_msg_interfaces REQUIRED)
 find_package(ament_cmake_auto REQUIRED)
 find_package(OpenCV REQUIRED)
-find_package(rm_msg_interfaces REQUIRED)
+
 ament_auto_find_build_dependencies()
 
 ###########

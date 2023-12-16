@@ -1,0 +1,16 @@
+/rm_version/install/rm_gimbal_description/share/rm_gimbal_description/urdf/rm_gimbal.urdf.xacro
+/rm_version/install/rm_gimbal_description/share/ament_index/resource_index/package_run_dependencies/rm_gimbal_description
+/rm_version/install/rm_gimbal_description/share/ament_index/resource_index/parent_prefix_path/rm_gimbal_description
+/rm_version/install/rm_gimbal_description/share/rm_gimbal_description/environment/ament_prefix_path.sh
+/rm_version/install/rm_gimbal_description/share/rm_gimbal_description/environment/ament_prefix_path.dsv
+/rm_version/install/rm_gimbal_description/share/rm_gimbal_description/environment/path.sh
+/rm_version/install/rm_gimbal_description/share/rm_gimbal_description/environment/path.dsv
+/rm_version/install/rm_gimbal_description/share/rm_gimbal_description/local_setup.bash
+/rm_version/install/rm_gimbal_description/share/rm_gimbal_description/local_setup.sh
+/rm_version/install/rm_gimbal_description/share/rm_gimbal_description/local_setup.zsh
+/rm_version/install/rm_gimbal_description/share/rm_gimbal_description/local_setup.dsv
+/rm_version/install/rm_gimbal_description/share/rm_gimbal_description/package.dsv
+/rm_version/install/rm_gimbal_description/share/ament_index/resource_index/packages/rm_gimbal_description
+/rm_version/install/rm_gimbal_description/share/rm_gimbal_description/cmake/rm_gimbal_descriptionConfig.cmake
+/rm_version/install/rm_gimbal_description/share/rm_gimbal_description/cmake/rm_gimbal_descriptionConfig-version.cmake
+/rm_version/install/rm_gimbal_description/share/rm_gimbal_description/package.xml

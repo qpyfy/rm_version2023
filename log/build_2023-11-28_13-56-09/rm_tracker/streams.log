@@ -1,0 +1,42 @@
+[0.011s] Invoking command in '/rm_version/build/rm_tracker': CMAKE_PREFIX_PATH=/rm_version/install/rm_msg_interfaces:/rm_version/install/ros2_video:/rm_version/install/rm_tracker:/rm_version/install/rm_detector:/ros_ws/install/ros2_video:/ros_ws/install/rm_vision_bringup:/ros_ws/install/rm_serial_driver:/ros_ws/install/rm_gimbal_description:/ros_ws/install/rm_auto_aim:/ros_ws/install/mindvision_camera:/ros_ws/install/hik_camera:/ros_ws/install/armor_tracker:/ros_ws/install/armor_detector:/ros_ws/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/rm_version/install/rm_msg_interfaces/lib:/rm_version/install/ros2_video/lib:/rm_version/install/rm_tracker/lib:/rm_version/install/rm_detector/lib:/ros_ws/install/ros2_video/lib:/ros_ws/install/rm_serial_driver/lib:/ros_ws/install/mindvision_camera/lib:/ros_ws/install/hik_camera/lib:/ros_ws/install/armor_tracker/lib:/ros_ws/install/armor_detector/lib:/ros_ws/install/auto_aim_interfaces/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /rm_version/build/rm_tracker -- -j20 -l20
+[0.035s] [35m[1mConsolidate compiler generated dependencies of target rm_tracker[0m
+[0.040s] [ 33%] Built target rm_tracker_node
+[0.050s] [ 50%] [32mBuilding CXX object CMakeFiles/rm_tracker.dir/src/tracker_node.cpp.o[0m
+[6.069s] [ 66%] [32m[1mLinking CXX shared library librm_tracker.so[0m
+[6.479s] [100%] Built target rm_tracker
+[6.485s] Invoked command in '/rm_version/build/rm_tracker' returned '0': CMAKE_PREFIX_PATH=/rm_version/install/rm_msg_interfaces:/rm_version/install/ros2_video:/rm_version/install/rm_tracker:/rm_version/install/rm_detector:/ros_ws/install/ros2_video:/ros_ws/install/rm_vision_bringup:/ros_ws/install/rm_serial_driver:/ros_ws/install/rm_gimbal_description:/ros_ws/install/rm_auto_aim:/ros_ws/install/mindvision_camera:/ros_ws/install/hik_camera:/ros_ws/install/armor_tracker:/ros_ws/install/armor_detector:/ros_ws/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/rm_version/install/rm_msg_interfaces/lib:/rm_version/install/ros2_video/lib:/rm_version/install/rm_tracker/lib:/rm_version/install/rm_detector/lib:/ros_ws/install/ros2_video/lib:/ros_ws/install/rm_serial_driver/lib:/ros_ws/install/mindvision_camera/lib:/ros_ws/install/hik_camera/lib:/ros_ws/install/armor_tracker/lib:/ros_ws/install/armor_detector/lib:/ros_ws/install/auto_aim_interfaces/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /rm_version/build/rm_tracker -- -j20 -l20
+[6.504s] Invoking command in '/rm_version/build/rm_tracker': CMAKE_PREFIX_PATH=/rm_version/install/rm_msg_interfaces:/rm_version/install/ros2_video:/rm_version/install/rm_tracker:/rm_version/install/rm_detector:/ros_ws/install/ros2_video:/ros_ws/install/rm_vision_bringup:/ros_ws/install/rm_serial_driver:/ros_ws/install/rm_gimbal_description:/ros_ws/install/rm_auto_aim:/ros_ws/install/mindvision_camera:/ros_ws/install/hik_camera:/ros_ws/install/armor_tracker:/ros_ws/install/armor_detector:/ros_ws/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/rm_version/install/rm_msg_interfaces/lib:/rm_version/install/ros2_video/lib:/rm_version/install/rm_tracker/lib:/rm_version/install/rm_detector/lib:/ros_ws/install/ros2_video/lib:/ros_ws/install/rm_serial_driver/lib:/ros_ws/install/mindvision_camera/lib:/ros_ws/install/hik_camera/lib:/ros_ws/install/armor_tracker/lib:/ros_ws/install/armor_detector/lib:/ros_ws/install/auto_aim_interfaces/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /rm_version/build/rm_tracker
+[6.507s] -- Install configuration: ""
+[6.507s] -- Up-to-date: /rm_version/install/rm_tracker/lib/rm_tracker/rm_tracker_node
+[6.507s] -- Up-to-date: /rm_version/install/rm_tracker/include
+[6.508s] -- Up-to-date: /rm_version/install/rm_tracker/include/tracker_node.hpp
+[6.508s] -- Up-to-date: /rm_version/install/rm_tracker/include/tracker.hpp
+[6.508s] -- Up-to-date: /rm_version/install/rm_tracker/include/extended_kalman_filiter.hpp
+[6.508s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/environment/library_path.sh
+[6.508s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/environment/library_path.dsv
+[6.508s] -- Installing: /rm_version/install/rm_tracker/lib/librm_tracker.so
+[6.514s] -- Set runtime path of "/rm_version/install/rm_tracker/lib/librm_tracker.so" to ""
+[6.514s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/config
+[6.515s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/config/tracker.yaml
+[6.515s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/launch
+[6.515s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/launch/armor_tracker.launch.py
+[6.515s] -- Up-to-date: /rm_version/install/rm_tracker/share/ament_index/resource_index/package_run_dependencies/rm_tracker
+[6.515s] -- Up-to-date: /rm_version/install/rm_tracker/share/ament_index/resource_index/parent_prefix_path/rm_tracker
+[6.515s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/environment/ament_prefix_path.sh
+[6.515s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/environment/ament_prefix_path.dsv
+[6.515s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/environment/path.sh
+[6.515s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/environment/path.dsv
+[6.515s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/local_setup.bash
+[6.516s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/local_setup.sh
+[6.516s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/local_setup.zsh
+[6.516s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/local_setup.dsv
+[6.516s] -- Installing: /rm_version/install/rm_tracker/share/rm_tracker/package.dsv
+[6.516s] -- Up-to-date: /rm_version/install/rm_tracker/share/ament_index/resource_index/packages/rm_tracker
+[6.517s] -- Up-to-date: /rm_version/install/rm_tracker/share/ament_index/resource_index/rclcpp_components/rm_tracker
+[6.517s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.517s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.517s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/cmake/ament_cmake_export_libraries-extras.cmake
+[6.517s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/cmake/rm_trackerConfig.cmake
+[6.517s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/cmake/rm_trackerConfig-version.cmake
+[6.519s] -- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/package.xml
+[6.519s] Invoked command in '/rm_version/build/rm_tracker' returned '0': CMAKE_PREFIX_PATH=/rm_version/install/rm_msg_interfaces:/rm_version/install/ros2_video:/rm_version/install/rm_tracker:/rm_version/install/rm_detector:/ros_ws/install/ros2_video:/ros_ws/install/rm_vision_bringup:/ros_ws/install/rm_serial_driver:/ros_ws/install/rm_gimbal_description:/ros_ws/install/rm_auto_aim:/ros_ws/install/mindvision_camera:/ros_ws/install/hik_camera:/ros_ws/install/armor_tracker:/ros_ws/install/armor_detector:/ros_ws/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/rm_version/install/rm_msg_interfaces/lib:/rm_version/install/ros2_video/lib:/rm_version/install/rm_tracker/lib:/rm_version/install/rm_detector/lib:/ros_ws/install/ros2_video/lib:/ros_ws/install/rm_serial_driver/lib:/ros_ws/install/mindvision_camera/lib:/ros_ws/install/hik_camera/lib:/ros_ws/install/armor_tracker/lib:/ros_ws/install/armor_detector/lib:/ros_ws/install/auto_aim_interfaces/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /rm_version/build/rm_tracker

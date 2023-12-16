@@ -1,0 +1,40 @@
+[35m[1mConsolidate compiler generated dependencies of target rm_tracker[0m
+[ 33%] Built target rm_tracker_node
+[ 50%] [32mBuilding CXX object CMakeFiles/rm_tracker.dir/src/extended_kalman_filiter.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/rm_tracker.dir/src/tracker.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/rm_tracker.dir/src/tracker_node.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library librm_tracker.so[0m
+[100%] Built target rm_tracker
+-- Install configuration: ""
+-- Up-to-date: /rm_version/install/rm_tracker/lib/rm_tracker/rm_tracker_node
+-- Up-to-date: /rm_version/install/rm_tracker/include
+-- Up-to-date: /rm_version/install/rm_tracker/include/tracker_node.hpp
+-- Up-to-date: /rm_version/install/rm_tracker/include/tracker.hpp
+-- Installing: /rm_version/install/rm_tracker/include/extended_kalman_filiter.hpp
+-- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/environment/library_path.sh
+-- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/environment/library_path.dsv
+-- Installing: /rm_version/install/rm_tracker/lib/librm_tracker.so
+-- Set runtime path of "/rm_version/install/rm_tracker/lib/librm_tracker.so" to ""
+-- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/config
+-- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/config/tracker.yaml
+-- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/launch
+-- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/launch/armor_tracker.launch.py
+-- Up-to-date: /rm_version/install/rm_tracker/share/ament_index/resource_index/package_run_dependencies/rm_tracker
+-- Up-to-date: /rm_version/install/rm_tracker/share/ament_index/resource_index/parent_prefix_path/rm_tracker
+-- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/environment/ament_prefix_path.sh
+-- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/environment/ament_prefix_path.dsv
+-- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/environment/path.sh
+-- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/environment/path.dsv
+-- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/local_setup.bash
+-- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/local_setup.sh
+-- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/local_setup.zsh
+-- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/local_setup.dsv
+-- Installing: /rm_version/install/rm_tracker/share/rm_tracker/package.dsv
+-- Up-to-date: /rm_version/install/rm_tracker/share/ament_index/resource_index/packages/rm_tracker
+-- Up-to-date: /rm_version/install/rm_tracker/share/ament_index/resource_index/rclcpp_components/rm_tracker
+-- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/cmake/rm_trackerConfig.cmake
+-- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/cmake/rm_trackerConfig-version.cmake
+-- Up-to-date: /rm_version/install/rm_tracker/share/rm_tracker/package.xml

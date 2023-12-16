@@ -1,0 +1,17 @@
+/rm_version/install/start_directory/share/start_directory/launch/test.launch.py
+/rm_version/install/start_directory/share/start_directory/config/launch_param.yaml
+/rm_version/install/start_directory/share/ament_index/resource_index/package_run_dependencies/start_directory
+/rm_version/install/start_directory/share/ament_index/resource_index/parent_prefix_path/start_directory
+/rm_version/install/start_directory/share/start_directory/environment/ament_prefix_path.sh
+/rm_version/install/start_directory/share/start_directory/environment/ament_prefix_path.dsv
+/rm_version/install/start_directory/share/start_directory/environment/path.sh
+/rm_version/install/start_directory/share/start_directory/environment/path.dsv
+/rm_version/install/start_directory/share/start_directory/local_setup.bash
+/rm_version/install/start_directory/share/start_directory/local_setup.sh
+/rm_version/install/start_directory/share/start_directory/local_setup.zsh
+/rm_version/install/start_directory/share/start_directory/local_setup.dsv
+/rm_version/install/start_directory/share/start_directory/package.dsv
+/rm_version/install/start_directory/share/ament_index/resource_index/packages/start_directory
+/rm_version/install/start_directory/share/start_directory/cmake/start_directoryConfig.cmake
+/rm_version/install/start_directory/share/start_directory/cmake/start_directoryConfig-version.cmake
+/rm_version/install/start_directory/share/start_directory/package.xml

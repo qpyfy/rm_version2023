@@ -8,6 +8,10 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/rm_msg_interfaces/msg/detail/armors__builder.hpp"
   "rosidl_generator_cpp/rm_msg_interfaces/msg/detail/armors__struct.hpp"
   "rosidl_generator_cpp/rm_msg_interfaces/msg/detail/armors__traits.hpp"
+  "rosidl_generator_cpp/rm_msg_interfaces/msg/detail/tracker__builder.hpp"
+  "rosidl_generator_cpp/rm_msg_interfaces/msg/detail/tracker__struct.hpp"
+  "rosidl_generator_cpp/rm_msg_interfaces/msg/detail/tracker__traits.hpp"
+  "rosidl_generator_cpp/rm_msg_interfaces/msg/tracker.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

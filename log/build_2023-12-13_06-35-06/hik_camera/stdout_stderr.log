@@ -1,0 +1,67 @@
+[35m[1mConsolidate compiler generated dependencies of target hik_camera[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/hik_camera.dir/src/hik_node.cpp.o[0m
+[ 75%] Built target hik_camera_node
+In file included from [01m[K/opt/ros/humble/include/rclcpp_components/rclcpp_components/register_node_macro.hpp:19[m[K,
+                 from [01m[K/rm_version/src/hik_camera_node/src/hik_node.cpp:27[m[K:
+/opt/ros/humble/include/rclcpp_components/rclcpp_components/node_factory_template.hpp: In instantiation of ‘[01m[Krclcpp_components::NodeInstanceWrapper rclcpp_components::NodeFactoryTemplate<NodeT>::create_node_instance(const rclcpp::NodeOptions&) [with NodeT = rm_camera::HikCameraNode][m[K’:
+[01m[K/opt/ros/humble/include/rclcpp_components/rclcpp_components/node_factory_template.hpp:43:3:[m[K   required from here
+[01m[K/opt/ros/humble/include/rclcpp_components/rclcpp_components/node_factory_template.hpp:48:23:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp::node_interfaces::NodeBaseInterface::SharedPtr rclcpp::Node::get_node_base_interface()[m[K’ is inaccessible within this context
+   48 |       node, std::bind([01;31m[K&NodeT::get_node_base_interface[m[K, node));
+      |                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:45[m[K,
+                 from [01m[K/rm_version/src/hik_camera_node/src/hik_node.cpp:3[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1131:3:[m[K [01;36m[Knote: [m[Kdeclared here
+ 1131 |   [01;36m[Kget_node_base_interface[m[K();
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp_components/rclcpp_components/register_node_macro.hpp:19[m[K,
+                 from [01m[K/rm_version/src/hik_camera_node/src/hik_node.cpp:27[m[K:
+[01m[K/opt/ros/humble/include/rclcpp_components/rclcpp_components/node_factory_template.hpp:47:12:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp_components::NodeInstanceWrapper::NodeInstanceWrapper(std::shared_ptr<rm_camera::HikCameraNode>&, std::_Bind_helper<false, std::shared_ptr<rclcpp::node_interfaces::NodeBaseInterface> (rclcpp::Node::*)(), std::shared_ptr<rm_camera::HikCameraNode>&>::type)[m[K’
+   47 |     return [01;31m[KNodeInstanceWrapper([m[K
+      |            [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+   48 | [01;31m[K      node, std::bind(&NodeT::get_node_base_interface, node))[m[K;
+      |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp_components/rclcpp_components/node_factory.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp_components/rclcpp_components/node_factory_template.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp_components/rclcpp_components/register_node_macro.hpp:19[m[K,
+                 from [01m[K/rm_version/src/hik_camera_node/src/hik_node.cpp:27[m[K:
+[01m[K/opt/ros/humble/include/rclcpp_components/rclcpp_components/node_instance_wrapper.hpp:36:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp_components::NodeInstanceWrapper::NodeInstanceWrapper(std::shared_ptr<void>, rclcpp_components::NodeInstanceWrapper::NodeBaseInterfaceGetter)[m[K’
+   36 |   [01;36m[KNodeInstanceWrapper[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp_components/rclcpp_components/node_instance_wrapper.hpp:38:29:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::_Bind_helper<false, std::shared_ptr<rclcpp::node_interfaces::NodeBaseInterface> (rclcpp::Node::*)(), std::shared_ptr<rm_camera::HikCameraNode>&>::type[m[K’ to ‘[01m[Krclcpp_components::NodeInstanceWrapper::NodeBaseInterfaceGetter[m[K’ {aka ‘[01m[Kstd::function<std::shared_ptr<rclcpp::node_interfaces::NodeBaseInterface>(const std::shared_ptr<void>&)>[m[K’}
+   38 |     [01;36m[KNodeBaseInterfaceGetter node_base_interface_getter[m[K)
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp_components/rclcpp_components/node_instance_wrapper.hpp:32:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp_components::NodeInstanceWrapper::NodeInstanceWrapper()[m[K’
+   32 |   [01;36m[KNodeInstanceWrapper[m[K()
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp_components/rclcpp_components/node_instance_wrapper.hpp:32:3:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 2 provided
+[01m[K/opt/ros/humble/include/rclcpp_components/rclcpp_components/node_instance_wrapper.hpp:26:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp_components::NodeInstanceWrapper::NodeInstanceWrapper(const rclcpp_components::NodeInstanceWrapper&)[m[K’
+   26 | class [01;36m[KNodeInstanceWrapper[m[K
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp_components/rclcpp_components/node_instance_wrapper.hpp:26:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/opt/ros/humble/include/rclcpp_components/rclcpp_components/node_instance_wrapper.hpp:26:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp_components::NodeInstanceWrapper::NodeInstanceWrapper(rclcpp_components::NodeInstanceWrapper&&)[m[K’
+[01m[K/opt/ros/humble/include/rclcpp_components/rclcpp_components/node_instance_wrapper.hpp:26:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+                 from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+                 from [01m[K/usr/include/c++/11/memory:64[m[K,
+                 from [01m[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:41[m[K,
+                 from [01m[K/rm_version/src/hik_camera_node/src/hik_node.cpp:3[m[K:
+/usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = rm_camera::HikCameraNode; _Args = {const rclcpp::NodeOptions&}; _Tp = rm_camera::HikCameraNode][m[K’:
+[01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = rm_camera::HikCameraNode; _Args = {const rclcpp::NodeOptions&}; _Tp = rm_camera::HikCameraNode; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<rm_camera::HikCameraNode>][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {const rclcpp::NodeOptions&}; _Tp = rm_camera::HikCameraNode; _Alloc = std::allocator<rm_camera::HikCameraNode>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = rm_camera::HikCameraNode; _Alloc = std::allocator<rm_camera::HikCameraNode>; _Args = {const rclcpp::NodeOptions&}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<rm_camera::HikCameraNode>; _Args = {const rclcpp::NodeOptions&}; _Tp = rm_camera::HikCameraNode; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<rm_camera::HikCameraNode>; _Args = {const rclcpp::NodeOptions&}; _Tp = rm_camera::HikCameraNode][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = rm_camera::HikCameraNode; _Alloc = std::allocator<rm_camera::HikCameraNode>; _Args = {const rclcpp::NodeOptions&}][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = rm_camera::HikCameraNode; _Args = {const rclcpp::NodeOptions&}][m[K’
+[01m[K/opt/ros/humble/include/rclcpp_components/rclcpp_components/node_factory_template.hpp:45:40:[m[K   required from ‘[01m[Krclcpp_components::NodeInstanceWrapper rclcpp_components::NodeFactoryTemplate<NodeT>::create_node_instance(const rclcpp::NodeOptions&) [with NodeT = rm_camera::HikCameraNode][m[K’
+[01m[K/opt/ros/humble/include/rclcpp_components/rclcpp_components/node_factory_template.hpp:43:3:[m[K   required from here
+[01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krm_camera::HikCameraNode::HikCameraNode(const rclcpp::NodeOptions&)[m[K’
+  162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/rm_version/src/hik_camera_node/src/hik_node.cpp:22:2:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krm_camera::HikCameraNode::HikCameraNode()[m[K’
+   22 |  [01;36m[KHikCameraNode[m[K::HikCameraNode():rclcpp::Node("hikcameranode")
+      |  [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/rm_version/src/hik_camera_node/src/hik_node.cpp:22:2:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+gmake[2]: *** [CMakeFiles/hik_camera.dir/build.make:76: CMakeFiles/hik_camera.dir/src/hik_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/hik_camera.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

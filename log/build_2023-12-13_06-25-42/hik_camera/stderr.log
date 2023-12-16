@@ -1,0 +1,9 @@
+In file included from [01m[K/rm_version/src/hik_camera_node/src/hik_node.cpp:1[m[K:
+[01m[K/rm_version/src/hik_camera_node/include/hik_node.hpp:1:10:[m[K [01;31m[Kfatal error: [m[KMvCameraControl.h: No such file or directory
+    1 | #include [01;31m[K"MvCameraControl.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/hik_camera.dir/build.make:76: CMakeFiles/hik_camera.dir/src/hik_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/hik_camera.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

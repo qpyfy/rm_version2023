@@ -1,0 +1,11 @@
+[01m[K/rm_version/src/rm_tracker/src/tracker_node.cpp:[m[K In member function ‘[01m[Kvoid rm_auto_aim::ArmorTrackerNode::ArmorCallback(const SharedPtr&)[m[K’:
+[01m[K/rm_version/src/rm_tracker/src/tracker_node.cpp:51:43:[m[K [01;31m[Kerror: [m[Kcomparison between ‘[01m[Kenum rm_auto_aim::Tracker::State[m[K’ and ‘[01m[Kenum rm_auto_aim::State[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wenum-compare-Werror=enum-compare]8;;[m[K]
+   51 |         if ([01;31m[Kthis->tracker_->tracker_state == LOST[m[K)
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/rm_version/src/rm_tracker/src/tracker_node.cpp:62:46:[m[K [01;31m[Kerror: [m[Kcomparison between ‘[01m[Kenum rm_auto_aim::Tracker::State[m[K’ and ‘[01m[Kenum rm_auto_aim::State[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wenum-compare-Werror=enum-compare]8;;[m[K]
+   62 |             if([01;31m[Kthis->tracker_->tracker_state == TRACKING[m[K)
+      |                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [CMakeFiles/rm_tracker.dir/build.make:104: CMakeFiles/rm_tracker.dir/src/tracker_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/rm_tracker.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

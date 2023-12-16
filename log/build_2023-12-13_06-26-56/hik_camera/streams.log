@@ -1,0 +1,12 @@
+[0.029s] Invoking command in '/rm_version/build/hik_camera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /rm_version/build/hik_camera -- -j20 -l20
+[0.056s] [ 25%] [32mBuilding CXX object CMakeFiles/hik_camera.dir/src/hik_node.cpp.o[0m
+[0.059s] [ 75%] Built target hik_camera_node
+[0.062s] In file included from [01m[K/rm_version/src/hik_camera_node/src/hik_node.cpp:1[m[K:
+[0.063s] [01m[K/rm_version/src/hik_camera_node/include/hik_node.hpp:1:10:[m[K [01;31m[Kfatal error: [m[KMvCameraControl.h: No such file or directory
+[0.063s]     1 | #include [01;31m[K"MvCameraControl.h"[m[K
+[0.063s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[0.063s] compilation terminated.
+[0.063s] gmake[2]: *** [CMakeFiles/hik_camera.dir/build.make:76: CMakeFiles/hik_camera.dir/src/hik_node.cpp.o] Error 1
+[0.064s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/hik_camera.dir/all] Error 2
+[0.064s] gmake: *** [Makefile:146: all] Error 2
+[0.065s] Invoked command in '/rm_version/build/hik_camera' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /rm_version/build/hik_camera -- -j20 -l20

@@ -74,6 +74,10 @@ CMakeFiles/rm_msg_interfaces__cpp: rosidl_generator_cpp/rm_msg_interfaces/msg/ar
 CMakeFiles/rm_msg_interfaces__cpp: rosidl_generator_cpp/rm_msg_interfaces/msg/detail/armors__builder.hpp
 CMakeFiles/rm_msg_interfaces__cpp: rosidl_generator_cpp/rm_msg_interfaces/msg/detail/armors__struct.hpp
 CMakeFiles/rm_msg_interfaces__cpp: rosidl_generator_cpp/rm_msg_interfaces/msg/detail/armors__traits.hpp
+CMakeFiles/rm_msg_interfaces__cpp: rosidl_generator_cpp/rm_msg_interfaces/msg/tracker.hpp
+CMakeFiles/rm_msg_interfaces__cpp: rosidl_generator_cpp/rm_msg_interfaces/msg/detail/tracker__builder.hpp
+CMakeFiles/rm_msg_interfaces__cpp: rosidl_generator_cpp/rm_msg_interfaces/msg/detail/tracker__struct.hpp
+CMakeFiles/rm_msg_interfaces__cpp: rosidl_generator_cpp/rm_msg_interfaces/msg/detail/tracker__traits.hpp
 
 rosidl_generator_cpp/rm_msg_interfaces/msg/armor.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/rm_msg_interfaces/msg/armor.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -92,6 +96,7 @@ rosidl_generator_cpp/rm_msg_interfaces/msg/armor.hpp: /opt/ros/humble/share/rosi
 rosidl_generator_cpp/rm_msg_interfaces/msg/armor.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/rm_msg_interfaces/msg/armor.hpp: rosidl_adapter/rm_msg_interfaces/msg/Armor.idl
 rosidl_generator_cpp/rm_msg_interfaces/msg/armor.hpp: rosidl_adapter/rm_msg_interfaces/msg/Armors.idl
+rosidl_generator_cpp/rm_msg_interfaces/msg/armor.hpp: rosidl_adapter/rm_msg_interfaces/msg/Tracker.idl
 rosidl_generator_cpp/rm_msg_interfaces/msg/armor.hpp: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 rosidl_generator_cpp/rm_msg_interfaces/msg/armor.hpp: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 rosidl_generator_cpp/rm_msg_interfaces/msg/armor.hpp: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
@@ -177,6 +182,18 @@ rosidl_generator_cpp/rm_msg_interfaces/msg/detail/armors__struct.hpp: rosidl_gen
 rosidl_generator_cpp/rm_msg_interfaces/msg/detail/armors__traits.hpp: rosidl_generator_cpp/rm_msg_interfaces/msg/armor.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/rm_msg_interfaces/msg/detail/armors__traits.hpp
 
+rosidl_generator_cpp/rm_msg_interfaces/msg/tracker.hpp: rosidl_generator_cpp/rm_msg_interfaces/msg/armor.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/rm_msg_interfaces/msg/tracker.hpp
+
+rosidl_generator_cpp/rm_msg_interfaces/msg/detail/tracker__builder.hpp: rosidl_generator_cpp/rm_msg_interfaces/msg/armor.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/rm_msg_interfaces/msg/detail/tracker__builder.hpp
+
+rosidl_generator_cpp/rm_msg_interfaces/msg/detail/tracker__struct.hpp: rosidl_generator_cpp/rm_msg_interfaces/msg/armor.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/rm_msg_interfaces/msg/detail/tracker__struct.hpp
+
+rosidl_generator_cpp/rm_msg_interfaces/msg/detail/tracker__traits.hpp: rosidl_generator_cpp/rm_msg_interfaces/msg/armor.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/rm_msg_interfaces/msg/detail/tracker__traits.hpp
+
 rm_msg_interfaces__cpp: CMakeFiles/rm_msg_interfaces__cpp
 rm_msg_interfaces__cpp: rosidl_generator_cpp/rm_msg_interfaces/msg/armor.hpp
 rm_msg_interfaces__cpp: rosidl_generator_cpp/rm_msg_interfaces/msg/armors.hpp
@@ -186,6 +203,10 @@ rm_msg_interfaces__cpp: rosidl_generator_cpp/rm_msg_interfaces/msg/detail/armor_
 rm_msg_interfaces__cpp: rosidl_generator_cpp/rm_msg_interfaces/msg/detail/armors__builder.hpp
 rm_msg_interfaces__cpp: rosidl_generator_cpp/rm_msg_interfaces/msg/detail/armors__struct.hpp
 rm_msg_interfaces__cpp: rosidl_generator_cpp/rm_msg_interfaces/msg/detail/armors__traits.hpp
+rm_msg_interfaces__cpp: rosidl_generator_cpp/rm_msg_interfaces/msg/detail/tracker__builder.hpp
+rm_msg_interfaces__cpp: rosidl_generator_cpp/rm_msg_interfaces/msg/detail/tracker__struct.hpp
+rm_msg_interfaces__cpp: rosidl_generator_cpp/rm_msg_interfaces/msg/detail/tracker__traits.hpp
+rm_msg_interfaces__cpp: rosidl_generator_cpp/rm_msg_interfaces/msg/tracker.hpp
 rm_msg_interfaces__cpp: CMakeFiles/rm_msg_interfaces__cpp.dir/build.make
 .PHONY : rm_msg_interfaces__cpp
 

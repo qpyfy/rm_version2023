@@ -1,0 +1,25 @@
+-- Found ament_cmake_auto: 1.3.4 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+-- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /rm_version/build/start_dirtectory
+-- Install configuration: ""
+-- Up-to-date: /rm_version/install/start_dirtectory/share/start_dirtectory/launch
+-- Installing: /rm_version/install/start_dirtectory/share/start_dirtectory/launch/test.launch.py
+-- Installing: /rm_version/install/start_dirtectory/share/start_dirtectory/config
+-- Installing: /rm_version/install/start_dirtectory/share/start_dirtectory/config/launch_param.yaml
+-- Up-to-date: /rm_version/install/start_dirtectory/share/ament_index/resource_index/package_run_dependencies/start_dirtectory
+-- Installing: /rm_version/install/start_dirtectory/share/ament_index/resource_index/parent_prefix_path/start_dirtectory
+-- Up-to-date: /rm_version/install/start_dirtectory/share/start_dirtectory/environment/ament_prefix_path.sh
+-- Installing: /rm_version/install/start_dirtectory/share/start_dirtectory/environment/ament_prefix_path.dsv
+-- Up-to-date: /rm_version/install/start_dirtectory/share/start_dirtectory/environment/path.sh
+-- Installing: /rm_version/install/start_dirtectory/share/start_dirtectory/environment/path.dsv
+-- Up-to-date: /rm_version/install/start_dirtectory/share/start_dirtectory/local_setup.bash
+-- Up-to-date: /rm_version/install/start_dirtectory/share/start_dirtectory/local_setup.sh
+-- Up-to-date: /rm_version/install/start_dirtectory/share/start_dirtectory/local_setup.zsh
+-- Installing: /rm_version/install/start_dirtectory/share/start_dirtectory/local_setup.dsv
+-- Installing: /rm_version/install/start_dirtectory/share/start_dirtectory/package.dsv
+-- Up-to-date: /rm_version/install/start_dirtectory/share/ament_index/resource_index/packages/start_dirtectory
+-- Up-to-date: /rm_version/install/start_dirtectory/share/start_dirtectory/cmake/start_dirtectoryConfig.cmake
+-- Up-to-date: /rm_version/install/start_dirtectory/share/start_dirtectory/cmake/start_dirtectoryConfig-version.cmake
+-- Up-to-date: /rm_version/install/start_dirtectory/share/start_dirtectory/package.xml

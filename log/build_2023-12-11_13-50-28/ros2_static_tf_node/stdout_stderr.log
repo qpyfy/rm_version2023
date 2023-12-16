@@ -1,0 +1,20 @@
+[ 50%] Built target ros2_static_tf_node_node
+[100%] Built target ros2_static_tf_node
+-- Install configuration: ""
+-- Up-to-date: /rm_version/install/ros2_static_tf_node/lib/ros2_static_tf_node/ros2_static_tf_node_node
+-- Up-to-date: /rm_version/install/ros2_static_tf_node/share/ament_index/resource_index/package_run_dependencies/ros2_static_tf_node
+-- Up-to-date: /rm_version/install/ros2_static_tf_node/share/ament_index/resource_index/parent_prefix_path/ros2_static_tf_node
+-- Up-to-date: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/environment/ament_prefix_path.sh
+-- Up-to-date: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/environment/ament_prefix_path.dsv
+-- Up-to-date: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/environment/path.sh
+-- Up-to-date: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/environment/path.dsv
+-- Up-to-date: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/local_setup.bash
+-- Up-to-date: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/local_setup.sh
+-- Up-to-date: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/local_setup.zsh
+-- Up-to-date: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/local_setup.dsv
+-- Installing: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/package.dsv
+-- Up-to-date: /rm_version/install/ros2_static_tf_node/share/ament_index/resource_index/packages/ros2_static_tf_node
+-- Up-to-date: /rm_version/install/ros2_static_tf_node/share/ament_index/resource_index/rclcpp_components/ros2_static_tf_node
+-- Up-to-date: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/cmake/ros2_static_tf_nodeConfig.cmake
+-- Up-to-date: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/cmake/ros2_static_tf_nodeConfig-version.cmake
+-- Up-to-date: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/package.xml

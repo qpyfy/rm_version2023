@@ -1,0 +1,33 @@
+[0.008s] Invoking command in '/rm_version/build/rm_tracker': AMENT_PREFIX_PATH=/rm_version/install/rm_msg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/rm_version/install/rm_msg_interfaces:/ros_ws/install/ros2_video:/ros_ws/install/rm_vision_bringup:/ros_ws/install/rm_serial_driver:/ros_ws/install/rm_gimbal_description:/ros_ws/install/rm_auto_aim:/ros_ws/install/mindvision_camera:/ros_ws/install/hik_camera:/ros_ws/install/armor_tracker:/ros_ws/install/armor_detector:/ros_ws/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/rm_version/install/rm_msg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /rm_version/build/rm_tracker -- -j20 -l20
+[0.032s] [35m[1mConsolidate compiler generated dependencies of target rm_tracker[0m
+[0.036s] [ 33%] Built target rm_tracker_node
+[0.046s] [ 50%] [32mBuilding CXX object CMakeFiles/rm_tracker.dir/src/extended_kalman_filiter.cpp.o[0m
+[0.047s] [ 66%] [32mBuilding CXX object CMakeFiles/rm_tracker.dir/src/tracker.cpp.o[0m
+[0.047s] [ 83%] [32mBuilding CXX object CMakeFiles/rm_tracker.dir/src/tracker_node.cpp.o[0m
+[1.673s] In file included from [01m[K/rm_version/src/rm_tracker/src/extended_kalman_filiter.cpp:1[m[K:
+[1.673s] [01m[K/rm_version/src/rm_tracker/include/extended_kalman_filiter.hpp:[m[K In constructor ‘[01m[Krm_auto_aim::KalmanFilter::KalmanFilter(std::function<Eigen::Matrix<double, -1, 1>(Eigen::Matrix<double, -1, 1>)>, std::function<Eigen::Matrix<double, -1, 1>(Eigen::Matrix<double, -1, 1>)>, std::function<Eigen::Matrix<double, -1, -1>()>, std::function<Eigen::Matrix<double, -1, -1>(Eigen::Matrix<double, -1, 1>)>, std::function<Eigen::Matrix<double, -1, -1>(Eigen::Matrix<double, -1, 1>)>, std::function<Eigen::Matrix<double, -1, -1>(Eigen::Matrix<double, -1, 1>)>, Eigen::MatrixXd)[m[K’:
+[1.673s] [01m[K/rm_version/src/rm_tracker/include/extended_kalman_filiter.hpp:42:21:[m[K [01;31m[Kerror: [m[K‘[01m[Krm_auto_aim::KalmanFilter::I[m[K’ will be initialized after [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Werror=reorder]8;;[m[K]
+[1.673s]    42 |     Eigen::MatrixXd [01;31m[KI[m[K;
+[1.673s]       |                     [01;31m[K^[m[K
+[1.673s] [01m[K/rm_version/src/rm_tracker/include/extended_kalman_filiter.hpp:39:21:[m[K [01;31m[Kerror: [m[K  ‘[01m[KEigen::VectorXd rm_auto_aim::KalmanFilter::X_post[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Werror=reorder]8;;[m[K]
+[1.673s]    39 |     Eigen::VectorXd [01;31m[KX_post[m[K;
+[1.673s]       |                     [01;31m[K^~~~~~[m[K
+[1.673s] [01m[K/rm_version/src/rm_tracker/src/extended_kalman_filiter.cpp:6:2:[m[K [01;31m[Kerror: [m[K  when initialized here [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Werror=reorder]8;;[m[K]
+[1.673s]     6 |  [01;31m[KKalmanFilter[m[K::KalmanFilter( std::function<Eigen::VectorXd(Eigen::VectorXd)> f,
+[1.673s]       |  [01;31m[K^~~~~~~~~~~~[m[K
+[1.673s] In file included from [01m[K/rm_version/src/rm_tracker/src/extended_kalman_filiter.cpp:1[m[K:
+[1.673s] [01m[K/rm_version/src/rm_tracker/include/extended_kalman_filiter.hpp:39:21:[m[K [01;31m[Kerror: [m[K‘[01m[Krm_auto_aim::KalmanFilter::X_post[m[K’ will be initialized after [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Werror=reorder]8;;[m[K]
+[1.673s]    39 |     Eigen::VectorXd [01;31m[KX_post[m[K;
+[1.673s]       |                     [01;31m[K^~~~~~[m[K
+[1.674s] [01m[K/rm_version/src/rm_tracker/include/extended_kalman_filiter.hpp:38:21:[m[K [01;31m[Kerror: [m[K  ‘[01m[KEigen::VectorXd rm_auto_aim::KalmanFilter::X_pre[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Werror=reorder]8;;[m[K]
+[1.674s]    38 |     Eigen::VectorXd [01;31m[KX_pre[m[K;
+[1.674s]       |                     [01;31m[K^~~~~[m[K
+[1.674s] [01m[K/rm_version/src/rm_tracker/src/extended_kalman_filiter.cpp:6:2:[m[K [01;31m[Kerror: [m[K  when initialized here [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Werror=reorder]8;;[m[K]
+[1.674s]     6 |  [01;31m[KKalmanFilter[m[K::KalmanFilter( std::function<Eigen::VectorXd(Eigen::VectorXd)> f,
+[1.674s]       |  [01;31m[K^~~~~~~~~~~~[m[K
+[1.959s] cc1plus: all warnings being treated as errors
+[1.973s] gmake[2]: *** [CMakeFiles/rm_tracker.dir/build.make:76: CMakeFiles/rm_tracker.dir/src/extended_kalman_filiter.cpp.o] Error 1
+[1.973s] gmake[2]: *** Waiting for unfinished jobs....
+[5.786s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/rm_tracker.dir/all] Error 2
+[5.786s] gmake: *** [Makefile:146: all] Error 2
+[5.787s] Invoked command in '/rm_version/build/rm_tracker' returned '2': AMENT_PREFIX_PATH=/rm_version/install/rm_msg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/rm_version/install/rm_msg_interfaces:/ros_ws/install/ros2_video:/ros_ws/install/rm_vision_bringup:/ros_ws/install/rm_serial_driver:/ros_ws/install/rm_gimbal_description:/ros_ws/install/rm_auto_aim:/ros_ws/install/mindvision_camera:/ros_ws/install/hik_camera:/ros_ws/install/armor_tracker:/ros_ws/install/armor_detector:/ros_ws/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/rm_version/install/rm_msg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /rm_version/build/rm_tracker -- -j20 -l20

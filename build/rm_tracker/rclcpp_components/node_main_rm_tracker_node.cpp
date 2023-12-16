@@ -34,7 +34,7 @@ int main(int argc, char * argv[])
   std::vector<rclcpp_components::NodeInstanceWrapper> node_wrappers;
 
   std::string library_name = "librm_tracker.so";
-  std::string class_name = "rclcpp_components::NodeFactoryTemplate<rm_auto_aim::TrackerNode>";
+  std::string class_name = "rclcpp_components::NodeFactoryTemplate<rm_auto_aim::ArmorTrackerNode>";
 
   RCLCPP_DEBUG(logger, "Load library %s", library_name.c_str());
   auto loader = new class_loader::ClassLoader(library_name);

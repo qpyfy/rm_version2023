@@ -1,0 +1,34 @@
+[35m[1mConsolidate compiler generated dependencies of target rm_tracker[0m
+[ 33%] Built target rm_tracker_node
+[ 50%] [32mBuilding CXX object CMakeFiles/rm_tracker.dir/src/extended_kalman_filiter.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/rm_tracker.dir/src/tracker.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/rm_tracker.dir/src/tracker_node.cpp.o[0m
+[01m[K/rm_version/src/rm_tracker/src/extended_kalman_filiter.cpp:12:22:[m[K [01;31m[Kerror: [m[Kdefinition of ‘[01m[KKalmanFilter::KalmanFilter(std::function<Eigen::Matrix<double, -1, 1>(Eigen::Matrix<double, -1, 1>)>, std::function<Eigen::Matrix<double, -1, 1>(Eigen::Matrix<double, -1, 1>)>, std::function<Eigen::Matrix<double, -1, -1>()>, std::function<Eigen::Matrix<double, -1, -1>(Eigen::Matrix<double, -1, 1>)>, std::function<Eigen::Matrix<double, -1, -1>(Eigen::Matrix<double, -1, 1>)>, std::function<Eigen::Matrix<double, -1, -1>(Eigen::Matrix<double, -1, 1>)>, Eigen::MatrixXd)[m[K’ is not in namespace enclosing ‘[01m[KKalmanFilter[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   12 |     Eigen::MatrixXd P[01;31m[K)[m[K:
+      |                      [01;31m[K^[m[K
+In file included from [01m[K/rm_version/src/rm_tracker/src/extended_kalman_filiter.cpp:1[m[K:
+[01m[K/rm_version/src/rm_tracker/include/extended_kalman_filiter.hpp:[m[K In constructor ‘[01m[KKalmanFilter::KalmanFilter(std::function<Eigen::Matrix<double, -1, 1>(Eigen::Matrix<double, -1, 1>)>, std::function<Eigen::Matrix<double, -1, 1>(Eigen::Matrix<double, -1, 1>)>, std::function<Eigen::Matrix<double, -1, -1>()>, std::function<Eigen::Matrix<double, -1, -1>(Eigen::Matrix<double, -1, 1>)>, std::function<Eigen::Matrix<double, -1, -1>(Eigen::Matrix<double, -1, 1>)>, std::function<Eigen::Matrix<double, -1, -1>(Eigen::Matrix<double, -1, 1>)>, Eigen::MatrixXd)[m[K’:
+[01m[K/rm_version/src/rm_tracker/include/extended_kalman_filiter.hpp:41:21:[m[K [01;31m[Kerror: [m[K‘[01m[KKalmanFilter::I[m[K’ will be initialized after [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Werror=reorder]8;;[m[K]
+   41 |     Eigen::MatrixXd [01;31m[KI[m[K;
+      |                     [01;31m[K^[m[K
+[01m[K/rm_version/src/rm_tracker/include/extended_kalman_filiter.hpp:38:21:[m[K [01;31m[Kerror: [m[K  ‘[01m[KEigen::VectorXd KalmanFilter::X_post[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Werror=reorder]8;;[m[K]
+   38 |     Eigen::VectorXd [01;31m[KX_post[m[K;
+      |                     [01;31m[K^~~~~~[m[K
+[01m[K/rm_version/src/rm_tracker/src/extended_kalman_filiter.cpp:6:2:[m[K [01;31m[Kerror: [m[K  when initialized here [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Werror=reorder]8;;[m[K]
+    6 |  [01;31m[KKalmanFilter[m[K::KalmanFilter( std::function<Eigen::VectorXd(Eigen::VectorXd)> f,
+      |  [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/rm_version/src/rm_tracker/src/extended_kalman_filiter.cpp:1[m[K:
+[01m[K/rm_version/src/rm_tracker/include/extended_kalman_filiter.hpp:38:21:[m[K [01;31m[Kerror: [m[K‘[01m[KKalmanFilter::X_post[m[K’ will be initialized after [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Werror=reorder]8;;[m[K]
+   38 |     Eigen::VectorXd [01;31m[KX_post[m[K;
+      |                     [01;31m[K^~~~~~[m[K
+[01m[K/rm_version/src/rm_tracker/include/extended_kalman_filiter.hpp:37:21:[m[K [01;31m[Kerror: [m[K  ‘[01m[KEigen::VectorXd KalmanFilter::X_pre[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Werror=reorder]8;;[m[K]
+   37 |     Eigen::VectorXd [01;31m[KX_pre[m[K;
+      |                     [01;31m[K^~~~~[m[K
+[01m[K/rm_version/src/rm_tracker/src/extended_kalman_filiter.cpp:6:2:[m[K [01;31m[Kerror: [m[K  when initialized here [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Werror=reorder]8;;[m[K]
+    6 |  [01;31m[KKalmanFilter[m[K::KalmanFilter( std::function<Eigen::VectorXd(Eigen::VectorXd)> f,
+      |  [01;31m[K^~~~~~~~~~~~[m[K
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [CMakeFiles/rm_tracker.dir/build.make:76: CMakeFiles/rm_tracker.dir/src/extended_kalman_filiter.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/rm_tracker.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

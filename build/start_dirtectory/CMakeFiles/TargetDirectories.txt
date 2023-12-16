@@ -1,0 +1,9 @@
+/rm_version/build/start_dirtectory/CMakeFiles/uninstall.dir
+/rm_version/build/start_dirtectory/CMakeFiles/start_dirtectory_uninstall.dir
+/rm_version/build/start_dirtectory/CMakeFiles/test.dir
+/rm_version/build/start_dirtectory/CMakeFiles/edit_cache.dir
+/rm_version/build/start_dirtectory/CMakeFiles/rebuild_cache.dir
+/rm_version/build/start_dirtectory/CMakeFiles/list_install_components.dir
+/rm_version/build/start_dirtectory/CMakeFiles/install.dir
+/rm_version/build/start_dirtectory/CMakeFiles/install/local.dir
+/rm_version/build/start_dirtectory/CMakeFiles/install/strip.dir

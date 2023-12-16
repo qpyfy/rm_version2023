@@ -1,0 +1,2 @@
+Invoking command in '/rm_version/build/ros2_static_tf_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /rm_version/build/ros2_static_tf_node -- -j20 -l20
+Invoked command in '/rm_version/build/ros2_static_tf_node' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /rm_version/build/ros2_static_tf_node -- -j20 -l20

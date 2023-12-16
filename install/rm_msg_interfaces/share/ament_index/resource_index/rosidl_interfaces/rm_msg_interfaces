@@ -2,3 +2,5 @@ msg/Armor.idl
 msg/Armor.msg
 msg/Armors.idl
 msg/Armors.msg
+msg/Tracker.idl
+msg/Tracker.msg

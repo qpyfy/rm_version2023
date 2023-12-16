@@ -214,4 +214,8 @@ CMakeFiles/rm_msg_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_p
  /rm_version/build/rm_msg_interfaces/rosidl_generator_c/rm_msg_interfaces/msg/detail/armors__struct.h \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.h \
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
- /rm_version/build/rm_msg_interfaces/rosidl_generator_c/rm_msg_interfaces/msg/detail/armors__functions.h
+ /rm_version/build/rm_msg_interfaces/rosidl_generator_c/rm_msg_interfaces/msg/detail/armors__functions.h \
+ /rm_version/build/rm_msg_interfaces/rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__type_support.h \
+ /rm_version/build/rm_msg_interfaces/rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__struct.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.h \
+ /rm_version/build/rm_msg_interfaces/rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__functions.h

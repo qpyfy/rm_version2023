@@ -1,0 +1,10 @@
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:[m[K In member function ‘[01m[Kvoid rm_auto_aim::ArmorDetectorNode::ArmorPubilsh(const std::vector<rm_auto_aim::Armor>&)[m[K’:
+[01m[K/rm_version/src/rm_detector/src/detector_node.cpp:119:44:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Karmors_msg_[m[K’
+  119 |       armors_msg_.header.frame_id = "carme"
+      |                                            [01;31m[K^[m[K
+      |                                            [32m[K;[m[K
+  120 |       [32m[Karmors_msg_[m[K.armors.clear();
+      |       [32m[K~~~~~~~~~~~[m[K                           
+gmake[2]: *** [CMakeFiles/rm_detector.dir/build.make:104: CMakeFiles/rm_detector.dir/src/detector_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/rm_detector.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

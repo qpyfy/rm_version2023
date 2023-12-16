@@ -84,6 +84,7 @@ rosidl_generator_c/rm_msg_interfaces/msg/armor.h: /opt/ros/humble/share/rosidl_g
 rosidl_generator_c/rm_msg_interfaces/msg/armor.h: /opt/ros/humble/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/rm_msg_interfaces/msg/armor.h: rosidl_adapter/rm_msg_interfaces/msg/Armor.idl
 rosidl_generator_c/rm_msg_interfaces/msg/armor.h: rosidl_adapter/rm_msg_interfaces/msg/Armors.idl
+rosidl_generator_c/rm_msg_interfaces/msg/armor.h: rosidl_adapter/rm_msg_interfaces/msg/Tracker.idl
 rosidl_generator_c/rm_msg_interfaces/msg/armor.h: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 rosidl_generator_c/rm_msg_interfaces/msg/armor.h: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 rosidl_generator_c/rm_msg_interfaces/msg/armor.h: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
@@ -169,11 +170,26 @@ rosidl_generator_c/rm_msg_interfaces/msg/detail/armors__struct.h: rosidl_generat
 rosidl_generator_c/rm_msg_interfaces/msg/detail/armors__type_support.h: rosidl_generator_c/rm_msg_interfaces/msg/armor.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/rm_msg_interfaces/msg/detail/armors__type_support.h
 
+rosidl_generator_c/rm_msg_interfaces/msg/tracker.h: rosidl_generator_c/rm_msg_interfaces/msg/armor.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/rm_msg_interfaces/msg/tracker.h
+
+rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__functions.h: rosidl_generator_c/rm_msg_interfaces/msg/armor.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__functions.h
+
+rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__struct.h: rosidl_generator_c/rm_msg_interfaces/msg/armor.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__struct.h
+
+rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__type_support.h: rosidl_generator_c/rm_msg_interfaces/msg/armor.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__type_support.h
+
 rosidl_generator_c/rm_msg_interfaces/msg/detail/armor__functions.c: rosidl_generator_c/rm_msg_interfaces/msg/armor.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/rm_msg_interfaces/msg/detail/armor__functions.c
 
 rosidl_generator_c/rm_msg_interfaces/msg/detail/armors__functions.c: rosidl_generator_c/rm_msg_interfaces/msg/armor.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/rm_msg_interfaces/msg/detail/armors__functions.c
+
+rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__functions.c: rosidl_generator_c/rm_msg_interfaces/msg/armor.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__functions.c
 
 CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rm_msg_interfaces/msg/detail/armor__functions.c.o: CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rm_msg_interfaces/msg/detail/armor__functions.c.o: rosidl_generator_c/rm_msg_interfaces/msg/detail/armor__functions.c
@@ -203,16 +219,32 @@ CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rm_msg_i
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rm_msg_interfaces/msg/detail/armors__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /rm_version/build/rm_msg_interfaces/rosidl_generator_c/rm_msg_interfaces/msg/detail/armors__functions.c -o CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rm_msg_interfaces/msg/detail/armors__functions.c.s
 
+CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__functions.c.o: CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__functions.c.o: rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__functions.c
+CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__functions.c.o: CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/rm_version/build/rm_msg_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__functions.c.o -MF CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__functions.c.o.d -o CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__functions.c.o -c /rm_version/build/rm_msg_interfaces/rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__functions.c
+
+CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /rm_version/build/rm_msg_interfaces/rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__functions.c > CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__functions.c.i
+
+CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /rm_version/build/rm_msg_interfaces/rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__functions.c -o CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__functions.c.s
+
 # Object files for target rm_msg_interfaces__rosidl_generator_c
 rm_msg_interfaces__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rm_msg_interfaces/msg/detail/armor__functions.c.o" \
-"CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rm_msg_interfaces/msg/detail/armors__functions.c.o"
+"CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rm_msg_interfaces/msg/detail/armors__functions.c.o" \
+"CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__functions.c.o"
 
 # External object files for target rm_msg_interfaces__rosidl_generator_c
 rm_msg_interfaces__rosidl_generator_c_EXTERNAL_OBJECTS =
 
 librm_msg_interfaces__rosidl_generator_c.so: CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rm_msg_interfaces/msg/detail/armor__functions.c.o
 librm_msg_interfaces__rosidl_generator_c.so: CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rm_msg_interfaces/msg/detail/armors__functions.c.o
+librm_msg_interfaces__rosidl_generator_c.so: CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__functions.c.o
 librm_msg_interfaces__rosidl_generator_c.so: CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/build.make
 librm_msg_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
 librm_msg_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
@@ -220,7 +252,7 @@ librm_msg_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/libbuiltin_inte
 librm_msg_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 librm_msg_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 librm_msg_interfaces__rosidl_generator_c.so: CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/rm_version/build/rm_msg_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library librm_msg_interfaces__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/rm_version/build/rm_msg_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library librm_msg_interfaces__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -241,6 +273,11 @@ CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/
 CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/rm_msg_interfaces/msg/detail/armors__functions.h
 CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/rm_msg_interfaces/msg/detail/armors__struct.h
 CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/rm_msg_interfaces/msg/detail/armors__type_support.h
+CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__functions.c
+CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__functions.h
+CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__struct.h
+CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__type_support.h
+CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/rm_msg_interfaces/msg/tracker.h
 	cd /rm_version/build/rm_msg_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /rm_version/src/rm_msg_interfaces /rm_version/src/rm_msg_interfaces /rm_version/build/rm_msg_interfaces /rm_version/build/rm_msg_interfaces /rm_version/build/rm_msg_interfaces/CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/depend
 

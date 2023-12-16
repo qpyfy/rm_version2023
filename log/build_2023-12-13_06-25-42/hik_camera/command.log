@@ -1,0 +1,4 @@
+Invoking command in '/rm_version/build/hik_camera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /rm_version/src/hik_camera_node -DCMAKE_INSTALL_PREFIX=/rm_version/install/hik_camera
+Invoked command in '/rm_version/build/hik_camera' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /rm_version/src/hik_camera_node -DCMAKE_INSTALL_PREFIX=/rm_version/install/hik_camera
+Invoking command in '/rm_version/build/hik_camera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /rm_version/build/hik_camera -- -j20 -l20
+Invoked command in '/rm_version/build/hik_camera' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /rm_version/build/hik_camera -- -j20 -l20

@@ -51,7 +51,6 @@ namespace rm_auto_aim
    void ArmorDetectorNode::ImgCallback(const sensor_msgs::msg::Image::ConstSharedPtr img_msg)
    {
       // 1.转成opencv类型
-      RCLCPP_INFO(this->get_logger(), "ImgCallback");
       img_ = cv_bridge::toCvShare(img_msg, "rgb8")->image;
       // 2.判断装甲板
       this->GetArmors();
@@ -117,6 +116,8 @@ namespace rm_auto_aim
    }
    void ArmorDetectorNode::ArmorPubilsh(const std::vector<Armor> &armors)
    {
+      armors_msg_.header.frame_id = "carme";
+      armors_msg_.header.stamp = this->get_clock()->now();
       armors_msg_.armors.clear();
       for (auto &armor : armors)
       {

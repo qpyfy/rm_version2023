@@ -1,0 +1,22 @@
+[0.020s] Invoking command in '/rm_version/build/start_dirtectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /rm_version/build/start_dirtectory -- -j20 -l20
+[0.044s] Invoked command in '/rm_version/build/start_dirtectory' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /rm_version/build/start_dirtectory -- -j20 -l20
+[0.065s] Invoking command in '/rm_version/build/start_dirtectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /rm_version/build/start_dirtectory
+[0.068s] -- Install configuration: ""
+[0.069s] -- Up-to-date: /rm_version/install/start_dirtectory/share/start_dirtectory/launch
+[0.069s] -- Up-to-date: /rm_version/install/start_dirtectory/share/start_dirtectory/launch/test.launch.py
+[0.069s] -- Up-to-date: /rm_version/install/start_dirtectory/share/ament_index/resource_index/package_run_dependencies/start_dirtectory
+[0.069s] -- Up-to-date: /rm_version/install/start_dirtectory/share/ament_index/resource_index/parent_prefix_path/start_dirtectory
+[0.069s] -- Up-to-date: /rm_version/install/start_dirtectory/share/start_dirtectory/environment/ament_prefix_path.sh
+[0.069s] -- Up-to-date: /rm_version/install/start_dirtectory/share/start_dirtectory/environment/ament_prefix_path.dsv
+[0.069s] -- Up-to-date: /rm_version/install/start_dirtectory/share/start_dirtectory/environment/path.sh
+[0.069s] -- Up-to-date: /rm_version/install/start_dirtectory/share/start_dirtectory/environment/path.dsv
+[0.069s] -- Up-to-date: /rm_version/install/start_dirtectory/share/start_dirtectory/local_setup.bash
+[0.069s] -- Up-to-date: /rm_version/install/start_dirtectory/share/start_dirtectory/local_setup.sh
+[0.069s] -- Up-to-date: /rm_version/install/start_dirtectory/share/start_dirtectory/local_setup.zsh
+[0.069s] -- Up-to-date: /rm_version/install/start_dirtectory/share/start_dirtectory/local_setup.dsv
+[0.070s] -- Installing: /rm_version/install/start_dirtectory/share/start_dirtectory/package.dsv
+[0.070s] -- Up-to-date: /rm_version/install/start_dirtectory/share/ament_index/resource_index/packages/start_dirtectory
+[0.070s] -- Up-to-date: /rm_version/install/start_dirtectory/share/start_dirtectory/cmake/start_dirtectoryConfig.cmake
+[0.070s] -- Up-to-date: /rm_version/install/start_dirtectory/share/start_dirtectory/cmake/start_dirtectoryConfig-version.cmake
+[0.070s] -- Up-to-date: /rm_version/install/start_dirtectory/share/start_dirtectory/package.xml
+[0.071s] Invoked command in '/rm_version/build/start_dirtectory' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /rm_version/build/start_dirtectory

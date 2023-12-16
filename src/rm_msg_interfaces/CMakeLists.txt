@@ -14,6 +14,7 @@ find_package(geometry_msgs REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Armor.msg"
   "msg/Armors.msg"
+  "msg/Tracker.msg"
   DEPENDENCIES
     std_msgs
     geometry_msgs

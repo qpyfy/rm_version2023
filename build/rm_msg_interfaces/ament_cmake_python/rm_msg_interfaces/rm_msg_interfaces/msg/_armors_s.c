@@ -22,6 +22,10 @@
 // Nested array functions includes
 #include "rm_msg_interfaces/msg/detail/armor__functions.h"
 // end nested array functions include
+ROSIDL_GENERATOR_C_IMPORT
+bool std_msgs__msg__header__convert_from_py(PyObject * _pymsg, void * _ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * std_msgs__msg__header__convert_to_py(void * raw_ros_message);
 bool rm_msg_interfaces__msg__armor__convert_from_py(PyObject * _pymsg, void * _ros_message);
 PyObject * rm_msg_interfaces__msg__armor__convert_to_py(void * raw_ros_message);
 
@@ -58,6 +62,17 @@ bool rm_msg_interfaces__msg__armors__convert_from_py(PyObject * _pymsg, void * _
     assert(strncmp("rm_msg_interfaces.msg._armors.Armors", full_classname_dest, 36) == 0);
   }
   rm_msg_interfaces__msg__Armors * ros_message = _ros_message;
+  {  // header
+    PyObject * field = PyObject_GetAttrString(_pymsg, "header");
+    if (!field) {
+      return false;
+    }
+    if (!std_msgs__msg__header__convert_from_py(field, &ros_message->header)) {
+      Py_DECREF(field);
+      return false;
+    }
+    Py_DECREF(field);
+  }
   {  // armors
     PyObject * field = PyObject_GetAttrString(_pymsg, "armors");
     if (!field) {
@@ -113,6 +128,20 @@ PyObject * rm_msg_interfaces__msg__armors__convert_to_py(void * raw_ros_message)
     }
   }
   rm_msg_interfaces__msg__Armors * ros_message = (rm_msg_interfaces__msg__Armors *)raw_ros_message;
+  {  // header
+    PyObject * field = NULL;
+    field = std_msgs__msg__header__convert_to_py(&ros_message->header);
+    if (!field) {
+      return NULL;
+    }
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "header", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
   {  // armors
     PyObject * field = NULL;
     size_t size = ros_message->armors.size;

@@ -19,6 +19,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/rm_version/build/rm_msg_interfaces/rosidl_generator_py/rm_msg_interfaces/msg/_armor_s.c" "/rm_version/build/rm_msg_interfaces/rosidl_generator_py/rm_msg_interfaces/_rm_msg_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/rm_version/build/rm_msg_interfaces/rosidl_generator_py/rm_msg_interfaces/msg/_armors.py" "/rm_version/build/rm_msg_interfaces/rosidl_generator_py/rm_msg_interfaces/_rm_msg_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/rm_version/build/rm_msg_interfaces/rosidl_generator_py/rm_msg_interfaces/msg/_armors_s.c" "/rm_version/build/rm_msg_interfaces/rosidl_generator_py/rm_msg_interfaces/_rm_msg_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/rm_version/build/rm_msg_interfaces/rosidl_generator_py/rm_msg_interfaces/msg/_tracker.py" "/rm_version/build/rm_msg_interfaces/rosidl_generator_py/rm_msg_interfaces/_rm_msg_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/rm_version/build/rm_msg_interfaces/rosidl_generator_py/rm_msg_interfaces/msg/_tracker_s.c" "/rm_version/build/rm_msg_interfaces/rosidl_generator_py/rm_msg_interfaces/_rm_msg_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 
 

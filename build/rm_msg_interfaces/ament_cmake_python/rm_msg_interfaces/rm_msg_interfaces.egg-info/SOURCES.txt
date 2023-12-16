@@ -7,3 +7,4 @@ rm_msg_interfaces.egg-info/top_level.txt
 rm_msg_interfaces/msg/__init__.py
 rm_msg_interfaces/msg/_armor.py
 rm_msg_interfaces/msg/_armors.py
+rm_msg_interfaces/msg/_tracker.py

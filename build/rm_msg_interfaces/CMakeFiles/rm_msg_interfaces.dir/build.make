@@ -68,6 +68,7 @@ include CMakeFiles/rm_msg_interfaces.dir/progress.make
 
 CMakeFiles/rm_msg_interfaces: /rm_version/src/rm_msg_interfaces/msg/Armor.msg
 CMakeFiles/rm_msg_interfaces: /rm_version/src/rm_msg_interfaces/msg/Armors.msg
+CMakeFiles/rm_msg_interfaces: /rm_version/src/rm_msg_interfaces/msg/Tracker.msg
 CMakeFiles/rm_msg_interfaces: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 CMakeFiles/rm_msg_interfaces: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 CMakeFiles/rm_msg_interfaces: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl

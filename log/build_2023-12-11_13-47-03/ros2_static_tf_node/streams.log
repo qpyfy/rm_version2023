@@ -1,0 +1,28 @@
+[0.031s] Invoking command in '/rm_version/build/ros2_static_tf_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /rm_version/build/ros2_static_tf_node -- -j20 -l20
+[0.067s] [35m[1mConsolidate compiler generated dependencies of target ros2_static_tf_node[0m
+[0.081s] [ 25%] [32mBuilding CXX object CMakeFiles/ros2_static_tf_node.dir/src/ros2_static_tf_node.cpp.o[0m
+[0.084s] [ 75%] Built target ros2_static_tf_node_node
+[2.442s] [100%] [32m[1mLinking CXX shared library libros2_static_tf_node.so[0m
+[2.509s] [100%] Built target ros2_static_tf_node
+[2.515s] Invoked command in '/rm_version/build/ros2_static_tf_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /rm_version/build/ros2_static_tf_node -- -j20 -l20
+[2.530s] Invoking command in '/rm_version/build/ros2_static_tf_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /rm_version/build/ros2_static_tf_node
+[2.534s] -- Install configuration: ""
+[2.534s] -- Installing: /rm_version/install/ros2_static_tf_node/lib/ros2_static_tf_node/ros2_static_tf_node_node
+[2.536s] -- Set runtime path of "/rm_version/install/ros2_static_tf_node/lib/ros2_static_tf_node/ros2_static_tf_node_node" to ""
+[2.536s] -- Installing: /rm_version/install/ros2_static_tf_node/share/ament_index/resource_index/package_run_dependencies/ros2_static_tf_node
+[2.536s] -- Installing: /rm_version/install/ros2_static_tf_node/share/ament_index/resource_index/parent_prefix_path/ros2_static_tf_node
+[2.537s] -- Installing: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/environment/ament_prefix_path.sh
+[2.537s] -- Installing: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/environment/ament_prefix_path.dsv
+[2.537s] -- Installing: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/environment/path.sh
+[2.537s] -- Installing: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/environment/path.dsv
+[2.537s] -- Installing: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/local_setup.bash
+[2.538s] -- Installing: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/local_setup.sh
+[2.538s] -- Installing: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/local_setup.zsh
+[2.539s] -- Installing: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/local_setup.dsv
+[2.539s] -- Installing: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/package.dsv
+[2.540s] -- Installing: /rm_version/install/ros2_static_tf_node/share/ament_index/resource_index/packages/ros2_static_tf_node
+[2.540s] -- Installing: /rm_version/install/ros2_static_tf_node/share/ament_index/resource_index/rclcpp_components/ros2_static_tf_node
+[2.540s] -- Installing: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/cmake/ros2_static_tf_nodeConfig.cmake
+[2.541s] -- Installing: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/cmake/ros2_static_tf_nodeConfig-version.cmake
+[2.541s] -- Installing: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/package.xml
+[2.544s] Invoked command in '/rm_version/build/ros2_static_tf_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /rm_version/build/ros2_static_tf_node

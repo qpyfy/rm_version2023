@@ -1,0 +1,24 @@
+[0.037s] Invoking command in '/rm_version/build/ros2_video': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /rm_version/build/ros2_video -- -j20 -l20
+[0.077s] [ 20%] Built target gtest
+[0.079s] [ 40%] Built target gtest_main
+[0.081s] [ 60%] Built target ros2_video_node
+[0.082s] [ 70%] [32mBuilding CXX object CMakeFiles/ros2_video.dir/src/video_node.cpp.o[0m
+[1.915s] [01m[K/rm_version/src/ros2_video_node/src/video_node.cpp:[m[K In constructor ‘[01m[Kros2_video_node::VideoNode::VideoNode(const rclcpp::NodeOptions&)[m[K’:
+[1.915s] [01m[K/rm_version/src/ros2_video_node/src/video_node.cpp:32:40:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd_msgs::msg::Header_<std::allocator<void> >::_stamp_type[m[K’ {aka ‘[01m[Kbuiltin_interfaces::msg::Time_<std::allocator<void> >[m[K’} and ‘[01m[Kint[m[K’)
+[1.915s]    32 |                cv_image.header.stamp = [01;31m[K0[m[K;
+[1.915s]       |                                        [01;31m[K^[m[K
+[1.915s] In file included from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp:20[m[K,
+[1.915s]                  from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp:7[m[K,
+[1.915s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:37[m[K,
+[1.915s]                  from [01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:37[m[K,
+[1.916s]                  from [01m[K/rm_version/src/ros2_video_node/src/video_node.cpp:4[m[K:
+[1.916s] [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:32:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr builtin_interfaces::msg::Time_<std::allocator<void> >& builtin_interfaces::msg::Time_<std::allocator<void> >::operator=(const builtin_interfaces::msg::Time_<std::allocator<void> >&)[m[K’
+[1.916s]    32 | struct [01;36m[KTime_[m[K
+[1.916s]       |        [01;36m[K^~~~~[m[K
+[1.916s] [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:32:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kconst builtin_interfaces::msg::Time_<std::allocator<void> >&[m[K’
+[1.916s] [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:32:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr builtin_interfaces::msg::Time_<std::allocator<void> >& builtin_interfaces::msg::Time_<std::allocator<void> >::operator=(builtin_interfaces::msg::Time_<std::allocator<void> >&&)[m[K’
+[1.916s] [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:32:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kbuiltin_interfaces::msg::Time_<std::allocator<void> >&&[m[K’
+[2.935s] gmake[2]: *** [CMakeFiles/ros2_video.dir/build.make:76: CMakeFiles/ros2_video.dir/src/video_node.cpp.o] Error 1
+[2.935s] gmake[1]: *** [CMakeFiles/Makefile2:159: CMakeFiles/ros2_video.dir/all] Error 2
+[2.936s] gmake: *** [Makefile:146: all] Error 2
+[2.938s] Invoked command in '/rm_version/build/ros2_video' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /rm_version/build/ros2_video -- -j20 -l20

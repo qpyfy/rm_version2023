@@ -1,0 +1,16 @@
+[35m[1mConsolidate compiler generated dependencies of target rm_tracker[0m
+[ 33%] Built target rm_tracker_node
+[ 50%] [32mBuilding CXX object CMakeFiles/rm_tracker.dir/src/extended_kalman_filiter.cpp.o[0m
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:164[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/rm_version/src/rm_tracker/include/extended_kalman_filiter.hpp:4[m[K,
+                 from [01m[K/rm_version/src/rm_tracker/src/extended_kalman_filiter.cpp:1[m[K:
+/usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.h: In instantiation of ‘[01m[Ktypename Eigen::internal::enable_if<((! Eigen::DenseBase<Derived>::IsRowMajor) && (!((Eigen::internal::get_compile_time_incr<typename Eigen::DenseBase<Derived>::IvcType<Indices>::type>::value == 1) || Eigen::internal::is_valid_index_type<Indices>::value))), Eigen::IndexedView<Derived, typename Eigen::DenseBase<Derived>::IvcType<Indices>::type, Eigen::internal::SingleRange> >::type Eigen::DenseBase<Derived>::operator()(const Indices&) [with Indices = Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<double>, Eigen::Matrix<double, -1, -1> >; Derived = Eigen::Matrix<double, -1, -1>; typename Eigen::internal::enable_if<((! Eigen::DenseBase<Derived>::IsRowMajor) && (!((Eigen::internal::get_compile_time_incr<typename Eigen::DenseBase<Derived>::IvcType<Indices>::type>::value == 1) || Eigen::internal::is_valid_index_type<Indices>::value))), Eigen::IndexedView<Derived, typename Eigen::DenseBase<Derived>::IvcType<Indices>::type, Eigen::internal::SingleRange> >::type = Eigen::IndexedView<Eigen::Matrix<double, -1, -1>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<double>, Eigen::Matrix<double, -1, -1> >, Eigen::internal::SingleRange>; typename Eigen::DenseBase<Derived>::IvcType<Indices>::type = Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<double>, Eigen::Matrix<double, -1, -1> >][m[K’:
+[01m[K/rm_version/src/rm_tracker/src/extended_kalman_filiter.cpp:23:6:[m[K   required from here
+[01m[K/usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.h:157:3:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: YOU_TRIED_CALLING_A_VECTOR_METHOD_ON_A_MATRIX
+  157 |   [01;31m[KEIGEN_STATIC_ASSERT_VECTOR_ONLY[m[K(Derived)
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.h:157:3:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::Matrix<double, -1, -1>::IsVectorAtCompileTime[m[K’ evaluates to false
+gmake[2]: *** [CMakeFiles/rm_tracker.dir/build.make:76: CMakeFiles/rm_tracker.dir/src/extended_kalman_filiter.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/rm_tracker.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

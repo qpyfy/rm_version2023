@@ -4,7 +4,8 @@
   "template_dir": "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
     "/rm_version/build/rm_msg_interfaces/rosidl_adapter/rm_msg_interfaces:msg/Armor.idl",
-    "/rm_version/build/rm_msg_interfaces/rosidl_adapter/rm_msg_interfaces:msg/Armors.idl"
+    "/rm_version/build/rm_msg_interfaces/rosidl_adapter/rm_msg_interfaces:msg/Armors.idl",
+    "/rm_version/build/rm_msg_interfaces/rosidl_adapter/rm_msg_interfaces:msg/Tracker.idl"
   ],
   "ros_interface_dependencies": [
     "std_msgs:/opt/ros/humble/share/std_msgs/msg/Bool.idl",
@@ -85,6 +86,7 @@
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
     "/rm_version/build/rm_msg_interfaces/rosidl_adapter/rm_msg_interfaces/msg/Armor.idl",
     "/rm_version/build/rm_msg_interfaces/rosidl_adapter/rm_msg_interfaces/msg/Armors.idl",
+    "/rm_version/build/rm_msg_interfaces/rosidl_adapter/rm_msg_interfaces/msg/Tracker.idl",
     "/opt/ros/humble/share/std_msgs/msg/Bool.idl",
     "/opt/ros/humble/share/std_msgs/msg/Byte.idl",
     "/opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl",

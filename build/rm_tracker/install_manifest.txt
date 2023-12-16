@@ -6,6 +6,7 @@
 /rm_version/install/rm_tracker/share/rm_tracker/environment/library_path.dsv
 /rm_version/install/rm_tracker/lib/librm_tracker.so
 /rm_version/install/rm_tracker/share/rm_tracker/config/tracker.yaml
+/rm_version/install/rm_tracker/share/rm_tracker/launch/armor_tracker.launch.py
 /rm_version/install/rm_tracker/share/ament_index/resource_index/package_run_dependencies/rm_tracker
 /rm_version/install/rm_tracker/share/ament_index/resource_index/parent_prefix_path/rm_tracker
 /rm_version/install/rm_tracker/share/rm_tracker/environment/ament_prefix_path.sh

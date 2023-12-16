@@ -1,0 +1,270 @@
+[0.014s] Invoking command in '/rm_version/build/rm_msg_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /rm_version/build/rm_msg_interfaces -- -j20 -l20
+[0.026s] -- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.101s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.102s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.103s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.119s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.134s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.352s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.474s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.638s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.648s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.657s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.657s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.657s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.682s] -- Configuring done
+[0.702s] -- Generating done
+[0.703s] -- Build files have been written to: /rm_version/build/rm_msg_interfaces
+[0.715s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.720s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.724s] [  4%] Built target ament_cmake_python_copy_rm_msg_interfaces
+[0.827s] running egg_info
+[0.828s] writing rm_msg_interfaces.egg-info/PKG-INFO
+[0.828s] writing dependency_links to rm_msg_interfaces.egg-info/dependency_links.txt
+[0.828s] writing top-level names to rm_msg_interfaces.egg-info/top_level.txt
+[0.829s] reading manifest file 'rm_msg_interfaces.egg-info/SOURCES.txt'
+[0.829s] writing manifest file 'rm_msg_interfaces.egg-info/SOURCES.txt'
+[0.846s] [  4%] Built target ament_cmake_python_build_rm_msg_interfaces_egg
+[0.940s] [  4%] Built target rm_msg_interfaces__cpp
+[0.946s] [  6%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[0.948s] [  8%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[0.949s] [ 10%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[0.956s] [35m[1mConsolidate compiler generated dependencies of target rm_msg_interfaces__rosidl_generator_c[0m
+[0.962s] [ 12%] [32mBuilding C object CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rm_msg_interfaces/msg/detail/armors__functions.c.o[0m
+[0.963s] [ 14%] [32mBuilding C object CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__functions.c.o[0m
+[0.963s] [ 17%] [32mBuilding C object CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rm_msg_interfaces/msg/detail/armor__functions.c.o[0m
+[1.000s] [ 19%] [32m[1mLinking C shared library librm_msg_interfaces__rosidl_generator_c.so[0m
+[1.023s] [ 19%] Built target rm_msg_interfaces__rosidl_generator_c
+[1.030s] [ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.031s] [ 23%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.031s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.129s] [35m[1mConsolidate compiler generated dependencies of target rm_msg_interfaces__rosidl_typesupport_cpp[0m
+[1.139s] [ 27%] [32mBuilding CXX object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rm_msg_interfaces/msg/armor__type_support.cpp.o[0m
+[1.140s] [ 29%] [32mBuilding CXX object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rm_msg_interfaces/msg/armors__type_support.cpp.o[0m
+[1.140s] [ 31%] [32mBuilding CXX object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rm_msg_interfaces/msg/tracker__type_support.cpp.o[0m
+[1.154s] [35m[1mConsolidate compiler generated dependencies of target rm_msg_interfaces__rosidl_typesupport_introspection_cpp[0m
+[1.164s] [ 34%] [32mBuilding CXX object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rm_msg_interfaces/msg/detail/armors__type_support.cpp.o[0m
+[1.166s] [ 36%] [32mBuilding CXX object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rm_msg_interfaces/msg/detail/armor__type_support.cpp.o[0m
+[1.166s] [ 38%] [32mBuilding CXX object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rm_msg_interfaces/msg/detail/tracker__type_support.cpp.o[0m
+[1.168s] [35m[1mConsolidate compiler generated dependencies of target rm_msg_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[1.180s] [ 40%] [32mBuilding CXX object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rm_msg_interfaces/msg/detail/dds_fastrtps/tracker__type_support.cpp.o[0m
+[1.180s] [ 42%] [32mBuilding CXX object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rm_msg_interfaces/msg/detail/dds_fastrtps/armors__type_support.cpp.o[0m
+[1.180s] [ 44%] [32mBuilding CXX object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rm_msg_interfaces/msg/detail/dds_fastrtps/armor__type_support.cpp.o[0m
+[1.232s] [35m[1mConsolidate compiler generated dependencies of target rm_msg_interfaces__rosidl_typesupport_c[0m
+[1.241s] [ 46%] [32mBuilding CXX object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/rm_msg_interfaces/msg/armors__type_support.cpp.o[0m
+[1.241s] [ 48%] [32mBuilding CXX object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/rm_msg_interfaces/msg/armor__type_support.cpp.o[0m
+[1.241s] [ 51%] [32mBuilding CXX object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/rm_msg_interfaces/msg/tracker__type_support.cpp.o[0m
+[1.268s] [ 53%] [32m[1mLinking CXX shared library librm_msg_interfaces__rosidl_typesupport_c.so[0m
+[1.274s] [35m[1mConsolidate compiler generated dependencies of target rm_msg_interfaces__rosidl_typesupport_fastrtps_c[0m
+[1.288s] [35m[1mConsolidate compiler generated dependencies of target rm_msg_interfaces__rosidl_typesupport_introspection_c[0m
+[1.292s] [ 55%] [32mBuilding CXX object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rm_msg_interfaces/msg/detail/armor__type_support_c.cpp.o[0m
+[1.292s] [ 57%] [32mBuilding CXX object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rm_msg_interfaces/msg/detail/armors__type_support_c.cpp.o[0m
+[1.292s] [ 59%] [32mBuilding CXX object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rm_msg_interfaces/msg/detail/tracker__type_support_c.cpp.o[0m
+[1.307s] [ 61%] [32mBuilding C object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rm_msg_interfaces/msg/detail/armor__type_support.c.o[0m
+[1.308s] [ 63%] [32mBuilding C object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rm_msg_interfaces/msg/detail/tracker__type_support.c.o[0m
+[1.309s] [ 65%] [32mBuilding C object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rm_msg_interfaces/msg/detail/armors__type_support.c.o[0m
+[1.328s] [ 65%] Built target rm_msg_interfaces__rosidl_typesupport_c
+[1.346s] [ 68%] [32m[1mLinking C shared library librm_msg_interfaces__rosidl_typesupport_introspection_c.so[0m
+[1.374s] [ 68%] Built target rm_msg_interfaces__rosidl_typesupport_introspection_c
+[1.380s] [ 70%] [32m[1mLinking CXX shared library librm_msg_interfaces__rosidl_typesupport_cpp.so[0m
+[1.413s] [ 70%] Built target rm_msg_interfaces__rosidl_typesupport_cpp
+[1.511s] [ 72%] [32m[1mLinking CXX shared library librm_msg_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[1.543s] [ 74%] [32m[1mLinking CXX shared library librm_msg_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[1.554s] [ 74%] Built target rm_msg_interfaces__rosidl_typesupport_introspection_cpp
+[1.566s] [ 76%] [32m[1mLinking CXX shared library librm_msg_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[1.580s] [ 76%] Built target rm_msg_interfaces__rosidl_typesupport_fastrtps_cpp
+[1.604s] [ 76%] Built target rm_msg_interfaces__rosidl_typesupport_fastrtps_c
+[1.613s] [ 76%] Built target rm_msg_interfaces
+[1.623s] [ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+[1.954s] [ 78%] Built target rm_msg_interfaces__py
+[1.959s] [35m[1mConsolidate compiler generated dependencies of target rm_msg_interfaces__rosidl_generator_py[0m
+[1.966s] [ 80%] [32mBuilding C object CMakeFiles/rm_msg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rm_msg_interfaces/msg/_armor_s.c.o[0m
+[1.966s] [ 82%] [32mBuilding C object CMakeFiles/rm_msg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rm_msg_interfaces/msg/_armors_s.c.o[0m
+[1.967s] [ 85%] [32mBuilding C object CMakeFiles/rm_msg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rm_msg_interfaces/msg/_tracker_s.c.o[0m
+[2.023s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/rm_msg_interfaces/librm_msg_interfaces__rosidl_generator_py.so[0m
+[2.046s] [ 87%] Built target rm_msg_interfaces__rosidl_generator_py
+[2.050s] [35m[1mConsolidate compiler generated dependencies of target rm_msg_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[2.051s] [35m[1mConsolidate compiler generated dependencies of target rm_msg_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[2.051s] [35m[1mConsolidate compiler generated dependencies of target rm_msg_interfaces__rosidl_typesupport_c__pyext[0m
+[2.057s] [ 93%] [32mBuilding C object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/rm_msg_interfaces/_rm_msg_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.057s] [ 93%] [32mBuilding C object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/rm_msg_interfaces/_rm_msg_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[2.057s] [ 93%] [32mBuilding C object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/rm_msg_interfaces/_rm_msg_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[2.114s] [100%] [32m[1mLinking C shared library rosidl_generator_py/rm_msg_interfaces/rm_msg_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.114s] [100%] [32m[1mLinking C shared library rosidl_generator_py/rm_msg_interfaces/rm_msg_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.114s] [100%] [32m[1mLinking C shared library rosidl_generator_py/rm_msg_interfaces/rm_msg_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.135s] [100%] Built target rm_msg_interfaces__rosidl_typesupport_introspection_c__pyext
+[2.135s] [100%] Built target rm_msg_interfaces__rosidl_typesupport_c__pyext
+[2.135s] [100%] Built target rm_msg_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[2.141s] Invoked command in '/rm_version/build/rm_msg_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /rm_version/build/rm_msg_interfaces -- -j20 -l20
+[2.183s] Invoking command in '/rm_version/build/rm_msg_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /rm_version/build/rm_msg_interfaces
+[2.186s] -- Install configuration: ""
+[2.186s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/ament_index/resource_index/rosidl_interfaces/rm_msg_interfaces
+[2.186s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces
+[2.186s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg
+[2.186s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/tracker.h
+[2.186s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/armors.h
+[2.187s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/armor.h
+[2.187s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/rosidl_generator_c__visibility_control.h
+[2.187s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail
+[2.187s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/tracker__struct.h
+[2.187s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armor__functions.c
+[2.187s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/tracker__type_support.h
+[2.187s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armors__struct.h
+[2.187s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armor__type_support.h
+[2.187s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armor__struct.h
+[2.187s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armors__type_support.h
+[2.187s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armor__functions.h
+[2.188s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armors__functions.h
+[2.188s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/tracker__functions.h
+[2.188s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armors__functions.c
+[2.188s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/tracker__functions.c
+[2.188s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/environment/library_path.sh
+[2.188s] -- Installing: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/environment/library_path.dsv
+[2.188s] -- Installing: /rm_version/install/rm_msg_interfaces/lib/librm_msg_interfaces__rosidl_generator_c.so
+[2.188s] -- Set runtime path of "/rm_version/install/rm_msg_interfaces/lib/librm_msg_interfaces__rosidl_generator_c.so" to ""
+[2.188s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces
+[2.188s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg
+[2.188s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.188s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail
+[2.189s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/tracker__rosidl_typesupport_fastrtps_c.h
+[2.189s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armors__rosidl_typesupport_fastrtps_c.h
+[2.189s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armor__rosidl_typesupport_fastrtps_c.h
+[2.189s] -- Installing: /rm_version/install/rm_msg_interfaces/lib/librm_msg_interfaces__rosidl_typesupport_fastrtps_c.so
+[2.189s] -- Set runtime path of "/rm_version/install/rm_msg_interfaces/lib/librm_msg_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[2.189s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces
+[2.189s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg
+[2.189s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.189s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail
+[2.189s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/tracker__type_support.c
+[2.189s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armor__rosidl_typesupport_introspection_c.h
+[2.190s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armors__type_support.c
+[2.190s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armor__type_support.c
+[2.190s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armors__rosidl_typesupport_introspection_c.h
+[2.190s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/tracker__rosidl_typesupport_introspection_c.h
+[2.190s] -- Installing: /rm_version/install/rm_msg_interfaces/lib/librm_msg_interfaces__rosidl_typesupport_introspection_c.so
+[2.190s] -- Set runtime path of "/rm_version/install/rm_msg_interfaces/lib/librm_msg_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[2.190s] -- Installing: /rm_version/install/rm_msg_interfaces/lib/librm_msg_interfaces__rosidl_typesupport_c.so
+[2.190s] -- Set runtime path of "/rm_version/install/rm_msg_interfaces/lib/librm_msg_interfaces__rosidl_typesupport_c.so" to ""
+[2.190s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces
+[2.190s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg
+[2.190s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/armors.hpp
+[2.190s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/tracker.hpp
+[2.190s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/armor.hpp
+[2.191s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail
+[2.191s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/tracker__traits.hpp
+[2.191s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armors__traits.hpp
+[2.191s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/tracker__builder.hpp
+[2.191s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armor__builder.hpp
+[2.191s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armor__struct.hpp
+[2.191s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armor__traits.hpp
+[2.191s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armors__builder.hpp
+[2.191s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/tracker__struct.hpp
+[2.191s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armors__struct.hpp
+[2.191s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces
+[2.191s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg
+[2.191s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.192s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail
+[2.192s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/tracker__rosidl_typesupport_fastrtps_cpp.hpp
+[2.192s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armor__rosidl_typesupport_fastrtps_cpp.hpp
+[2.192s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armors__rosidl_typesupport_fastrtps_cpp.hpp
+[2.192s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/dds_fastrtps
+[2.192s] -- Installing: /rm_version/install/rm_msg_interfaces/lib/librm_msg_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[2.192s] -- Set runtime path of "/rm_version/install/rm_msg_interfaces/lib/librm_msg_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[2.192s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces
+[2.192s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg
+[2.192s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail
+[2.192s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armors__rosidl_typesupport_introspection_cpp.hpp
+[2.193s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armors__type_support.cpp
+[2.193s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armor__type_support.cpp
+[2.193s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/tracker__rosidl_typesupport_introspection_cpp.hpp
+[2.193s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/tracker__type_support.cpp
+[2.193s] -- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armor__rosidl_typesupport_introspection_cpp.hpp
+[2.193s] -- Installing: /rm_version/install/rm_msg_interfaces/lib/librm_msg_interfaces__rosidl_typesupport_introspection_cpp.so
+[2.193s] -- Set runtime path of "/rm_version/install/rm_msg_interfaces/lib/librm_msg_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[2.193s] -- Installing: /rm_version/install/rm_msg_interfaces/lib/librm_msg_interfaces__rosidl_typesupport_cpp.so
+[2.193s] -- Set runtime path of "/rm_version/install/rm_msg_interfaces/lib/librm_msg_interfaces__rosidl_typesupport_cpp.so" to ""
+[2.193s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/environment/pythonpath.sh
+[2.193s] -- Installing: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/environment/pythonpath.dsv
+[2.193s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces-0.0.0-py3.10.egg-info
+[2.193s] -- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[2.193s] -- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[2.194s] -- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[2.194s] -- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[2.194s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces
+[2.194s] -- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/rm_msg_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.194s] -- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/_rm_msg_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[2.194s] -- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/_rm_msg_interfaces_s.ep.rosidl_typesupport_c.c
+[2.194s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/msg
+[2.194s] -- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/msg/_tracker_s.c
+[2.194s] -- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/msg/_armors.py
+[2.194s] -- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/msg/_armor_s.c
+[2.194s] -- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/msg/_armor.py
+[2.194s] -- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/msg/_tracker.py
+[2.194s] -- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/msg/_armors_s.c
+[2.194s] -- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/msg/__init__.py
+[2.194s] -- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/librm_msg_interfaces__rosidl_generator_py.so
+[2.194s] -- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/_rm_msg_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.194s] -- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/rm_msg_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.194s] -- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/__init__.py
+[2.194s] -- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/rm_msg_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.213s] Listing '/rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces'...
+[2.213s] Compiling '/rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/__init__.py'...
+[2.214s] Listing '/rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/msg'...
+[2.214s] Compiling '/rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/msg/__init__.py'...
+[2.214s] Compiling '/rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/msg/_armor.py'...
+[2.214s] Compiling '/rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/msg/_armors.py'...
+[2.214s] Compiling '/rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/msg/_tracker.py'...
+[2.216s] -- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/rm_msg_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.216s] -- Set runtime path of "/rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/rm_msg_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.216s] -- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/rm_msg_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.217s] -- Set runtime path of "/rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/rm_msg_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.217s] -- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/rm_msg_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.217s] -- Set runtime path of "/rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/rm_msg_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.217s] -- Installing: /rm_version/install/rm_msg_interfaces/lib/librm_msg_interfaces__rosidl_generator_py.so
+[2.217s] -- Set runtime path of "/rm_version/install/rm_msg_interfaces/lib/librm_msg_interfaces__rosidl_generator_py.so" to ""
+[2.217s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/msg/Armor.idl
+[2.217s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/msg/Armors.idl
+[2.217s] -- Installing: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/msg/Tracker.idl
+[2.217s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/msg/Armor.msg
+[2.217s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/msg/Armors.msg
+[2.217s] -- Installing: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/msg/Tracker.msg
+[2.218s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/ament_index/resource_index/package_run_dependencies/rm_msg_interfaces
+[2.218s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/ament_index/resource_index/parent_prefix_path/rm_msg_interfaces
+[2.218s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/environment/ament_prefix_path.sh
+[2.218s] -- Installing: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/environment/ament_prefix_path.dsv
+[2.218s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/environment/path.sh
+[2.218s] -- Installing: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/environment/path.dsv
+[2.218s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/local_setup.bash
+[2.218s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/local_setup.sh
+[2.218s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/local_setup.zsh
+[2.218s] -- Installing: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/local_setup.dsv
+[2.218s] -- Installing: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/package.dsv
+[2.218s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/ament_index/resource_index/packages/rm_msg_interfaces
+[2.219s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/export_rm_msg_interfaces__rosidl_generator_cExport.cmake
+[2.219s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/export_rm_msg_interfaces__rosidl_generator_cExport-noconfig.cmake
+[2.219s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/export_rm_msg_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[2.219s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/export_rm_msg_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.219s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/rm_msg_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[2.219s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/rm_msg_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.219s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/rm_msg_interfaces__rosidl_typesupport_cExport.cmake
+[2.219s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/rm_msg_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[2.219s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/export_rm_msg_interfaces__rosidl_generator_cppExport.cmake
+[2.219s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/export_rm_msg_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.219s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/export_rm_msg_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.219s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/rm_msg_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[2.219s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/rm_msg_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.219s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/rm_msg_interfaces__rosidl_typesupport_cppExport.cmake
+[2.219s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/rm_msg_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[2.219s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/export_rm_msg_interfaces__rosidl_generator_pyExport.cmake
+[2.219s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/export_rm_msg_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[2.219s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/rosidl_cmake-extras.cmake
+[2.219s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.219s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.219s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[2.219s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[2.219s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.219s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.219s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/rm_msg_interfacesConfig.cmake
+[2.220s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/rm_msg_interfacesConfig-version.cmake
+[2.220s] -- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/package.xml
+[2.220s] Invoked command in '/rm_version/build/rm_msg_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /rm_version/build/rm_msg_interfaces

@@ -1,0 +1,24 @@
+[35m[1mConsolidate compiler generated dependencies of target ros2_static_tf_node[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/ros2_static_tf_node.dir/src/ros2_static_tf_node.cpp.o[0m
+[ 75%] Built target ros2_static_tf_node_node
+[100%] [32m[1mLinking CXX shared library libros2_static_tf_node.so[0m
+[100%] Built target ros2_static_tf_node
+-- Install configuration: ""
+-- Installing: /rm_version/install/ros2_static_tf_node/lib/ros2_static_tf_node/ros2_static_tf_node_node
+-- Set runtime path of "/rm_version/install/ros2_static_tf_node/lib/ros2_static_tf_node/ros2_static_tf_node_node" to ""
+-- Installing: /rm_version/install/ros2_static_tf_node/share/ament_index/resource_index/package_run_dependencies/ros2_static_tf_node
+-- Installing: /rm_version/install/ros2_static_tf_node/share/ament_index/resource_index/parent_prefix_path/ros2_static_tf_node
+-- Installing: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/environment/ament_prefix_path.sh
+-- Installing: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/environment/ament_prefix_path.dsv
+-- Installing: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/environment/path.sh
+-- Installing: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/environment/path.dsv
+-- Installing: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/local_setup.bash
+-- Installing: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/local_setup.sh
+-- Installing: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/local_setup.zsh
+-- Installing: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/local_setup.dsv
+-- Installing: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/package.dsv
+-- Installing: /rm_version/install/ros2_static_tf_node/share/ament_index/resource_index/packages/ros2_static_tf_node
+-- Installing: /rm_version/install/ros2_static_tf_node/share/ament_index/resource_index/rclcpp_components/ros2_static_tf_node
+-- Installing: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/cmake/ros2_static_tf_nodeConfig.cmake
+-- Installing: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/cmake/ros2_static_tf_nodeConfig-version.cmake
+-- Installing: /rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/package.xml

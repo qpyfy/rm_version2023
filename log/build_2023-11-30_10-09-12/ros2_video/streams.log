@@ -1,0 +1,6 @@
+[0.017s] Invoking command in '/rm_version/build/ros2_video': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /rm_version/build/ros2_video -- -j20 -l20
+[0.050s] [ 20%] Built target ros2_video
+[0.050s] [ 40%] Built target gtest
+[0.055s] [ 60%] Built target ros2_video_node
+[0.055s] [ 80%] Built target gtest_main
+[0.075s] [100%] Built target video_node

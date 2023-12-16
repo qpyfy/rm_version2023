@@ -1,0 +1,38 @@
+[0.028s] Invoking command in '/rm_version/build/ros2_video': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /rm_version/build/ros2_video -- -j20 -l20
+[0.060s] [ 20%] Built target gtest_main
+[0.062s] [ 40%] Built target ros2_video_node
+[0.064s] [ 60%] Built target gtest
+[0.069s] [ 80%] Built target ros2_video
+[0.080s] [100%] Built target video_node
+[0.097s] Invoked command in '/rm_version/build/ros2_video' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /rm_version/build/ros2_video -- -j20 -l20
+[0.119s] Invoking command in '/rm_version/build/ros2_video': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /rm_version/build/ros2_video
+[0.123s] -- Install configuration: ""
+[0.124s] -- Up-to-date: /rm_version/install/ros2_video/lib/ros2_video/ros2_video_node
+[0.124s] -- Up-to-date: /rm_version/install/ros2_video/include
+[0.124s] -- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/environment/library_path.sh
+[0.124s] -- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/environment/library_path.dsv
+[0.124s] -- Up-to-date: /rm_version/install/ros2_video/lib/libros2_video.so
+[0.124s] -- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/launch
+[0.125s] -- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/launch/video_node.launch.py
+[0.125s] -- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/config
+[0.125s] -- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/config/node_params.yaml
+[0.125s] -- Up-to-date: /rm_version/install/ros2_video/share/ament_index/resource_index/package_run_dependencies/ros2_video
+[0.125s] -- Up-to-date: /rm_version/install/ros2_video/share/ament_index/resource_index/parent_prefix_path/ros2_video
+[0.125s] -- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/environment/ament_prefix_path.sh
+[0.125s] -- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/environment/ament_prefix_path.dsv
+[0.125s] -- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/environment/path.sh
+[0.125s] -- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/environment/path.dsv
+[0.125s] -- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/local_setup.bash
+[0.125s] -- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/local_setup.sh
+[0.125s] -- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/local_setup.zsh
+[0.125s] -- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/local_setup.dsv
+[0.125s] -- Installing: /rm_version/install/ros2_video/share/ros2_video/package.dsv
+[0.125s] -- Up-to-date: /rm_version/install/ros2_video/share/ament_index/resource_index/packages/ros2_video
+[0.125s] -- Up-to-date: /rm_version/install/ros2_video/share/ament_index/resource_index/rclcpp_components/ros2_video
+[0.126s] -- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.126s] -- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.126s] -- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/cmake/ament_cmake_export_libraries-extras.cmake
+[0.127s] -- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/cmake/ros2_videoConfig.cmake
+[0.127s] -- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/cmake/ros2_videoConfig-version.cmake
+[0.127s] -- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/package.xml
+[0.129s] Invoked command in '/rm_version/build/ros2_video' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /rm_version/build/ros2_video

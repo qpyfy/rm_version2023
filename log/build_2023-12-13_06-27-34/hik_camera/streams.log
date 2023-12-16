@@ -1,0 +1,33 @@
+[0.024s] Invoking command in '/rm_version/build/hik_camera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /rm_version/build/hik_camera -- -j20 -l20
+[0.039s] -- Found ament_cmake_auto: 1.3.4 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.172s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.173s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.177s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.183s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.191s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.223s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.224s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.280s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.597s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.598s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.755s] -- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.760s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.760s] -- Configured cppcheck include dirs: /rm_version/src/hik_camera_node/include;/rm_version/src/hik_camera_node/hikSDK/include
+[0.760s] -- Configured cppcheck exclude dirs and/or files: 
+[0.760s] -- Added test 'lint_cmake' to check CMake code style
+[0.760s] -- Added test 'xmllint' to check XML markup files
+[0.761s] -- Configuring done
+[0.770s] -- Generating done
+[0.771s] -- Build files have been written to: /rm_version/build/hik_camera
+[0.786s] [35m[1mConsolidate compiler generated dependencies of target hik_camera_node[0m
+[0.790s] [ 25%] [32mBuilding CXX object CMakeFiles/hik_camera.dir/src/hik_node.cpp.o[0m
+[0.794s] [ 75%] Built target hik_camera_node
+[0.798s] In file included from [01m[K/rm_version/src/hik_camera_node/src/hik_node.cpp:1[m[K:
+[0.798s] [01m[K/rm_version/src/hik_camera_node/include/hik_node.hpp:3:10:[m[K [01;31m[Kfatal error: [m[Kcamera_info_manager/camera_info_manager.hpp: No such file or directory
+[0.798s]     3 | #include [01;31m[K<camera_info_manager/camera_info_manager.hpp>[m[K
+[0.798s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.798s] compilation terminated.
+[0.799s] gmake[2]: *** [CMakeFiles/hik_camera.dir/build.make:76: CMakeFiles/hik_camera.dir/src/hik_node.cpp.o] Error 1
+[0.799s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/hik_camera.dir/all] Error 2
+[0.799s] gmake: *** [Makefile:146: all] Error 2
+[0.800s] Invoked command in '/rm_version/build/hik_camera' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /rm_version/build/hik_camera -- -j20 -l20

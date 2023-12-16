@@ -1,0 +1,16 @@
+In file included from [01m[K/rm_version/src/rm_tracker/src/extended_kalman_filiter.cpp:1[m[K:
+[01m[K/rm_version/src/rm_tracker/include/extended_kalman_filiter.hpp:[m[K In constructor ‘[01m[Krm_auto_aim::KalmanFilter::KalmanFilter(std::function<Eigen::Matrix<double, -1, 1>(Eigen::Matrix<double, -1, 1>)>, std::function<Eigen::Matrix<double, -1, 1>(Eigen::Matrix<double, -1, 1>)>, std::function<Eigen::Matrix<double, -1, -1>()>, std::function<Eigen::Matrix<double, -1, -1>(Eigen::Matrix<double, -1, 1>)>, std::function<Eigen::Matrix<double, -1, -1>(Eigen::Matrix<double, -1, 1>)>, std::function<Eigen::Matrix<double, -1, -1>(Eigen::Matrix<double, -1, 1>)>, Eigen::MatrixXd)[m[K’:
+[01m[K/rm_version/src/rm_tracker/include/extended_kalman_filiter.hpp:52:21:[m[K [01;31m[Kerror: [m[K‘[01m[Krm_auto_aim::KalmanFilter::P_post[m[K’ will be initialized after [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Werror=reorder]8;;[m[K]
+   52 |     Eigen::MatrixXd [01;31m[KP_post[m[K;
+      |                     [01;31m[K^~~~~~[m[K
+[01m[K/rm_version/src/rm_tracker/include/extended_kalman_filiter.hpp:50:9:[m[K [01;31m[Kerror: [m[K  ‘[01m[Kint rm_auto_aim::KalmanFilter::n[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Werror=reorder]8;;[m[K]
+   50 |     int [01;31m[Kn[m[K;
+      |         [01;31m[K^[m[K
+[01m[K/rm_version/src/rm_tracker/src/extended_kalman_filiter.cpp:7:5:[m[K [01;31m[Kerror: [m[K  when initialized here [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Werror=reorder]8;;[m[K]
+    7 |     [01;31m[KKalmanFilter[m[K::KalmanFilter(std::function<Eigen::VectorXd(Eigen::VectorXd)> f,
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [CMakeFiles/rm_tracker.dir/build.make:76: CMakeFiles/rm_tracker.dir/src/extended_kalman_filiter.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/rm_tracker.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

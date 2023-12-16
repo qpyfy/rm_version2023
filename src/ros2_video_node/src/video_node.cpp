@@ -29,7 +29,7 @@ namespace ros2_video_node
                /* code */
                sensor_msgs::msg::Image image_msg_;
                cv_bridge::CvImage cv_image;
-               cv_image.header.stamp = this->now();
+               cv_image.header.stamp = this->get_clock()->now();
                cv_image.header.frame_id = "video_optical_frame";
                cv_image.encoding = "bgr8";
                cv_image.image = image;

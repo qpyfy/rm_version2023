@@ -1,0 +1,501 @@
+[0.000000] (-) TimerEvent: {}
+[0.000091] (rm_msg_interfaces) JobQueued: {'identifier': 'rm_msg_interfaces', 'dependencies': OrderedDict()}
+[0.000124] (ros2_video) JobQueued: {'identifier': 'ros2_video', 'dependencies': OrderedDict()}
+[0.000137] (rm_detector) JobQueued: {'identifier': 'rm_detector', 'dependencies': OrderedDict([('rm_msg_interfaces', '/rm_version/install/rm_msg_interfaces')])}
+[0.000366] (rm_tracker) JobQueued: {'identifier': 'rm_tracker', 'dependencies': OrderedDict([('rm_msg_interfaces', '/rm_version/install/rm_msg_interfaces')])}
+[0.000396] (rm_msg_interfaces) JobStarted: {'identifier': 'rm_msg_interfaces'}
+[0.006210] (ros2_video) JobStarted: {'identifier': 'ros2_video'}
+[0.011224] (rm_msg_interfaces) JobProgress: {'identifier': 'rm_msg_interfaces', 'progress': 'cmake'}
+[0.011640] (rm_msg_interfaces) JobProgress: {'identifier': 'rm_msg_interfaces', 'progress': 'build'}
+[0.012277] (rm_msg_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/rm_version/build/rm_msg_interfaces', '--', '-j20', '-l20'], 'cwd': '/rm_version/build/rm_msg_interfaces', 'env': OrderedDict([('LANGUAGE', 'en_US:en'), ('HOSTNAME', 'docker-desktop'), ('GIT_ASKPASS', '/root/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/ros_ws/install/ros2_video/lib:/ros_ws/install/rm_serial_driver/lib:/ros_ws/install/mindvision_camera/lib:/ros_ws/install/hik_camera/lib:/ros_ws/install/armor_tracker/lib:/ros_ws/install/armor_detector/lib:/ros_ws/install/auto_aim_interfaces/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/rm_version'), ('LESS', '-R'), ('TERM_PROGRAM_VERSION', '1.84.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-ecc8b337-067c-407e-8f67-cd00783454bc.sock'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node'), ('REMOTE_CONTAINERS', 'true'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/ros_ws/install'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-71b88171-ae69-4420-9007-f93baf61aa9b.sock'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USER_ZDOTDIR', '/root'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/root/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-71b88171-ae69-4420-9007-f93baf61aa9b.sock","/root/.gnupg/S.gpg-agent"]'), ('LANG', 'en_US.UTF-8'), ('VSCODE_INJECTION', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-acaa61e502.sock'), ('AMENT_PREFIX_PATH', '/ros_ws/install/ros2_video:/ros_ws/install/rm_vision_bringup:/ros_ws/install/rm_serial_driver:/ros_ws/install/rm_gimbal_description:/ros_ws/install/rm_auto_aim:/ros_ws/install/mindvision_camera:/ros_ws/install/hik_camera:/ros_ws/install/armor_tracker:/ros_ws/install/armor_detector:/ros_ws/install/auto_aim_interfaces:/opt/ros/humble'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-71b88171-ae69-4420-9007-f93baf61aa9b.sock'), ('SHELL', '/bin/zsh'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/rm_version/build/rm_msg_interfaces'), ('ZDOTDIR', '/root'), ('PYTHONPATH', '/ros_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ros_ws/install/ros2_video:/ros_ws/install/rm_vision_bringup:/ros_ws/install/rm_serial_driver:/ros_ws/install/rm_gimbal_description:/ros_ws/install/rm_auto_aim:/ros_ws/install/mindvision_camera:/ros_ws/install/hik_camera:/ros_ws/install/armor_tracker:/ros_ws/install/armor_detector:/ros_ws/install/auto_aim_interfaces:/opt/ros/humble')]), 'shell': False}
+[0.015939] (ros2_video) JobProgress: {'identifier': 'ros2_video', 'progress': 'cmake'}
+[0.016724] (ros2_video) JobProgress: {'identifier': 'ros2_video', 'progress': 'build'}
+[0.017840] (ros2_video) Command: {'cmd': ['/usr/bin/cmake', '--build', '/rm_version/build/ros2_video', '--', '-j20', '-l20'], 'cwd': '/rm_version/build/ros2_video', 'env': OrderedDict([('LANGUAGE', 'en_US:en'), ('HOSTNAME', 'docker-desktop'), ('GIT_ASKPASS', '/root/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/ros_ws/install/ros2_video/lib:/ros_ws/install/rm_serial_driver/lib:/ros_ws/install/mindvision_camera/lib:/ros_ws/install/hik_camera/lib:/ros_ws/install/armor_tracker/lib:/ros_ws/install/armor_detector/lib:/ros_ws/install/auto_aim_interfaces/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/rm_version'), ('LESS', '-R'), ('TERM_PROGRAM_VERSION', '1.84.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-ecc8b337-067c-407e-8f67-cd00783454bc.sock'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node'), ('REMOTE_CONTAINERS', 'true'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/ros_ws/install'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-71b88171-ae69-4420-9007-f93baf61aa9b.sock'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USER_ZDOTDIR', '/root'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/root/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-71b88171-ae69-4420-9007-f93baf61aa9b.sock","/root/.gnupg/S.gpg-agent"]'), ('LANG', 'en_US.UTF-8'), ('VSCODE_INJECTION', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-acaa61e502.sock'), ('AMENT_PREFIX_PATH', '/ros_ws/install/ros2_video:/ros_ws/install/rm_vision_bringup:/ros_ws/install/rm_serial_driver:/ros_ws/install/rm_gimbal_description:/ros_ws/install/rm_auto_aim:/ros_ws/install/mindvision_camera:/ros_ws/install/hik_camera:/ros_ws/install/armor_tracker:/ros_ws/install/armor_detector:/ros_ws/install/auto_aim_interfaces:/opt/ros/humble'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-71b88171-ae69-4420-9007-f93baf61aa9b.sock'), ('SHELL', '/bin/zsh'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/rm_version/build/ros2_video'), ('ZDOTDIR', '/root'), ('PYTHONPATH', '/ros_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ros_ws/install/ros2_video:/ros_ws/install/rm_vision_bringup:/ros_ws/install/rm_serial_driver:/ros_ws/install/rm_gimbal_description:/ros_ws/install/rm_auto_aim:/ros_ws/install/mindvision_camera:/ros_ws/install/hik_camera:/ros_ws/install/armor_tracker:/ros_ws/install/armor_detector:/ros_ws/install/auto_aim_interfaces:/opt/ros/humble')]), 'shell': False}
+[0.034070] (rm_msg_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.048524] (ros2_video) StdoutLine: {'line': b'[ 20%] Built target gtest_main\n'}
+[0.050373] (ros2_video) StdoutLine: {'line': b'[ 40%] Built target ros2_video_node\n'}
+[0.051176] (ros2_video) StdoutLine: {'line': b'[ 60%] Built target gtest\n'}
+[0.054911] (ros2_video) StdoutLine: {'line': b'[ 80%] Built target ros2_video\n'}
+[0.069316] (ros2_video) StdoutLine: {'line': b'[100%] Built target video_node\n'}
+[0.075150] (ros2_video) CommandEnded: {'returncode': 0}
+[0.088979] (ros2_video) JobProgress: {'identifier': 'ros2_video', 'progress': 'install'}
+[0.093202] (ros2_video) Command: {'cmd': ['/usr/bin/cmake', '--install', '/rm_version/build/ros2_video'], 'cwd': '/rm_version/build/ros2_video', 'env': OrderedDict([('LANGUAGE', 'en_US:en'), ('HOSTNAME', 'docker-desktop'), ('GIT_ASKPASS', '/root/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/ros_ws/install/ros2_video/lib:/ros_ws/install/rm_serial_driver/lib:/ros_ws/install/mindvision_camera/lib:/ros_ws/install/hik_camera/lib:/ros_ws/install/armor_tracker/lib:/ros_ws/install/armor_detector/lib:/ros_ws/install/auto_aim_interfaces/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/rm_version'), ('LESS', '-R'), ('TERM_PROGRAM_VERSION', '1.84.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-ecc8b337-067c-407e-8f67-cd00783454bc.sock'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node'), ('REMOTE_CONTAINERS', 'true'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/ros_ws/install'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-71b88171-ae69-4420-9007-f93baf61aa9b.sock'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USER_ZDOTDIR', '/root'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/root/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-71b88171-ae69-4420-9007-f93baf61aa9b.sock","/root/.gnupg/S.gpg-agent"]'), ('LANG', 'en_US.UTF-8'), ('VSCODE_INJECTION', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-acaa61e502.sock'), ('AMENT_PREFIX_PATH', '/ros_ws/install/ros2_video:/ros_ws/install/rm_vision_bringup:/ros_ws/install/rm_serial_driver:/ros_ws/install/rm_gimbal_description:/ros_ws/install/rm_auto_aim:/ros_ws/install/mindvision_camera:/ros_ws/install/hik_camera:/ros_ws/install/armor_tracker:/ros_ws/install/armor_detector:/ros_ws/install/auto_aim_interfaces:/opt/ros/humble'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-71b88171-ae69-4420-9007-f93baf61aa9b.sock'), ('SHELL', '/bin/zsh'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/rm_version/build/ros2_video'), ('ZDOTDIR', '/root'), ('PYTHONPATH', '/ros_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ros_ws/install/ros2_video:/ros_ws/install/rm_vision_bringup:/ros_ws/install/rm_serial_driver:/ros_ws/install/rm_gimbal_description:/ros_ws/install/rm_auto_aim:/ros_ws/install/mindvision_camera:/ros_ws/install/hik_camera:/ros_ws/install/armor_tracker:/ros_ws/install/armor_detector:/ros_ws/install/auto_aim_interfaces:/opt/ros/humble')]), 'shell': False}
+[0.096643] (ros2_video) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.096772] (ros2_video) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/ros2_video/lib/ros2_video/ros2_video_node\n'}
+[0.096903] (ros2_video) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/ros2_video/include\n'}
+[0.096994] (ros2_video) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/environment/library_path.sh\n'}
+[0.097037] (ros2_video) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/environment/library_path.dsv\n'}
+[0.097111] (ros2_video) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/ros2_video/lib/libros2_video.so\n'}
+[0.097256] (ros2_video) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/launch\n'}
+[0.097399] (ros2_video) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/launch/video_node.launch.py\n'}
+[0.097480] (ros2_video) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/config\n'}
+[0.097550] (ros2_video) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/config/node_params.yaml\n'}
+[0.097671] (ros2_video) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/ros2_video/share/ament_index/resource_index/package_run_dependencies/ros2_video\n'}
+[0.097747] (ros2_video) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/ros2_video/share/ament_index/resource_index/parent_prefix_path/ros2_video\n'}
+[0.097825] (ros2_video) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/environment/ament_prefix_path.sh\n'}
+[0.097909] (ros2_video) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/environment/ament_prefix_path.dsv\n'}
+[0.097950] (ros2_video) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/environment/path.sh\n'}
+[0.097983] (ros2_video) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/environment/path.dsv\n'}
+[0.098014] (ros2_video) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/local_setup.bash\n'}
+[0.098045] (ros2_video) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/local_setup.sh\n'}
+[0.098075] (ros2_video) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/local_setup.zsh\n'}
+[0.098105] (ros2_video) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/local_setup.dsv\n'}
+[0.098134] (ros2_video) StdoutLine: {'line': b'-- Installing: /rm_version/install/ros2_video/share/ros2_video/package.dsv\n'}
+[0.098163] (ros2_video) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/ros2_video/share/ament_index/resource_index/packages/ros2_video\n'}
+[0.098204] (ros2_video) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/ros2_video/share/ament_index/resource_index/rclcpp_components/ros2_video\n'}
+[0.098282] (ros2_video) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.098360] (ros2_video) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.098431] (ros2_video) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.098510] (ros2_video) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/cmake/ros2_videoConfig.cmake\n'}
+[0.098647] (ros2_video) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/cmake/ros2_videoConfig-version.cmake\n'}
+[0.098738] (ros2_video) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/ros2_video/share/ros2_video/package.xml\n'}
+[0.099304] (ros2_video) CommandEnded: {'returncode': 0}
+[0.099837] (-) TimerEvent: {}
+[0.118261] (rm_msg_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.120482] (rm_msg_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.122014] (rm_msg_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.131229] (ros2_video) JobEnded: {'identifier': 'ros2_video', 'rc': 0}
+[0.136972] (rm_msg_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.154584] (rm_msg_interfaces) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.199940] (-) TimerEvent: {}
+[0.300168] (-) TimerEvent: {}
+[0.394275] (rm_msg_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.400253] (-) TimerEvent: {}
+[0.500460] (-) TimerEvent: {}
+[0.525160] (rm_msg_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.600565] (-) TimerEvent: {}
+[0.690192] (rm_msg_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.700674] (rm_msg_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[0.700779] (-) TimerEvent: {}
+[0.712175] (rm_msg_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.712299] (rm_msg_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[0.712337] (rm_msg_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[0.750403] (rm_msg_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.782309] (rm_msg_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[0.784216] (rm_msg_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /rm_version/build/rm_msg_interfaces\n'}
+[0.796543] (rm_msg_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[0.800881] (-) TimerEvent: {}
+[0.803179] (rm_msg_interfaces) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[0.806147] (rm_msg_interfaces) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_copy_rm_msg_interfaces\n'}
+[0.900973] (-) TimerEvent: {}
+[0.913880] (rm_msg_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[0.914433] (rm_msg_interfaces) StdoutLine: {'line': b'writing rm_msg_interfaces.egg-info/PKG-INFO\n'}
+[0.914642] (rm_msg_interfaces) StdoutLine: {'line': b'writing dependency_links to rm_msg_interfaces.egg-info/dependency_links.txt\n'}
+[0.914692] (rm_msg_interfaces) StdoutLine: {'line': b'writing top-level names to rm_msg_interfaces.egg-info/top_level.txt\n'}
+[0.915677] (rm_msg_interfaces) StdoutLine: {'line': b"reading manifest file 'rm_msg_interfaces.egg-info/SOURCES.txt'\n"}
+[0.916029] (rm_msg_interfaces) StdoutLine: {'line': b"writing manifest file 'rm_msg_interfaces.egg-info/SOURCES.txt'\n"}
+[0.931286] (rm_msg_interfaces) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_rm_msg_interfaces_egg\n'}
+[1.001058] (-) TimerEvent: {}
+[1.041345] (rm_msg_interfaces) StdoutLine: {'line': b'[  4%] Built target rm_msg_interfaces__cpp\n'}
+[1.046042] (rm_msg_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.046162] (rm_msg_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.046200] (rm_msg_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.061759] (rm_msg_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rm_msg_interfaces__rosidl_generator_c\x1b[0m\n'}
+[1.067450] (rm_msg_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rm_msg_interfaces/msg/detail/armor__functions.c.o\x1b[0m\n'}
+[1.067634] (rm_msg_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rm_msg_interfaces/msg/detail/armors__functions.c.o\x1b[0m\n'}
+[1.069006] (rm_msg_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/rm_msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rm_msg_interfaces/msg/detail/tracker__functions.c.o\x1b[0m\n'}
+[1.101149] (-) TimerEvent: {}
+[1.149807] (rm_msg_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[32m\x1b[1mLinking C shared library librm_msg_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[1.167476] (rm_msg_interfaces) StdoutLine: {'line': b'[ 19%] Built target rm_msg_interfaces__rosidl_generator_c\n'}
+[1.172219] (rm_msg_interfaces) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.172470] (rm_msg_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[1.172685] (rm_msg_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.201268] (-) TimerEvent: {}
+[1.243826] (rm_msg_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rm_msg_interfaces__rosidl_typesupport_cpp\x1b[0m\n'}
+[1.252558] (rm_msg_interfaces) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rm_msg_interfaces/msg/tracker__type_support.cpp.o\x1b[0m\n'}
+[1.252798] (rm_msg_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rm_msg_interfaces/msg/armor__type_support.cpp.o\x1b[0m\n'}
+[1.252915] (rm_msg_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rm_msg_interfaces/msg/armors__type_support.cpp.o\x1b[0m\n'}
+[1.255505] (rm_msg_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rm_msg_interfaces__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[1.264862] (rm_msg_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rm_msg_interfaces/msg/detail/armors__type_support.cpp.o\x1b[0m\n'}
+[1.266630] (rm_msg_interfaces) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rm_msg_interfaces/msg/detail/armor__type_support.cpp.o\x1b[0m\n'}
+[1.266861] (rm_msg_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rm_msg_interfaces/msg/detail/tracker__type_support.cpp.o\x1b[0m\n'}
+[1.290325] (rm_msg_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rm_msg_interfaces__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[1.301381] (-) TimerEvent: {}
+[1.302815] (rm_msg_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rm_msg_interfaces/msg/detail/dds_fastrtps/armor__type_support.cpp.o\x1b[0m\n'}
+[1.303125] (rm_msg_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rm_msg_interfaces/msg/detail/dds_fastrtps/tracker__type_support.cpp.o\x1b[0m\n'}
+[1.303201] (rm_msg_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rm_msg_interfaces/msg/detail/dds_fastrtps/armors__type_support.cpp.o\x1b[0m\n'}
+[1.392128] (rm_msg_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rm_msg_interfaces__rosidl_typesupport_c\x1b[0m\n'}
+[1.400648] (rm_msg_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/rm_msg_interfaces/msg/armor__type_support.cpp.o\x1b[0m\n'}
+[1.401464] (-) TimerEvent: {}
+[1.402053] (rm_msg_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/rm_msg_interfaces/msg/tracker__type_support.cpp.o\x1b[0m\n'}
+[1.403385] (rm_msg_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/rm_msg_interfaces/msg/armors__type_support.cpp.o\x1b[0m\n'}
+[1.433874] (rm_msg_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library librm_msg_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[1.445441] (rm_msg_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rm_msg_interfaces__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[1.454770] (rm_msg_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding C object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rm_msg_interfaces/msg/detail/tracker__type_support.c.o\x1b[0m\n'}
+[1.455055] (rm_msg_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rm_msg_interfaces/msg/detail/armors__type_support.c.o\x1b[0m\n'}
+[1.456137] (rm_msg_interfaces) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding C object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rm_msg_interfaces/msg/detail/armor__type_support.c.o\x1b[0m\n'}
+[1.456286] (rm_msg_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rm_msg_interfaces__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[1.467305] (rm_msg_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rm_msg_interfaces/msg/detail/armors__type_support_c.cpp.o\x1b[0m\n'}
+[1.467726] (rm_msg_interfaces) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rm_msg_interfaces/msg/detail/tracker__type_support_c.cpp.o\x1b[0m\n'}
+[1.468054] (rm_msg_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rm_msg_interfaces/msg/detail/armor__type_support_c.cpp.o\x1b[0m\n'}
+[1.469176] (rm_msg_interfaces) StdoutLine: {'line': b'[ 65%] Built target rm_msg_interfaces__rosidl_typesupport_c\n'}
+[1.474580] (rm_msg_interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library librm_msg_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[1.498676] (rm_msg_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking C shared library librm_msg_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[1.501577] (-) TimerEvent: {}
+[1.509174] (rm_msg_interfaces) StdoutLine: {'line': b'[ 70%] Built target rm_msg_interfaces__rosidl_typesupport_cpp\n'}
+[1.519056] (rm_msg_interfaces) StdoutLine: {'line': b'[ 70%] Built target rm_msg_interfaces__rosidl_typesupport_introspection_c\n'}
+[1.589756] (rm_msg_interfaces) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library librm_msg_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[1.601695] (-) TimerEvent: {}
+[1.644691] (rm_msg_interfaces) StdoutLine: {'line': b'[ 72%] Built target rm_msg_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[1.646922] (rm_msg_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library librm_msg_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[1.685719] (rm_msg_interfaces) StdoutLine: {'line': b'[ 74%] Built target rm_msg_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[1.689508] (rm_msg_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library librm_msg_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[1.701783] (-) TimerEvent: {}
+[1.726321] (rm_msg_interfaces) StdoutLine: {'line': b'[ 76%] Built target rm_msg_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[1.736606] (rm_msg_interfaces) StdoutLine: {'line': b'[ 76%] Built target rm_msg_interfaces\n'}
+[1.745693] (rm_msg_interfaces) StdoutLine: {'line': b'[ 78%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[1.801875] (-) TimerEvent: {}
+[1.902106] (-) TimerEvent: {}
+[2.002339] (-) TimerEvent: {}
+[2.075307] (rm_msg_interfaces) StdoutLine: {'line': b'[ 78%] Built target rm_msg_interfaces__py\n'}
+[2.081527] (rm_msg_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rm_msg_interfaces__rosidl_generator_py\x1b[0m\n'}
+[2.088643] (rm_msg_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding C object CMakeFiles/rm_msg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rm_msg_interfaces/msg/_armor_s.c.o\x1b[0m\n'}
+[2.090297] (rm_msg_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/rm_msg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rm_msg_interfaces/msg/_tracker_s.c.o\x1b[0m\n'}
+[2.090963] (rm_msg_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/rm_msg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rm_msg_interfaces/msg/_armors_s.c.o\x1b[0m\n'}
+[2.102458] (-) TimerEvent: {}
+[2.172200] (rm_msg_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/rm_msg_interfaces/librm_msg_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[2.192808] (rm_msg_interfaces) StdoutLine: {'line': b'[ 87%] Built target rm_msg_interfaces__rosidl_generator_py\n'}
+[2.197578] (rm_msg_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rm_msg_interfaces__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[2.197805] (rm_msg_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rm_msg_interfaces__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[2.197946] (rm_msg_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rm_msg_interfaces__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[2.202606] (-) TimerEvent: {}
+[2.203930] (rm_msg_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/rm_msg_interfaces/_rm_msg_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[2.204017] (rm_msg_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/rm_msg_interfaces/_rm_msg_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[2.204213] (rm_msg_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/rm_msg_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/rm_msg_interfaces/_rm_msg_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[2.259411] (rm_msg_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/rm_msg_interfaces/rm_msg_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.259525] (rm_msg_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/rm_msg_interfaces/rm_msg_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.259566] (rm_msg_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/rm_msg_interfaces/rm_msg_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.279314] (rm_msg_interfaces) StdoutLine: {'line': b'[100%] Built target rm_msg_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[2.279547] (rm_msg_interfaces) StdoutLine: {'line': b'[100%] Built target rm_msg_interfaces__rosidl_typesupport_c__pyext\n'}
+[2.279589] (rm_msg_interfaces) StdoutLine: {'line': b'[100%] Built target rm_msg_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[2.285102] (rm_msg_interfaces) CommandEnded: {'returncode': 0}
+[2.302674] (-) TimerEvent: {}
+[2.326734] (rm_msg_interfaces) JobProgress: {'identifier': 'rm_msg_interfaces', 'progress': 'install'}
+[2.327349] (rm_msg_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/rm_version/build/rm_msg_interfaces'], 'cwd': '/rm_version/build/rm_msg_interfaces', 'env': OrderedDict([('LANGUAGE', 'en_US:en'), ('HOSTNAME', 'docker-desktop'), ('GIT_ASKPASS', '/root/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/ros_ws/install/ros2_video/lib:/ros_ws/install/rm_serial_driver/lib:/ros_ws/install/mindvision_camera/lib:/ros_ws/install/hik_camera/lib:/ros_ws/install/armor_tracker/lib:/ros_ws/install/armor_detector/lib:/ros_ws/install/auto_aim_interfaces/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/rm_version'), ('LESS', '-R'), ('TERM_PROGRAM_VERSION', '1.84.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-ecc8b337-067c-407e-8f67-cd00783454bc.sock'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node'), ('REMOTE_CONTAINERS', 'true'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/ros_ws/install'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-71b88171-ae69-4420-9007-f93baf61aa9b.sock'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USER_ZDOTDIR', '/root'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/root/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-71b88171-ae69-4420-9007-f93baf61aa9b.sock","/root/.gnupg/S.gpg-agent"]'), ('LANG', 'en_US.UTF-8'), ('VSCODE_INJECTION', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-acaa61e502.sock'), ('AMENT_PREFIX_PATH', '/ros_ws/install/ros2_video:/ros_ws/install/rm_vision_bringup:/ros_ws/install/rm_serial_driver:/ros_ws/install/rm_gimbal_description:/ros_ws/install/rm_auto_aim:/ros_ws/install/mindvision_camera:/ros_ws/install/hik_camera:/ros_ws/install/armor_tracker:/ros_ws/install/armor_detector:/ros_ws/install/auto_aim_interfaces:/opt/ros/humble'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-71b88171-ae69-4420-9007-f93baf61aa9b.sock'), ('SHELL', '/bin/zsh'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/rm_version/build/rm_msg_interfaces'), ('ZDOTDIR', '/root'), ('PYTHONPATH', '/ros_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ros_ws/install/ros2_video:/ros_ws/install/rm_vision_bringup:/ros_ws/install/rm_serial_driver:/ros_ws/install/rm_gimbal_description:/ros_ws/install/rm_auto_aim:/ros_ws/install/mindvision_camera:/ros_ws/install/hik_camera:/ros_ws/install/armor_tracker:/ros_ws/install/armor_detector:/ros_ws/install/auto_aim_interfaces:/opt/ros/humble')]), 'shell': False}
+[2.331464] (rm_msg_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.331640] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/share/ament_index/resource_index/rosidl_interfaces/rm_msg_interfaces\n'}
+[2.331789] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces\n'}
+[2.331954] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg\n'}
+[2.332028] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/tracker.h\n'}
+[2.332109] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/armors.h\n'}
+[2.332188] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/armor.h\n'}
+[2.332267] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[2.332348] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail\n'}
+[2.332438] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/tracker__struct.h\n'}
+[2.332518] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armor__functions.c\n'}
+[2.332661] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/tracker__type_support.h\n'}
+[2.332734] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armors__struct.h\n'}
+[2.332818] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armor__type_support.h\n'}
+[2.332904] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armor__struct.h\n'}
+[2.332948] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armors__type_support.h\n'}
+[2.332988] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armor__functions.h\n'}
+[2.333023] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armors__functions.h\n'}
+[2.333057] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/tracker__functions.h\n'}
+[2.333133] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armors__functions.c\n'}
+[2.333234] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/tracker__functions.c\n'}
+[2.333308] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/environment/library_path.sh\n'}
+[2.333403] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/environment/library_path.dsv\n'}
+[2.333479] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/lib/librm_msg_interfaces__rosidl_generator_c.so\n'}
+[2.333560] (rm_msg_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/rm_version/install/rm_msg_interfaces/lib/librm_msg_interfaces__rosidl_generator_c.so" to ""\n'}
+[2.333673] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces\n'}
+[2.333783] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg\n'}
+[2.333904] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[2.334215] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail\n'}
+[2.334311] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/tracker__rosidl_typesupport_fastrtps_c.h\n'}
+[2.334459] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armors__rosidl_typesupport_fastrtps_c.h\n'}
+[2.334523] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armor__rosidl_typesupport_fastrtps_c.h\n'}
+[2.334595] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/lib/librm_msg_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[2.334676] (rm_msg_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/rm_version/install/rm_msg_interfaces/lib/librm_msg_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[2.334811] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces\n'}
+[2.334912] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg\n'}
+[2.334954] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[2.335027] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail\n'}
+[2.335149] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/tracker__type_support.c\n'}
+[2.335229] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armor__rosidl_typesupport_introspection_c.h\n'}
+[2.335350] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armors__type_support.c\n'}
+[2.335417] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armor__type_support.c\n'}
+[2.335496] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armors__rosidl_typesupport_introspection_c.h\n'}
+[2.335566] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/tracker__rosidl_typesupport_introspection_c.h\n'}
+[2.335646] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/lib/librm_msg_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[2.335726] (rm_msg_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/rm_version/install/rm_msg_interfaces/lib/librm_msg_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[2.335806] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/lib/librm_msg_interfaces__rosidl_typesupport_c.so\n'}
+[2.335885] (rm_msg_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/rm_version/install/rm_msg_interfaces/lib/librm_msg_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[2.336116] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces\n'}
+[2.336167] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg\n'}
+[2.336247] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/armors.hpp\n'}
+[2.336326] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/tracker.hpp\n'}
+[2.336407] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/armor.hpp\n'}
+[2.336458] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail\n'}
+[2.336523] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/tracker__traits.hpp\n'}
+[2.336594] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armors__traits.hpp\n'}
+[2.336658] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/tracker__builder.hpp\n'}
+[2.336738] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armor__builder.hpp\n'}
+[2.336816] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armor__struct.hpp\n'}
+[2.336937] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armor__traits.hpp\n'}
+[2.336971] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armors__builder.hpp\n'}
+[2.337001] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/tracker__struct.hpp\n'}
+[2.337032] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armors__struct.hpp\n'}
+[2.337061] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces\n'}
+[2.337138] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg\n'}
+[2.337216] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[2.337295] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail\n'}
+[2.337374] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/tracker__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.337456] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armor__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.337535] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armors__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.337613] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/dds_fastrtps\n'}
+[2.337692] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/lib/librm_msg_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[2.337771] (rm_msg_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/rm_version/install/rm_msg_interfaces/lib/librm_msg_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[2.337849] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces\n'}
+[2.337931] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg\n'}
+[2.338010] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail\n'}
+[2.338090] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armors__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.338169] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armors__type_support.cpp\n'}
+[2.338227] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armor__type_support.cpp\n'}
+[2.338307] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/tracker__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.338384] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/tracker__type_support.cpp\n'}
+[2.338531] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/include/rm_msg_interfaces/rm_msg_interfaces/msg/detail/armor__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.338596] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/lib/librm_msg_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[2.338653] (rm_msg_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/rm_version/install/rm_msg_interfaces/lib/librm_msg_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[2.338702] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/lib/librm_msg_interfaces__rosidl_typesupport_cpp.so\n'}
+[2.338845] (rm_msg_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/rm_version/install/rm_msg_interfaces/lib/librm_msg_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[2.338889] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/environment/pythonpath.sh\n'}
+[2.338938] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/environment/pythonpath.dsv\n'}
+[2.338973] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces-0.0.0-py3.10.egg-info\n'}
+[2.339007] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[2.339039] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[2.339071] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[2.339104] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[2.339136] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces\n'}
+[2.339168] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/rm_msg_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.339202] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/_rm_msg_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[2.339233] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/_rm_msg_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[2.339262] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/msg\n'}
+[2.339291] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/msg/_tracker_s.c\n'}
+[2.339320] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/msg/_armors.py\n'}
+[2.339349] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/msg/_armor_s.c\n'}
+[2.339378] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/msg/_armor.py\n'}
+[2.339422] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/msg/_tracker.py\n'}
+[2.339458] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/msg/_armors_s.c\n'}
+[2.339491] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/msg/__init__.py\n'}
+[2.339521] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/librm_msg_interfaces__rosidl_generator_py.so\n'}
+[2.339553] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/_rm_msg_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[2.339584] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/rm_msg_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.339617] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/__init__.py\n'}
+[2.339647] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/rm_msg_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.358419] (rm_msg_interfaces) StdoutLine: {'line': b"Listing '/rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces'...\n"}
+[2.358524] (rm_msg_interfaces) StdoutLine: {'line': b"Compiling '/rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/__init__.py'...\n"}
+[2.358568] (rm_msg_interfaces) StdoutLine: {'line': b"Listing '/rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/msg'...\n"}
+[2.358601] (rm_msg_interfaces) StdoutLine: {'line': b"Compiling '/rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/msg/__init__.py'...\n"}
+[2.358633] (rm_msg_interfaces) StdoutLine: {'line': b"Compiling '/rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/msg/_armor.py'...\n"}
+[2.358662] (rm_msg_interfaces) StdoutLine: {'line': b"Compiling '/rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/msg/_armors.py'...\n"}
+[2.358692] (rm_msg_interfaces) StdoutLine: {'line': b"Compiling '/rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/msg/_tracker.py'...\n"}
+[2.360848] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/rm_msg_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.361004] (rm_msg_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/rm_msg_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[2.361104] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/rm_msg_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.361243] (rm_msg_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/rm_msg_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[2.361335] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/rm_msg_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.361481] (rm_msg_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages/rm_msg_interfaces/rm_msg_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[2.361562] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/lib/librm_msg_interfaces__rosidl_generator_py.so\n'}
+[2.361731] (rm_msg_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/rm_version/install/rm_msg_interfaces/lib/librm_msg_interfaces__rosidl_generator_py.so" to ""\n'}
+[2.361817] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/msg/Armor.idl\n'}
+[2.361903] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/msg/Armors.idl\n'}
+[2.361992] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/msg/Tracker.idl\n'}
+[2.362116] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/msg/Armor.msg\n'}
+[2.362159] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/msg/Armors.msg\n'}
+[2.362215] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/msg/Tracker.msg\n'}
+[2.362287] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/ament_index/resource_index/package_run_dependencies/rm_msg_interfaces\n'}
+[2.362356] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/ament_index/resource_index/parent_prefix_path/rm_msg_interfaces\n'}
+[2.362483] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/environment/ament_prefix_path.sh\n'}
+[2.362520] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/environment/ament_prefix_path.dsv\n'}
+[2.362575] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/environment/path.sh\n'}
+[2.362653] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/environment/path.dsv\n'}
+[2.362731] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/local_setup.bash\n'}
+[2.362810] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/local_setup.sh\n'}
+[2.362888] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/local_setup.zsh\n'}
+[2.362967] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/local_setup.dsv\n'}
+[2.363038] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/package.dsv\n'}
+[2.363207] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/ament_index/resource_index/packages/rm_msg_interfaces\n'}
+[2.363284] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/export_rm_msg_interfaces__rosidl_generator_cExport.cmake\n'}
+[2.363347] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/export_rm_msg_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[2.363421] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/export_rm_msg_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[2.363566] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/export_rm_msg_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[2.363647] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/rm_msg_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[2.363709] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/rm_msg_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[2.363783] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/rm_msg_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[2.363823] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/rm_msg_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[2.363857] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/export_rm_msg_interfaces__rosidl_generator_cppExport.cmake\n'}
+[2.363888] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/export_rm_msg_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[2.363932] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/export_rm_msg_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[2.363967] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/rm_msg_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[2.363998] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/rm_msg_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[2.364028] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/rm_msg_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[2.364058] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/rm_msg_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[2.364088] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/export_rm_msg_interfaces__rosidl_generator_pyExport.cmake\n'}
+[2.364117] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/export_rm_msg_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[2.364146] (rm_msg_interfaces) StdoutLine: {'line': b'-- Installing: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[2.364177] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.364208] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.364322] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[2.364405] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[2.364476] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[2.364513] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[2.364581] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/rm_msg_interfacesConfig.cmake\n'}
+[2.364651] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake/rm_msg_interfacesConfig-version.cmake\n'}
+[2.364729] (rm_msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/package.xml\n'}
+[2.365276] (rm_msg_interfaces) CommandEnded: {'returncode': 0}
+[2.402763] (-) TimerEvent: {}
+[2.420293] (rm_msg_interfaces) JobEnded: {'identifier': 'rm_msg_interfaces', 'rc': 0}
+[2.422278] (rm_detector) JobStarted: {'identifier': 'rm_detector'}
+[2.425156] (rm_tracker) JobStarted: {'identifier': 'rm_tracker'}
+[2.430412] (rm_detector) JobProgress: {'identifier': 'rm_detector', 'progress': 'cmake'}
+[2.431299] (rm_detector) JobProgress: {'identifier': 'rm_detector', 'progress': 'build'}
+[2.432187] (rm_detector) Command: {'cmd': ['/usr/bin/cmake', '--build', '/rm_version/build/rm_detector', '--', '-j20', '-l20'], 'cwd': '/rm_version/build/rm_detector', 'env': OrderedDict([('LANGUAGE', 'en_US:en'), ('HOSTNAME', 'docker-desktop'), ('GIT_ASKPASS', '/root/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/rm_version/install/rm_msg_interfaces/lib:/ros_ws/install/ros2_video/lib:/ros_ws/install/rm_serial_driver/lib:/ros_ws/install/mindvision_camera/lib:/ros_ws/install/hik_camera/lib:/ros_ws/install/armor_tracker/lib:/ros_ws/install/armor_detector/lib:/ros_ws/install/auto_aim_interfaces/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/rm_version'), ('LESS', '-R'), ('TERM_PROGRAM_VERSION', '1.84.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-ecc8b337-067c-407e-8f67-cd00783454bc.sock'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node'), ('REMOTE_CONTAINERS', 'true'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/ros_ws/install'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-71b88171-ae69-4420-9007-f93baf61aa9b.sock'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USER_ZDOTDIR', '/root'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/root/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-71b88171-ae69-4420-9007-f93baf61aa9b.sock","/root/.gnupg/S.gpg-agent"]'), ('LANG', 'en_US.UTF-8'), ('VSCODE_INJECTION', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-acaa61e502.sock'), ('AMENT_PREFIX_PATH', '/rm_version/install/rm_msg_interfaces:/ros_ws/install/ros2_video:/ros_ws/install/rm_vision_bringup:/ros_ws/install/rm_serial_driver:/ros_ws/install/rm_gimbal_description:/ros_ws/install/rm_auto_aim:/ros_ws/install/mindvision_camera:/ros_ws/install/hik_camera:/ros_ws/install/armor_tracker:/ros_ws/install/armor_detector:/ros_ws/install/auto_aim_interfaces:/opt/ros/humble'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-71b88171-ae69-4420-9007-f93baf61aa9b.sock'), ('SHELL', '/bin/zsh'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/rm_version/build/rm_detector'), ('ZDOTDIR', '/root'), ('PYTHONPATH', '/rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages:/ros_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/rm_version/install/rm_msg_interfaces:/ros_ws/install/ros2_video:/ros_ws/install/rm_vision_bringup:/ros_ws/install/rm_serial_driver:/ros_ws/install/rm_gimbal_description:/ros_ws/install/rm_auto_aim:/ros_ws/install/mindvision_camera:/ros_ws/install/hik_camera:/ros_ws/install/armor_tracker:/ros_ws/install/armor_detector:/ros_ws/install/auto_aim_interfaces:/opt/ros/humble')]), 'shell': False}
+[2.434933] (rm_tracker) JobProgress: {'identifier': 'rm_tracker', 'progress': 'cmake'}
+[2.435109] (rm_tracker) JobProgress: {'identifier': 'rm_tracker', 'progress': 'build'}
+[2.435597] (rm_tracker) Command: {'cmd': ['/usr/bin/cmake', '--build', '/rm_version/build/rm_tracker', '--', '-j20', '-l20'], 'cwd': '/rm_version/build/rm_tracker', 'env': OrderedDict([('LANGUAGE', 'en_US:en'), ('HOSTNAME', 'docker-desktop'), ('GIT_ASKPASS', '/root/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/rm_version/install/rm_msg_interfaces/lib:/ros_ws/install/ros2_video/lib:/ros_ws/install/rm_serial_driver/lib:/ros_ws/install/mindvision_camera/lib:/ros_ws/install/hik_camera/lib:/ros_ws/install/armor_tracker/lib:/ros_ws/install/armor_detector/lib:/ros_ws/install/auto_aim_interfaces/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/rm_version'), ('LESS', '-R'), ('TERM_PROGRAM_VERSION', '1.84.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-ecc8b337-067c-407e-8f67-cd00783454bc.sock'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node'), ('REMOTE_CONTAINERS', 'true'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/ros_ws/install'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-71b88171-ae69-4420-9007-f93baf61aa9b.sock'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USER_ZDOTDIR', '/root'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/root/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-71b88171-ae69-4420-9007-f93baf61aa9b.sock","/root/.gnupg/S.gpg-agent"]'), ('LANG', 'en_US.UTF-8'), ('VSCODE_INJECTION', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-acaa61e502.sock'), ('AMENT_PREFIX_PATH', '/rm_version/install/rm_msg_interfaces:/ros_ws/install/ros2_video:/ros_ws/install/rm_vision_bringup:/ros_ws/install/rm_serial_driver:/ros_ws/install/rm_gimbal_description:/ros_ws/install/rm_auto_aim:/ros_ws/install/mindvision_camera:/ros_ws/install/hik_camera:/ros_ws/install/armor_tracker:/ros_ws/install/armor_detector:/ros_ws/install/auto_aim_interfaces:/opt/ros/humble'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-71b88171-ae69-4420-9007-f93baf61aa9b.sock'), ('SHELL', '/bin/zsh'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/rm_version/build/rm_tracker'), ('ZDOTDIR', '/root'), ('PYTHONPATH', '/rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages:/ros_ws/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/rm_version/install/rm_msg_interfaces:/ros_ws/install/ros2_video:/ros_ws/install/rm_vision_bringup:/ros_ws/install/rm_serial_driver:/ros_ws/install/rm_gimbal_description:/ros_ws/install/rm_auto_aim:/ros_ws/install/mindvision_camera:/ros_ws/install/hik_camera:/ros_ws/install/armor_tracker:/ros_ws/install/armor_detector:/ros_ws/install/auto_aim_interfaces:/opt/ros/humble')]), 'shell': False}
+[2.446731] (rm_detector) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.4 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[2.448618] (rm_tracker) StdoutLine: {'line': b'-- Found rm_msg_interfaces: 0.0.0 (/rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake)\n'}
+[2.502860] (-) TimerEvent: {}
+[2.527479] (rm_detector) StdoutLine: {'line': b'-- Found rm_msg_interfaces: 0.0.0 (/rm_version/install/rm_msg_interfaces/share/rm_msg_interfaces/cmake)\n'}
+[2.536041] (rm_tracker) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.537418] (rm_tracker) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.540374] (rm_detector) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.540571] (rm_tracker) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.541637] (rm_detector) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.544909] (rm_detector) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.546815] (rm_tracker) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.550793] (rm_detector) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.555167] (rm_tracker) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.559275] (rm_detector) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.602950] (-) TimerEvent: {}
+[2.648812] (rm_tracker) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.4 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[2.703051] (-) TimerEvent: {}
+[2.711829] (rm_tracker) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.713171] (rm_tracker) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.716095] (rm_detector) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.717018] (rm_detector) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.770521] (rm_tracker) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.774408] (rm_detector) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.803146] (-) TimerEvent: {}
+[2.903378] (-) TimerEvent: {}
+[3.003615] (-) TimerEvent: {}
+[3.019357] (rm_tracker) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[3.020178] (rm_tracker) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[3.026800] (rm_detector) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[3.027618] (rm_detector) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[3.103717] (-) TimerEvent: {}
+[3.178568] (rm_tracker) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.183805] (rm_tracker) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[3.184083] (rm_tracker) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /rm_version/src/rm_tracker/include\n'}
+[3.184171] (rm_tracker) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[3.184337] (rm_tracker) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.184576] (rm_tracker) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.184928] (rm_tracker) StdoutLine: {'line': b"-- Added test 'clang_format' to check C / C++ code style\n"}
+[3.185865] (rm_tracker) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.187062] (rm_detector) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.194793] (rm_detector) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[3.195000] (rm_detector) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /rm_version/src/rm_detector/include\n'}
+[3.195161] (rm_detector) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[3.195219] (rm_detector) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[3.195254] (rm_tracker) StdoutLine: {'line': b'-- Generating done\n'}
+[3.195326] (rm_detector) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.195505] (rm_detector) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[3.195643] (rm_detector) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.196091] (rm_detector) StdoutLine: {'line': b"-- Added test 'clang_format' to check C / C++ code style\n"}
+[3.196196] (rm_tracker) StdoutLine: {'line': b'-- Build files have been written to: /rm_version/build/rm_tracker\n'}
+[3.199978] (rm_detector) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.203787] (-) TimerEvent: {}
+[3.208646] (rm_tracker) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rm_tracker_node\x1b[0m\n'}
+[3.209944] (rm_tracker) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rm_tracker\x1b[0m\n'}
+[3.217037] (rm_tracker) StdoutLine: {'line': b'[ 33%] Built target rm_tracker_node\n'}
+[3.218192] (rm_detector) StdoutLine: {'line': b'-- Generating done\n'}
+[3.219500] (rm_detector) StdoutLine: {'line': b'-- Build files have been written to: /rm_version/build/rm_detector\n'}
+[3.224372] (rm_tracker) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/rm_tracker.dir/src/extended_kalman_filiter.cpp.o\x1b[0m\n'}
+[3.224563] (rm_tracker) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/rm_tracker.dir/src/tracker.cpp.o\x1b[0m\n'}
+[3.225066] (rm_tracker) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/rm_tracker.dir/src/tracker_node.cpp.o\x1b[0m\n'}
+[3.235583] (rm_detector) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rm_detector_node\x1b[0m\n'}
+[3.245093] (rm_detector) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rm_detector\x1b[0m\n'}
+[3.245376] (rm_detector) StdoutLine: {'line': b'[ 25%] Built target rm_detector_node\n'}
+[3.262046] (rm_detector) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/rm_detector.dir/src/detector_node.cpp.o\x1b[0m\n'}
+[3.303895] (-) TimerEvent: {}
+[3.404133] (-) TimerEvent: {}
+[3.424937] (rm_tracker) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/rm_version/src/rm_tracker/src/tracker_node.cpp:1\x1b[m\x1b[K:\n'}
+[3.425193] (rm_tracker) StderrLine: {'line': b'\x1b[01m\x1b[K/rm_version/src/rm_tracker/include/tracker_node.hpp:21:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Krm_msg_interfaces/srv/tracker.hpp: No such file or directory\n'}
+[3.425293] (rm_tracker) StderrLine: {'line': b'   21 | #include \x1b[01;31m\x1b[K"rm_msg_interfaces/srv/tracker.hpp"\x1b[m\x1b[K\n'}
+[3.425364] (rm_tracker) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.425455] (rm_tracker) StderrLine: {'line': b'compilation terminated.\n'}
+[3.429349] (rm_tracker) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/rm_tracker.dir/build.make:104: CMakeFiles/rm_tracker.dir/src/tracker_node.cpp.o] Error 1\n'}
+[3.429464] (rm_tracker) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[3.504251] (-) TimerEvent: {}
+[3.604525] (-) TimerEvent: {}
+[3.704780] (-) TimerEvent: {}
+[3.805034] (-) TimerEvent: {}
+[3.905279] (-) TimerEvent: {}
+[4.005531] (-) TimerEvent: {}
+[4.105785] (-) TimerEvent: {}
+[4.206055] (-) TimerEvent: {}
+[4.306387] (-) TimerEvent: {}
+[4.406656] (-) TimerEvent: {}
+[4.506910] (-) TimerEvent: {}
+[4.607166] (-) TimerEvent: {}
+[4.707437] (-) TimerEvent: {}
+[4.807704] (-) TimerEvent: {}
+[4.907963] (-) TimerEvent: {}
+[5.008220] (-) TimerEvent: {}
+[5.108483] (-) TimerEvent: {}
+[5.208723] (-) TimerEvent: {}
+[5.309021] (-) TimerEvent: {}
+[5.409351] (-) TimerEvent: {}
+[5.509658] (-) TimerEvent: {}
+[5.609929] (-) TimerEvent: {}
+[5.710180] (-) TimerEvent: {}
+[5.810426] (-) TimerEvent: {}
+[5.910725] (-) TimerEvent: {}
+[6.010975] (-) TimerEvent: {}
+[6.111218] (-) TimerEvent: {}
+[6.211529] (-) TimerEvent: {}
+[6.311798] (-) TimerEvent: {}
+[6.412164] (-) TimerEvent: {}
+[6.512421] (-) TimerEvent: {}
+[6.612682] (-) TimerEvent: {}
+[6.712938] (-) TimerEvent: {}
+[6.813204] (-) TimerEvent: {}
+[6.913661] (-) TimerEvent: {}
+[7.014140] (-) TimerEvent: {}
+[7.114381] (-) TimerEvent: {}
+[7.214624] (-) TimerEvent: {}
+[7.314881] (-) TimerEvent: {}
+[7.415149] (-) TimerEvent: {}
+[7.515436] (-) TimerEvent: {}
+[7.615724] (-) TimerEvent: {}
+[7.715979] (-) TimerEvent: {}
+[7.816254] (-) TimerEvent: {}
+[7.916677] (-) TimerEvent: {}
+[8.016978] (-) TimerEvent: {}
+[8.117326] (-) TimerEvent: {}
+[8.217621] (-) TimerEvent: {}
+[8.317856] (-) TimerEvent: {}
+[8.418106] (-) TimerEvent: {}
+[8.462178] (rm_tracker) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/rm_tracker.dir/all] Error 2\n'}
+[8.462336] (rm_tracker) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[8.463379] (rm_tracker) CommandEnded: {'returncode': 2}
+[8.484203] (rm_tracker) JobEnded: {'identifier': 'rm_tracker', 'rc': 2}
+[8.518345] (-) TimerEvent: {}
+[8.618863] (-) TimerEvent: {}
+[8.719232] (-) TimerEvent: {}
+[8.819612] (-) TimerEvent: {}
+[8.919884] (-) TimerEvent: {}
+[9.020156] (-) TimerEvent: {}
+[9.120416] (-) TimerEvent: {}
+[9.220714] (-) TimerEvent: {}
+[9.320950] (-) TimerEvent: {}
+[9.421199] (-) TimerEvent: {}
+[9.521445] (-) TimerEvent: {}
+[9.566293] (rm_detector) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library librm_detector.so\x1b[0m\n'}
+[9.621538] (-) TimerEvent: {}
+[9.721802] (-) TimerEvent: {}
+[9.822048] (-) TimerEvent: {}
+[9.922301] (-) TimerEvent: {}
+[9.946740] (rm_detector) StdoutLine: {'line': b'[100%] Built target rm_detector\n'}
+[9.952672] (rm_detector) JobEnded: {'identifier': 'rm_detector', 'rc': 'SIGINT'}
+[9.954203] (-) EventReactorShutdown: {}

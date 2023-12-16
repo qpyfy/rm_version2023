@@ -1,0 +1,17 @@
+/rm_version/install/ros2_static_tf_node/lib/ros2_static_tf_node/ros2_static_tf_node_node
+/rm_version/install/ros2_static_tf_node/share/ament_index/resource_index/package_run_dependencies/ros2_static_tf_node
+/rm_version/install/ros2_static_tf_node/share/ament_index/resource_index/parent_prefix_path/ros2_static_tf_node
+/rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/environment/ament_prefix_path.sh
+/rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/environment/ament_prefix_path.dsv
+/rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/environment/path.sh
+/rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/environment/path.dsv
+/rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/local_setup.bash
+/rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/local_setup.sh
+/rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/local_setup.zsh
+/rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/local_setup.dsv
+/rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/package.dsv
+/rm_version/install/ros2_static_tf_node/share/ament_index/resource_index/packages/ros2_static_tf_node
+/rm_version/install/ros2_static_tf_node/share/ament_index/resource_index/rclcpp_components/ros2_static_tf_node
+/rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/cmake/ros2_static_tf_nodeConfig.cmake
+/rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/cmake/ros2_static_tf_nodeConfig-version.cmake
+/rm_version/install/ros2_static_tf_node/share/ros2_static_tf_node/package.xml

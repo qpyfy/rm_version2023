@@ -19,6 +19,10 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/rm_version/build/rm_msg_interfaces/rosidl_generator_cpp/rm_msg_interfaces/msg/detail/armors__builder.hpp" "/rm_version/build/rm_msg_interfaces/rosidl_generator_cpp/rm_msg_interfaces/msg/armor.hpp"
   "/rm_version/build/rm_msg_interfaces/rosidl_generator_cpp/rm_msg_interfaces/msg/detail/armors__struct.hpp" "/rm_version/build/rm_msg_interfaces/rosidl_generator_cpp/rm_msg_interfaces/msg/armor.hpp"
   "/rm_version/build/rm_msg_interfaces/rosidl_generator_cpp/rm_msg_interfaces/msg/detail/armors__traits.hpp" "/rm_version/build/rm_msg_interfaces/rosidl_generator_cpp/rm_msg_interfaces/msg/armor.hpp"
+  "/rm_version/build/rm_msg_interfaces/rosidl_generator_cpp/rm_msg_interfaces/msg/detail/tracker__builder.hpp" "/rm_version/build/rm_msg_interfaces/rosidl_generator_cpp/rm_msg_interfaces/msg/armor.hpp"
+  "/rm_version/build/rm_msg_interfaces/rosidl_generator_cpp/rm_msg_interfaces/msg/detail/tracker__struct.hpp" "/rm_version/build/rm_msg_interfaces/rosidl_generator_cpp/rm_msg_interfaces/msg/armor.hpp"
+  "/rm_version/build/rm_msg_interfaces/rosidl_generator_cpp/rm_msg_interfaces/msg/detail/tracker__traits.hpp" "/rm_version/build/rm_msg_interfaces/rosidl_generator_cpp/rm_msg_interfaces/msg/armor.hpp"
+  "/rm_version/build/rm_msg_interfaces/rosidl_generator_cpp/rm_msg_interfaces/msg/tracker.hpp" "/rm_version/build/rm_msg_interfaces/rosidl_generator_cpp/rm_msg_interfaces/msg/armor.hpp"
   )
 
 

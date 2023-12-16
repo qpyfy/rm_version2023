@@ -1,0 +1,18 @@
+[01m[K/rm_version/src/rm_tracker/src/tracker_node.cpp:[m[K In member function ‘[01m[Kstd::shared_ptr<rm_auto_aim::Tracker> rm_auto_aim::ArmorTrackerNode::initTracker()[m[K’:
+[01m[K/rm_version/src/rm_tracker/src/tracker_node.cpp:98:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktracker[m[K’ was not declared in this scope; did you mean ‘[01m[KTracker[m[K’?
+   98 |         [01;31m[Ktracker[m[K->max_match_distance = this->declare_parameter("max_match_distance", 100.0);
+      |         [01;31m[K^~~~~~~[m[K
+      |         [32m[KTracker[m[K
+In file included from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:56[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp_components/rclcpp_components/register_node_macro.hpp:18[m[K,
+                 from [01m[K/rm_version/src/rm_tracker/src/tracker_node.cpp:195[m[K:
+[01m[K/rm_version/src/rm_tracker/src/tracker_node.cpp:[m[K At global scope:
+[01m[K/rm_version/src/rm_tracker/src/tracker_node.cpp:196:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+  196 | [01;31m[KRCLCPP_COMPONENTS_REGISTER_NODE[m[K(rm_auto_aim::ArmorTrackerNode)
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_tracker/src/tracker_node.cpp:8:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+    8 | [01;36m[K{[m[K
+      | [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/rm_tracker.dir/build.make:104: CMakeFiles/rm_tracker.dir/src/tracker_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/rm_tracker.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

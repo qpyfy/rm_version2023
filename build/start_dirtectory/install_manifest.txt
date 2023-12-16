@@ -1,0 +1,17 @@
+/rm_version/install/start_dirtectory/share/start_dirtectory/launch/test.launch.py
+/rm_version/install/start_dirtectory/share/start_dirtectory/config/launch_param.yaml
+/rm_version/install/start_dirtectory/share/ament_index/resource_index/package_run_dependencies/start_dirtectory
+/rm_version/install/start_dirtectory/share/ament_index/resource_index/parent_prefix_path/start_dirtectory
+/rm_version/install/start_dirtectory/share/start_dirtectory/environment/ament_prefix_path.sh
+/rm_version/install/start_dirtectory/share/start_dirtectory/environment/ament_prefix_path.dsv
+/rm_version/install/start_dirtectory/share/start_dirtectory/environment/path.sh
+/rm_version/install/start_dirtectory/share/start_dirtectory/environment/path.dsv
+/rm_version/install/start_dirtectory/share/start_dirtectory/local_setup.bash
+/rm_version/install/start_dirtectory/share/start_dirtectory/local_setup.sh
+/rm_version/install/start_dirtectory/share/start_dirtectory/local_setup.zsh
+/rm_version/install/start_dirtectory/share/start_dirtectory/local_setup.dsv
+/rm_version/install/start_dirtectory/share/start_dirtectory/package.dsv
+/rm_version/install/start_dirtectory/share/ament_index/resource_index/packages/start_dirtectory
+/rm_version/install/start_dirtectory/share/start_dirtectory/cmake/start_dirtectoryConfig.cmake
+/rm_version/install/start_dirtectory/share/start_dirtectory/cmake/start_dirtectoryConfig-version.cmake
+/rm_version/install/start_dirtectory/share/start_dirtectory/package.xml

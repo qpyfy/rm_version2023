@@ -1,0 +1,6 @@
+Invoking command in '/rm_version/build/start_dirtectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /rm_version/src/start_dirtectory -DCMAKE_INSTALL_PREFIX=/rm_version/install/start_dirtectory
+Invoked command in '/rm_version/build/start_dirtectory' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /rm_version/src/start_dirtectory -DCMAKE_INSTALL_PREFIX=/rm_version/install/start_dirtectory
+Invoking command in '/rm_version/build/start_dirtectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /rm_version/build/start_dirtectory -- -j20 -l20
+Invoked command in '/rm_version/build/start_dirtectory' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /rm_version/build/start_dirtectory -- -j20 -l20
+Invoking command in '/rm_version/build/start_dirtectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /rm_version/build/start_dirtectory
+Invoked command in '/rm_version/build/start_dirtectory' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /rm_version/build/start_dirtectory
