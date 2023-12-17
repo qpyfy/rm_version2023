@@ -1,0 +1,8 @@
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Krm_serial_node.h: No such file or directory
+    1 | #include [01;31m[K<rm_serial_node.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/rm_serial.dir/build.make:76: CMakeFiles/rm_serial.dir/src/rm_serial_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/rm_serial.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

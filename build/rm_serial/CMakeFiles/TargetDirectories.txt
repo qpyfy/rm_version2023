@@ -1,0 +1,11 @@
+/rm_version/build/rm_serial/CMakeFiles/uninstall.dir
+/rm_version/build/rm_serial/CMakeFiles/rm_serial_uninstall.dir
+/rm_version/build/rm_serial/CMakeFiles/rm_serial.dir
+/rm_version/build/rm_serial/CMakeFiles/rm_serial_node.dir
+/rm_version/build/rm_serial/CMakeFiles/test.dir
+/rm_version/build/rm_serial/CMakeFiles/edit_cache.dir
+/rm_version/build/rm_serial/CMakeFiles/rebuild_cache.dir
+/rm_version/build/rm_serial/CMakeFiles/list_install_components.dir
+/rm_version/build/rm_serial/CMakeFiles/install.dir
+/rm_version/build/rm_serial/CMakeFiles/install/local.dir
+/rm_version/build/rm_serial/CMakeFiles/install/strip.dir

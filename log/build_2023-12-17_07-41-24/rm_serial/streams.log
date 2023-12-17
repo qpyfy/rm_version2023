@@ -1,0 +1,35 @@
+[0.013s] Invoking command in '/rm_version/build/rm_serial': AMENT_PREFIX_PATH=/rm_version/install/rm_msg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/rm_version/install/rm_msg_interfaces:/ros_ws/install/ros2_video:/ros_ws/install/rm_vision_bringup:/ros_ws/install/rm_serial_driver:/ros_ws/install/rm_gimbal_description:/ros_ws/install/rm_auto_aim:/ros_ws/install/mindvision_camera:/ros_ws/install/hik_camera:/ros_ws/install/armor_tracker:/ros_ws/install/armor_detector:/ros_ws/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/rm_version/install/rm_msg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /rm_version/build/rm_serial -- -j20 -l20
+[0.034s] [35m[1mConsolidate compiler generated dependencies of target rm_serial[0m
+[0.041s] [ 50%] Built target rm_serial_node
+[0.044s] [ 75%] [32mBuilding CXX object CMakeFiles/rm_serial.dir/src/rm_serial_node.cpp.o[0m
+[1.452s] [01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:[m[K In constructor ‘[01m[KSerial_Node::Serial_Node(const rclcpp::NodeOptions&)[m[K’:
+[1.452s] [01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:44:45:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid Serial_Node::serial_receive(std::queue<unsigned char>&)[m[K’
+[1.452s]    44 |     std::thread receive_thread([01;31m[KSerial_Node::serial_receive[m[K,this, std::ref(fd), std::ref(fifo));
+[1.452s]       |                                [01;31m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[1.452s] In file included from [01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:1[m[K:
+[1.452s] [01m[K/rm_version/src/rm_serial/src/../include/rm_serial_node.hpp:118:6:[m[K [01;36m[Knote: [m[Kdeclared here
+[1.452s]   118 | void [01;36m[Kserial_receive[m[K(std::queue<unsigned char>& fifo);
+[1.452s]       |      [01;36m[K^~~~~~~~~~~~~~[m[K
+[1.452s] [01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:46:53:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid Serial_Node::unpack_feedbackframe(std::queue<unsigned char>&)[m[K’
+[1.452s]    46 |     std::thread unpack_feedback_thread([01;31m[KSerial_Node::unpack_feedbackframe[m[K,this, std::ref(fifo));
+[1.452s]       |                                        [01;31m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[1.452s] In file included from [01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:1[m[K:
+[1.452s] [01m[K/rm_version/src/rm_serial/src/../include/rm_serial_node.hpp:119:6:[m[K [01;36m[Knote: [m[Kdeclared here
+[1.452s]   119 | void [01;36m[Kunpack_feedbackframe[m[K(std::queue<unsigned char>& fifo);
+[1.453s]       |      [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[1.455s] [01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:[m[K In member function ‘[01m[Kint Serial_Node::UART0_Set(int, int, int, int, int)[m[K’:
+[1.455s] [01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:275:20:[m[K [01;31m[Kerror: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Klong unsigned int[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Werror=sign-compare]8;;[m[K]
+[1.455s]   275 |     for ( i= 0;  [01;31m[Ki < sizeof(speed_arr) / sizeof(int)[m[K;  i++)
+[1.455s]       |                  [01;31m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.456s] [01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:260:11:[m[K [01;31m[Kerror: [m[Kunused variable ‘[01m[Kstatus[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Werror=unused-variable]8;;[m[K]
+[1.456s]   260 |     int   [01;31m[Kstatus[m[K;
+[1.456s]       |           [01;31m[K^~~~~~[m[K
+[1.456s] [01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:[m[K In member function ‘[01m[Kint Serial_Node::UART0_Init(int, int, int, int, int)[m[K’:
+[1.456s] [01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:400:9:[m[K [01;31m[Kerror: [m[Kunused variable ‘[01m[Kerr[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Werror=unused-variable]8;;[m[K]
+[1.456s]   400 |     int [01;31m[Kerr[m[K=0;
+[1.456s]       |         [01;31m[K^~~[m[K
+[2.749s] cc1plus: all warnings being treated as errors
+[2.762s] gmake[2]: *** [CMakeFiles/rm_serial.dir/build.make:76: CMakeFiles/rm_serial.dir/src/rm_serial_node.cpp.o] Error 1
+[2.762s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/rm_serial.dir/all] Error 2
+[2.762s] gmake: *** [Makefile:146: all] Error 2
+[2.764s] Invoked command in '/rm_version/build/rm_serial' returned '2': AMENT_PREFIX_PATH=/rm_version/install/rm_msg_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/rm_version/install/rm_msg_interfaces:/ros_ws/install/ros2_video:/ros_ws/install/rm_vision_bringup:/ros_ws/install/rm_serial_driver:/ros_ws/install/rm_gimbal_description:/ros_ws/install/rm_auto_aim:/ros_ws/install/mindvision_camera:/ros_ws/install/hik_camera:/ros_ws/install/armor_tracker:/ros_ws/install/armor_detector:/ros_ws/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/rm_version/install/rm_msg_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/rm_version/install/rm_msg_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /rm_version/build/rm_serial -- -j20 -l20

@@ -1,0 +1,3 @@
+[35m[1mConsolidate compiler generated dependencies of target rm_serial[0m
+[ 50%] Built target rm_serial_node
+[ 75%] [32mBuilding CXX object CMakeFiles/rm_serial.dir/src/rm_serial_node.cpp.o[0m

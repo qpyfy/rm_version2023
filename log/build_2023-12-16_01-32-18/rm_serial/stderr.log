@@ -1,0 +1,112 @@
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:7:8:[m[K [01;31m[Kerror: [m[K‘[01m[KArmorDetecting[m[K’ does not name a type
+    7 | extern [01;31m[KArmorDetecting[m[K armorDecting;
+      |        [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:13:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kmutex[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a type
+   13 | std::[01;31m[Kmutex[m[K fifo_source_mutex;
+      |      [01;31m[K^~~~~[m[K
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:2:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::mutex[m[K’ is defined in header ‘[01m[K<mutex>[m[K’; did you forget to ‘[01m[K#include <mutex>[m[K’?
+    1 | #include "../include/rm_serial_node.hpp"
+  +++ |+[32m[K#include <mutex>[m[K
+    2 | 
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:[m[K In function ‘[01m[Kvoid Serial_thread()[m[K’:
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:39:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kthread[m[K’ is not a member of ‘[01m[Kstd[m[K’
+   39 |     std::[01;31m[Kthread[m[K send_thread(serial_send, std::ref(fd));
+      |          [01;31m[K^~~~~~[m[K
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:2:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::thread[m[K’ is defined in header ‘[01m[K<thread>[m[K’; did you forget to ‘[01m[K#include <thread>[m[K’?
+    1 | #include "../include/rm_serial_node.hpp"
+  +++ |+[32m[K#include <thread>[m[K
+    2 | 
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:41:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kthread[m[K’ is not a member of ‘[01m[Kstd[m[K’
+   41 |     std::[01;31m[Kthread[m[K receive_thread(serial_receive, std::ref(fd), std::ref(fifo));
+      |          [01;31m[K^~~~~~[m[K
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:41:10:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::thread[m[K’ is defined in header ‘[01m[K<thread>[m[K’; did you forget to ‘[01m[K#include <thread>[m[K’?
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:43:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kthread[m[K’ is not a member of ‘[01m[Kstd[m[K’
+   43 |     std::[01;31m[Kthread[m[K unpack_feedback_thread(unpack_feedbackframe, std::ref(fifo));
+      |          [01;31m[K^~~~~~[m[K
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:43:10:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::thread[m[K’ is defined in header ‘[01m[K<thread>[m[K’; did you forget to ‘[01m[K#include <thread>[m[K’?
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:45:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksend_thread[m[K’ was not declared in this scope; did you mean ‘[01m[KSerial_thread[m[K’?
+   45 |     [01;31m[Ksend_thread[m[K.join();
+      |     [01;31m[K^~~~~~~~~~~[m[K
+      |     [32m[KSerial_thread[m[K
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:46:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kreceive_thread[m[K’ was not declared in this scope
+   46 |     [01;31m[Kreceive_thread[m[K.join();
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:47:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kunpack_feedback_thread[m[K’ was not declared in this scope; did you mean ‘[01m[Kunpack_feedbackframe[m[K’?
+   47 |     [01;31m[Kunpack_feedback_thread[m[K.join();
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kunpack_feedbackframe[m[K
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:[m[K In function ‘[01m[Kvoid serial_send(int&)[m[K’:
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:57:12:[m[K [01;31m[Kerror: [m[K‘[01m[KarmorDecting[m[K’ was not declared in this scope
+   57 |     while ([01;31m[KarmorDecting[m[K.get_bRun())
+      |            [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:59:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kunique_lock[m[K’ is not a member of ‘[01m[Kstd[m[K’
+   59 |         std::[01;31m[Kunique_lock[m[K<std::mutex> progress_lock(Globalmutex,std::defer_lock);
+      |              [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:59:14:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::unique_lock[m[K’ is defined in header ‘[01m[K<mutex>[m[K’; did you forget to ‘[01m[K#include <mutex>[m[K’?
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:59:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kmutex[m[K’ is not a member of ‘[01m[Kstd[m[K’
+   59 |         std::unique_lock<std::[01;31m[Kmutex[m[K> progress_lock(Globalmutex,std::defer_lock);
+      |                               [01;31m[K^~~~~[m[K
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:59:31:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::mutex[m[K’ is defined in header ‘[01m[K<mutex>[m[K’; did you forget to ‘[01m[K#include <mutex>[m[K’?
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:59:52:[m[K [01;31m[Kerror: [m[K‘[01m[KGlobalmutex[m[K’ was not declared in this scope
+   59 |         std::unique_lock<std::mutex> progress_lock([01;31m[KGlobalmutex[m[K,std::defer_lock);
+      |                                                    [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:59:69:[m[K [01;31m[Kerror: [m[K‘[01m[Kdefer_lock[m[K’ is not a member of ‘[01m[Kstd[m[K’
+   59 |         std::unique_lock<std::mutex> progress_lock(Globalmutex,std::[01;31m[Kdefer_lock[m[K);
+      |                                                                     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:59:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kprogress_lock[m[K’ was not declared in this scope
+   59 |         std::unique_lock<std::mutex> [01;31m[Kprogress_lock[m[K(Globalmutex,std::defer_lock);
+      |                                      [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:60:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcondition_serial[m[K’ was not declared in this scope
+   60 |         [01;31m[Kcondition_serial[m[K.wait(progress_lock);
+      |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:[m[K In function ‘[01m[Kvoid serial_receive(int&, std::queue<unsigned char>&)[m[K’:
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:100:12:[m[K [01;31m[Kerror: [m[K‘[01m[KarmorDecting[m[K’ was not declared in this scope
+  100 |     while ([01;31m[KarmorDecting[m[K.get_bRun())
+      |            [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:104:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kunique_lock[m[K’ is not a member of ‘[01m[Kstd[m[K’
+  104 |             std::[01;31m[Kunique_lock[m[K<std::mutex> push_fifo_lock(fifo_source_mutex);
+      |                  [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:104:18:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::unique_lock[m[K’ is defined in header ‘[01m[K<mutex>[m[K’; did you forget to ‘[01m[K#include <mutex>[m[K’?
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:104:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kmutex[m[K’ is not a member of ‘[01m[Kstd[m[K’
+  104 |             std::unique_lock<std::[01;31m[Kmutex[m[K> push_fifo_lock(fifo_source_mutex);
+      |                                   [01;31m[K^~~~~[m[K
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:104:35:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::mutex[m[K’ is defined in header ‘[01m[K<mutex>[m[K’; did you forget to ‘[01m[K#include <mutex>[m[K’?
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:104:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kfifo_source_mutex[m[K’ was not declared in this scope
+  104 |             std::unique_lock<std::mutex> push_fifo_lock([01;31m[Kfifo_source_mutex[m[K);
+      |                                                         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:104:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kpush_fifo_lock[m[K’ was not declared in this scope
+  104 |             std::unique_lock<std::mutex> [01;31m[Kpush_fifo_lock[m[K(fifo_source_mutex);
+      |                                          [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:[m[K In function ‘[01m[Kvoid unpack_feedbackframe(std::queue<unsigned char>&)[m[K’:
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:130:12:[m[K [01;31m[Kerror: [m[K‘[01m[KarmorDecting[m[K’ was not declared in this scope
+  130 |     while ([01;31m[KarmorDecting[m[K.get_bRun())
+      |            [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:135:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kunique_lock[m[K’ is not a member of ‘[01m[Kstd[m[K’
+  135 |             std::[01;31m[Kunique_lock[m[K<std::mutex> unpack_fifo_lock(fifo_source_mutex);
+      |                  [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:135:18:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::unique_lock[m[K’ is defined in header ‘[01m[K<mutex>[m[K’; did you forget to ‘[01m[K#include <mutex>[m[K’?
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:135:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kmutex[m[K’ is not a member of ‘[01m[Kstd[m[K’
+  135 |             std::unique_lock<std::[01;31m[Kmutex[m[K> unpack_fifo_lock(fifo_source_mutex);
+      |                                   [01;31m[K^~~~~[m[K
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:135:35:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::mutex[m[K’ is defined in header ‘[01m[K<mutex>[m[K’; did you forget to ‘[01m[K#include <mutex>[m[K’?
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:135:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kfifo_source_mutex[m[K’ was not declared in this scope
+  135 |             std::unique_lock<std::mutex> unpack_fifo_lock([01;31m[Kfifo_source_mutex[m[K);
+      |                                                           [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:135:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kunpack_fifo_lock[m[K’ was not declared in this scope
+  135 |             std::unique_lock<std::mutex> [01;31m[Kunpack_fifo_lock[m[K(fifo_source_mutex);
+      |                                          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:[m[K In function ‘[01m[Kint UART0_Set(int, int, int, int, int, int)[m[K’:
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:269:20:[m[K [01;31m[Kerror: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Klong unsigned int[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Werror=sign-compare]8;;[m[K]
+  269 |     for ( i= 0;  [01;31m[Ki < sizeof(speed_arr) / sizeof(int)[m[K;  i++)
+      |                  [01;31m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:254:11:[m[K [01;31m[Kerror: [m[Kunused variable ‘[01m[Kstatus[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Werror=unused-variable]8;;[m[K]
+  254 |     int   [01;31m[Kstatus[m[K;
+      |           [01;31m[K^~~~~~[m[K
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:[m[K In function ‘[01m[Kint UART0_Init(int, int, int, int, int, int)[m[K’:
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:394:9:[m[K [01;31m[Kerror: [m[Kunused variable ‘[01m[Kerr[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Werror=unused-variable]8;;[m[K]
+  394 |     int [01;31m[Kerr[m[K=0;
+      |         [01;31m[K^~~[m[K
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [CMakeFiles/rm_serial.dir/build.make:76: CMakeFiles/rm_serial.dir/src/rm_serial_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/rm_serial.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
