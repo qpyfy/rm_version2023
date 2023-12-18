@@ -32,6 +32,7 @@
 #include <std_srvs/srv/trigger.hpp>
 #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
 #include <visualization_msgs/msg/marker_array.hpp>
+#include <sensor_msgs/msg/joint_state.hpp>
 
 
 #define FALSE -1
@@ -101,16 +102,54 @@ typedef unsigned short uint16_t;
 // }_feedBackFrame;
 class Serial_Node:public rclcpp::Node
 {
+public:
+struct ReceivePacket
+{
+  uint8_t header = 0x5A;
+  uint8_t detect_color : 1;  // 0-red 1-blue
+  bool reset_tracker : 1;
+  uint8_t reserved : 6;
+  float pitch;
+  float yaw;
+  uint16_t checksum = 0;
+} __attribute__((packed));
+
+struct SendPacket
+{
+  uint8_t header = 0xA5;
+  bool tracking : 1;
+  uint8_t id : 3;          // 0-outpost 6-guard 7-base
+  uint8_t armors_num : 3;  // 2-balance 3-outpost 4-normal
+  uint8_t reserved : 1;
+  float x;
+  float y;
+  float z;
+  float yaw;
+  float vx;
+  float vy;
+  float vz;
+  float v_yaw;
+  float r1;
+  float r2;
+  float dz;
+  uint16_t checksum = 0;
+} __attribute__((packed));
+
+
 Serial_Node(const rclcpp::NodeOptions & options);
 void serial_send(rm_msg_interfaces::msg::Tracker msg);
 rclcpp::Subscription<rm_msg_interfaces::msg::Tracker>::SharedPtr tracker_sub_;
+rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr joint_pub_;
 int fd;
+
+inline ReceivePacket fromVector(const std::vector<uint8_t> & data);
+inline std::vector<uint8_t> toVector(const SendPacket & data);
 
 int UART0_Open(char*port);
 void UART0_Close() ;
 int UART0_Set(int speed,int flow_ctrl,int databits,int stopbits,int parity);
 int UART0_Init(int speed,int flow_ctrl,int databits,int stopbits,int parity) ;
-int UART0_Recv(char *rcv_buf,int data_len);
+int UART0_Recv(std::vector<uint8_t>*rcv_buf,int data_len);
 int UART0_Send(char *send_buf,int data_len);
 
 //串口线程(主)函数

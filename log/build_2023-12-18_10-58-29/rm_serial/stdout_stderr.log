@@ -1,0 +1,11 @@
+[35m[1mConsolidate compiler generated dependencies of target rm_serial[0m
+[ 50%] Built target rm_serial_node
+[ 75%] [32mBuilding CXX object CMakeFiles/rm_serial.dir/src/rm_serial_node.cpp.o[0m
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:[m[K In member function ‘[01m[Kvoid Serial_Node::serial_receive(std::queue<unsigned char>&)[m[K’:
+[01m[K/rm_version/src/rm_serial/src/rm_serial_node.cpp:112:27:[m[K [01;31m[Kerror: [m[Kvariable ‘[01m[Kpacket[m[K’ set but not used [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Werror=unused-but-set-variable]8;;[m[K]
+  112 |             ReceivePacket [01;31m[Kpacket[m[K = fromVector(read);
+      |                           [01;31m[K^~~~~~[m[K
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [CMakeFiles/rm_serial.dir/build.make:76: CMakeFiles/rm_serial.dir/src/rm_serial_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/rm_serial.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

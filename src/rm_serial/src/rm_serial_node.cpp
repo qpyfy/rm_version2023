@@ -23,6 +23,7 @@ Serial_Node::Serial_Node(const rclcpp::NodeOptions & options): Node("serial_node
 {
     RCLCPP_INFO(this->get_logger(), "Initializing serial node");
     tracker_sub_ = this->create_subscription<rm_msg_interfaces::msg::Tracker>("tracker", 10, std::bind(&Serial_Node::serial_send, this, std::placeholders::_1));
+    joint_pub_ = this->create_publisher<sensor_msgs::msg::JointState>("joint_states", 10);
     fd = -1;           
     int err;
     std::queue<unsigned char> fifo;
@@ -84,7 +85,7 @@ void Serial_Node::serial_send(rm_msg_interfaces::msg::Tracker msg)
             // crc16    { 2 byte }
             *(unsigned char*)(send_buff + 23) = Get_CRC16_Check_Sum((unsigned char*)(send_buff), 11 , 0xffff);
 
-            UART0_Send((char*)(&send_buff),13);
+            UART0_Send((char*)(&send_buff),25);
 
         std::cout << "send_successfully: ";
         for (int i = 0; i < 13 ; i++)
@@ -101,18 +102,26 @@ void Serial_Node::serial_send(rm_msg_interfaces::msg::Tracker msg)
 
 void Serial_Node::serial_receive(std::queue<unsigned char>& fifo)
 {
-    unsigned char read[50];
+    std::vector<uint8_t> read;
     int len = 0;
     
     while (rclcpp::ok())
     {
-        len = UART0_Recv((char*)read,sizeof(read));
+        len = UART0_Recv(&read,sizeof(read));
         {
+            ReceivePacket packet = fromVector(read);    
             std::unique_lock<std::mutex> push_fifo_lock(fifo_source_mutex);
             for (int i = 0; i < len ; i++)
             {
                 fifo.push(read[i]);
             }
+            sensor_msgs::msg::JointState joint_state;
+            joint_state.header.stamp = this->now();
+            joint_state.name.push_back("pitch_joint");
+            joint_state.name.push_back("yaw_joint");
+            joint_state.position.push_back(packet.pitch);
+            joint_state.position.push_back(packet.yaw);      
+            joint_pub_->publish(joint_state);
         }
         len = 0;
         // std::cout << "receive_successfully: ";
@@ -127,7 +136,7 @@ void Serial_Node::serial_receive(std::queue<unsigned char>& fifo)
 
 
 }
-
+// 解包校验
 void Serial_Node::unpack_feedbackframe(std::queue<unsigned char>& fifo)
 {
     unsigned char read_buff[16] = {};
@@ -415,7 +424,7 @@ int Serial_Node::UART0_Init(int speed,int flow_ctrl,int databits,int stopbits,in
 *                   data_len   一帧数据的长度
 * 出口参数：        正确返回为1，错误返回为0
 *******************************************************************/
-int Serial_Node::UART0_Recv(char *rcv_buf,int data_len)
+int Serial_Node::UART0_Recv(std::vector<uint8_t>* rcv_buf,int data_len)
 {
     int len,fs_sel;
     fd_set fs_read;
@@ -489,7 +498,7 @@ const unsigned char CRC8_TAB[256] =
 	0xe9, 0xb7, 0x55, 0x0b, 0x88, 0xd6, 0x34, 0x6a, 0x2b, 0x75, 0x97, 0xc9, 0x4a, 0x14, 0xf6, 0xa8,
 	0x74, 0x2a, 0xc8, 0x96, 0x15, 0x4b, 0xa9, 0xf7, 0xb6, 0xe8, 0x0a, 0x54, 0xd7, 0x89, 0x6b, 0x35,
 };
-unsigned char Get_CRC8_Check_Sum(unsigned char *pchMessage, unsigned int dwLength, unsigned char ucCRC8)
+unsigned char Serial_Node::Get_CRC8_Check_Sum(unsigned char *pchMessage, unsigned int dwLength, unsigned char ucCRC8)
 {
 	unsigned char ucIndex;
 
@@ -506,7 +515,7 @@ unsigned char Get_CRC8_Check_Sum(unsigned char *pchMessage, unsigned int dwLengt
 ** Input: Data to Verify,Stream length = Data + checksum
 ** Output: True or False (CRC Verify Result)
 */
-unsigned int Verify_CRC8_Check_Sum(unsigned char *pchMessage, unsigned int dwLength)
+unsigned int Serial_Node::Verify_CRC8_Check_Sum(unsigned char *pchMessage, unsigned int dwLength)
 {
 	unsigned char ucExpected = 0;
 
@@ -520,7 +529,7 @@ unsigned int Verify_CRC8_Check_Sum(unsigned char *pchMessage, unsigned int dwLen
 ** Input: Data to CRC and append,Stream length = Data + checksum
 ** Output: True or False (CRC Verify Result)
 */
-void Append_CRC8_Check_Sum(unsigned char *pchMessage, unsigned int dwLength)
+void Serial_Node::Append_CRC8_Check_Sum(unsigned char *pchMessage, unsigned int dwLength)
 {
 	unsigned char ucCRC = 0;
 
@@ -570,7 +579,7 @@ const uint16_t wCRC_Table[256] =
 ** Input: Data to check,Stream length, initialized checksum
 ** Output: CRC checksum
 */
-uint16_t Get_CRC16_Check_Sum(uint8_t *pchMessage, uint32_t dwLength, uint16_t wCRC)
+uint16_t Serial_Node::Get_CRC16_Check_Sum(uint8_t *pchMessage, uint32_t dwLength, uint16_t wCRC)
 {
 	uint8_t chData;
 
@@ -592,7 +601,7 @@ uint16_t Get_CRC16_Check_Sum(uint8_t *pchMessage, uint32_t dwLength, uint16_t wC
 ** Input: Data to Verify,Stream length = Data + checksum
 ** Output: True or False (CRC Verify Result)
 */
-uint32_t Verify_CRC16_Check_Sum(uint8_t *pchMessage, uint32_t dwLength)
+uint32_t Serial_Node::Verify_CRC16_Check_Sum(uint8_t *pchMessage, uint32_t dwLength)
 {
 	uint16_t wExpected = 0;
 
@@ -609,7 +618,7 @@ uint32_t Verify_CRC16_Check_Sum(uint8_t *pchMessage, uint32_t dwLength)
 ** Input: Data to CRC and append,Stream length = Data + checksum
 ** Output: True or False (CRC Verify Result)
 */
-void Append_CRC16_Check_Sum(uint8_t *pchMessage, uint32_t dwLength)
+void Serial_Node::Append_CRC16_Check_Sum(uint8_t *pchMessage, uint32_t dwLength)
 {
 	uint16_t wCRC = 0;
 
@@ -621,4 +630,24 @@ void Append_CRC16_Check_Sum(uint8_t *pchMessage, uint32_t dwLength)
 	wCRC = Get_CRC16_Check_Sum((uint8_t *)pchMessage, dwLength - 2, CRC_INIT);
 	pchMessage[dwLength - 2] = (uint8_t)(wCRC & 0x00ff);
 	pchMessage[dwLength - 1] = (uint8_t)((wCRC >> 8) & 0x00ff);
+
 }
+inline Serial_Node::ReceivePacket Serial_Node::fromVector(const std::vector<uint8_t> & data)
+{
+  ReceivePacket packet;
+  std::copy(data.begin(), data.end(), reinterpret_cast<uint8_t *>(&packet));
+  return packet;
+}
+
+inline std::vector<uint8_t> Serial_Node::toVector(const SendPacket & data)
+{
+  std::vector<uint8_t> packet(sizeof(SendPacket));
+  std::copy(
+    reinterpret_cast<const uint8_t *>(&data),
+    reinterpret_cast<const uint8_t *>(&data) + sizeof(SendPacket), packet.begin());
+  return packet;
+}
+
+#include "rclcpp_components/register_node_macro.hpp"
+
+RCLCPP_COMPONENTS_REGISTER_NODE(Serial_Node)

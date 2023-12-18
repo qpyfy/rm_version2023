@@ -1,0 +1,36 @@
+[35m[1mConsolidate compiler generated dependencies of target rm_serial_node[0m
+[35m[1mConsolidate compiler generated dependencies of target rm_serial[0m
+[ 50%] Built target rm_serial_node
+[ 75%] [32mBuilding CXX object CMakeFiles/rm_serial.dir/src/rm_serial_node.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library librm_serial.so[0m
+[100%] Built target rm_serial
+-- Install configuration: ""
+-- Installing: /rm_version/install/rm_serial/lib/rm_serial/rm_serial_node
+-- Set runtime path of "/rm_version/install/rm_serial/lib/rm_serial/rm_serial_node" to ""
+-- Up-to-date: /rm_version/install/rm_serial/include
+-- Installing: /rm_version/install/rm_serial/include/rm_serial_node.hpp
+-- Up-to-date: /rm_version/install/rm_serial/share/rm_serial/environment/library_path.sh
+-- Installing: /rm_version/install/rm_serial/share/rm_serial/environment/library_path.dsv
+-- Installing: /rm_version/install/rm_serial/lib/librm_serial.so
+-- Set runtime path of "/rm_version/install/rm_serial/lib/librm_serial.so" to ""
+-- Up-to-date: /rm_version/install/rm_serial/share/rm_serial/launch
+-- Installing: /rm_version/install/rm_serial/share/rm_serial/launch/rm_serial_node.launch.py
+-- Up-to-date: /rm_version/install/rm_serial/share/ament_index/resource_index/package_run_dependencies/rm_serial
+-- Up-to-date: /rm_version/install/rm_serial/share/ament_index/resource_index/parent_prefix_path/rm_serial
+-- Up-to-date: /rm_version/install/rm_serial/share/rm_serial/environment/ament_prefix_path.sh
+-- Installing: /rm_version/install/rm_serial/share/rm_serial/environment/ament_prefix_path.dsv
+-- Up-to-date: /rm_version/install/rm_serial/share/rm_serial/environment/path.sh
+-- Installing: /rm_version/install/rm_serial/share/rm_serial/environment/path.dsv
+-- Up-to-date: /rm_version/install/rm_serial/share/rm_serial/local_setup.bash
+-- Up-to-date: /rm_version/install/rm_serial/share/rm_serial/local_setup.sh
+-- Up-to-date: /rm_version/install/rm_serial/share/rm_serial/local_setup.zsh
+-- Installing: /rm_version/install/rm_serial/share/rm_serial/local_setup.dsv
+-- Installing: /rm_version/install/rm_serial/share/rm_serial/package.dsv
+-- Up-to-date: /rm_version/install/rm_serial/share/ament_index/resource_index/packages/rm_serial
+-- Installing: /rm_version/install/rm_serial/share/ament_index/resource_index/rclcpp_components/rm_serial
+-- Up-to-date: /rm_version/install/rm_serial/share/rm_serial/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /rm_version/install/rm_serial/share/rm_serial/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /rm_version/install/rm_serial/share/rm_serial/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /rm_version/install/rm_serial/share/rm_serial/cmake/rm_serialConfig.cmake
+-- Up-to-date: /rm_version/install/rm_serial/share/rm_serial/cmake/rm_serialConfig-version.cmake
+-- Up-to-date: /rm_version/install/rm_serial/share/rm_serial/package.xml
